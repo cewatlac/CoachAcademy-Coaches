@@ -1,0 +1,147 @@
+{
+  "brand": {
+    "primary": "#0b2a67",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Specialized training for career success",
+    "headline": "Build Real-World Tech Skills, Guided by Industry Experts.",
+    "subline": "Gain hands-on experience and elevate your coding proficiency with live, interactive classes designed to empower your tech career.",
+    "ctaText": "Join Now",
+    "ctaLink": "",
+    "cardTitle": "Practical, Project-Based Learning",
+    "cardSub": "Led by top tech mentors",
+    "badges": [
+      { "label": "Assisted Students", "value": "150k+" },
+      { "label": "Expert Coaches", "value": "80+" }
+    ]
+  },
+  "metrics": [
+    { "label": "Programs", "value": "30+" },
+    { "label": "Expert Coaches", "value": "80+" },
+    { "label": "Students", "value": "45k+" },
+    { "label": "Years of Experience", "value": "10+" },
+    { "label": "Tracks", "value": "12+" }
+  ],
+  "partners": [
+    { "name": "Noon", "logo": "assets/partner-noon.png" },
+    { "name": "Facebook", "logo": "assets/partner-facebook.png" },
+    { "name": "Valeo", "logo": "assets/partner-valeo.png" },
+    { "name": "Siemens", "logo": "assets/partner-siemens.png" },
+    { "name": "Mentor Graphics", "logo": "assets/partner-mentor.png" }
+  ],
+  "tracks_config": {
+    "title": "Discover our tracks",
+    "sub": "Select your audience to explore a recommended learning path."
+  },
+  "tracks": [
+    {
+      "title": "Problem Solving For Interviews",
+      "audience": "Graduates",
+      "hours": "72 h",
+      "desc": "Elevate your interview performance with comprehensive training, from core techniques to hands-on coding sessions.",
+      "image": "assets/track-interviews.jpg",
+      "link": "#"
+    },
+    {
+      "title": "Back-End",
+      "audience": "Adults",
+      "hours": "144 h",
+      "desc": "Master back-end development with Node.js, databases, REST APIs, and authentication. Build and deploy secure server-side apps.",
+      "image": "assets/track-backend.jpg",
+      "link": "#"
+    },
+    {
+      "title": "University Competitive Programming",
+      "audience": "University Students",
+      "hours": "240 h",
+      "desc": "Gain an edge in ICPC competitions and excel in technical interviews for leading tech companies.",
+      "image": "assets/track-ucp.jpg",
+      "link": "#"
+    }
+  ],
+  "coaches": [
+    {
+      "role": "Backend Engineer & Competitive Programming Coach",
+      "university": "Faculty of Computers & Information, Fayoum University (2022–2026)",
+      "achievements": [
+        "ECPC Qualifiers — 4th (2024)",
+        "ECPC Finals — 30th (2024)",
+        "Reached Codeforces Expert rating"
+      ],
+      "skills": ["Algorithms","Data Structures","Node.js","Express","MongoDB","SQL","Docker","Testing"],
+      "projects": [
+        "RESTful APIs with JWT, rate limiting & testing",
+        "Contest Training Toolkit for problem sets & progress tracking",
+        "Repository pattern abstractions over MongoDB/SQL"
+      ],
+      "photo": "assets/assem.jpg",
+
+      /* مثال على وجود حقول شخصية داخل JSON—سيتم تجاهلها تلقائياً */
+      "Email Address": "hidden@example.com",
+      "Your Work Phone Number": "+20 1xx xxx xxxx",
+      "Your WhatsApp Number": "+20 1xx xxx xxxx",
+      "Your Work Gmail": "hidden@gmail.com",
+      "Facebook URL": "https://facebook.com/…",
+      "LinkedIn URL": "https://linkedin.com/in/…",
+      "ICPCID URl": "https://icpc.global/…",
+      "Codeforces Handel URL": "https://codeforces.com/profile/…",
+      "Vjudge URL": "https://vjudge.net/user/…",
+      "Your Address": "Cairo, Egypt",
+      "Bank Account": "xxxx"
+    }
+  ],
+  "faq": {
+    "title": "Find The Right Courses For Your Careers",
+    "items": [
+      {
+        "q": "How to enroll for a Training Course?",
+        "a": "<ul><li><strong>Explore Courses:</strong> Browse our catalog to find the track that matches your goals.</li><li><strong>Register:</strong> Open the program page and click “Enroll Now”.</li><li><strong>Complete Payment:</strong> Follow the secure checkout instructions.</li><li><strong>Start Learning:</strong> You’ll receive an email with access details and your live sessions schedule.</li></ul>"
+      },
+      {
+        "q": "Are the training courses interactive or recorded?",
+        "a": "Live, interactive sessions with practical exercises. Selected sessions may provide recordings for revision."
+      },
+      {
+        "q": "Who will be the instructor/coach for my course?",
+        "a": "Industry experts and ICPC-experienced coaches from Coach Academy."
+      },
+      {
+        "q": "What placement support do I receive after completing the program?",
+        "a": "Interview preparation, mock interviews, and referrals through our partner network."
+      }
+    ]
+  },
+  "subscribe": {
+    "enabled": true,
+    "title": "Subscribe Now!",
+    "sub": "Know everything new about our waves, rounds and offers."
+  },
+  "footer": {
+    "blurb": "Gain hands-on experience and elevate your coding proficiency with live, interactive classes designed to empower your tech career.",
+    "ctaText": "Join Now",
+    "ctaLink": "",
+    "links": [
+      { "label": "Home", "href": "#" },
+      { "label": "Programs", "href": "#tracks" },
+      { "label": "Coaches", "href": "#coaches" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "#" }
+    ],
+    "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
+    "email_public": "info@coach-academy.net",
+    "hours": "Sun–Thu, 11 AM – 8 PM",
+    "social": {
+      "facebook": "",
+      "linkedin": "",
+      "youtube": "",
+      "instagram": "",
+      "whatsapp": "https://wa.me/201102919193"
+    },
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
