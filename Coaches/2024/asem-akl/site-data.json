@@ -1,6 +1,6 @@
 {
   "brand": {
-    "primary": "#0b2a67",
+    "primary": "#002366",
     "gradient2": "#1e3a8a",
     "font": "Poppins"
   },
@@ -27,43 +27,12 @@
     { "label": "Years of Experience", "value": "10+" },
     { "label": "Tracks", "value": "12+" }
   ],
-  "partners": [
-    { "name": "Noon", "logo": "assets/partner-noon.png" },
-    { "name": "Facebook", "logo": "assets/partner-facebook.png" },
-    { "name": "Valeo", "logo": "assets/partner-valeo.png" },
-    { "name": "Siemens", "logo": "assets/partner-siemens.png" },
-    { "name": "Mentor Graphics", "logo": "assets/partner-mentor.png" }
-  ],
+  "partners": [],
   "tracks_config": {
-    "title": "Discover our tracks",
-    "sub": "Select your audience to explore a recommended learning path."
+    "title": "",
+    "sub": ""
   },
-  "tracks": [
-    {
-      "title": "Problem Solving For Interviews",
-      "audience": "Graduates",
-      "hours": "72 h",
-      "desc": "Elevate your interview performance with comprehensive training, from core techniques to hands-on coding sessions.",
-      "image": "assets/track-interviews.jpg",
-      "link": "#"
-    },
-    {
-      "title": "Back-End",
-      "audience": "Adults",
-      "hours": "144 h",
-      "desc": "Master back-end development with Node.js, databases, REST APIs, and authentication. Build and deploy secure server-side apps.",
-      "image": "assets/track-backend.jpg",
-      "link": "#"
-    },
-    {
-      "title": "University Competitive Programming",
-      "audience": "University Students",
-      "hours": "240 h",
-      "desc": "Gain an edge in ICPC competitions and excel in technical interviews for leading tech companies.",
-      "image": "assets/track-ucp.jpg",
-      "link": "#"
-    }
-  ],
+  "tracks": [],
   "coaches": [
     {
       "role": "Backend Engineer & Competitive Programming Coach",
@@ -71,28 +40,33 @@
       "achievements": [
         "ECPC Qualifiers — 4th (2024)",
         "ECPC Finals — 30th (2024)",
-        "Reached Codeforces Expert rating"
+        "ACPC Finals — 21st (2024)",
+        "Reached Codeforces Expert (2000+ problems solved)",
+        "IEEE Xtreme 17 — Rank 290",
+        "IEEE Xtreme 18 — Rank 527",
+        "ICPC ID: https://icpc.global/ICPCID/1RCP7AZLZHH0",
+        "Codeforces: https://codeforces.com/profile/BluoCaroot",
+        "Vjudge: https://vjudge.net/user/Assem_Amr"
       ],
-      "skills": ["Algorithms","Data Structures","Node.js","Express","MongoDB","SQL","Docker","Testing"],
+      "skills": [
+        "Algorithms","Data Structures","C++","Python","JavaScript",
+        "Node.js","Express.js","MongoDB","SQL","RESTful APIs","Docker",
+        "OOP","Computational Geometry","DP Optimizations","Flows","FFT",
+        "Math","Computer Architecture","Angular","Problem Solving","Communication","Teamwork"
+      ],
       "projects": [
-        "RESTful APIs with JWT, rate limiting & testing",
-        "Contest Training Toolkit for problem sets & progress tracking",
+        "E-commerce Backend APIs — Node.js, Express, MongoDB, Stripe integration",
+        "Contest Training Toolkit — Structured problem sets & progress tracking",
         "Repository pattern abstractions over MongoDB/SQL"
       ],
       "photo": "assets/assem.jpg",
-
-      /* مثال على وجود حقول شخصية داخل JSON—سيتم تجاهلها تلقائياً */
-      "Email Address": "hidden@example.com",
-      "Your Work Phone Number": "+20 1xx xxx xxxx",
-      "Your WhatsApp Number": "+20 1xx xxx xxxx",
-      "Your Work Gmail": "hidden@gmail.com",
-      "Facebook URL": "https://facebook.com/…",
-      "LinkedIn URL": "https://linkedin.com/in/…",
-      "ICPCID URl": "https://icpc.global/…",
-      "Codeforces Handel URL": "https://codeforces.com/profile/…",
-      "Vjudge URL": "https://vjudge.net/user/…",
-      "Your Address": "Cairo, Egypt",
-      "Bank Account": "xxxx"
+      "coach_level": "Senior",
+      "experience_ca": "New Comers (Coach Academy, 2025–Present)",
+      "experience_other": "Head of Newcomers Training, Fayoum University ICPC Community",
+      "segments": "Universities, Graduates",
+      "max_hours_per_week": "15",
+      "availability_start": "2025-01-17",
+      "open_to_extra_tasks": "Yes"
     }
   ],
   "faq": {
@@ -136,10 +110,6 @@
     "email_public": "info@coach-academy.net",
     "hours": "Sun–Thu, 11 AM – 8 PM",
     "social": {
-      "facebook": "",
-      "linkedin": "",
-      "youtube": "",
-      "instagram": "",
       "whatsapp": "https://wa.me/201102919193"
     },
     "copyright": "© 2025 Coach Academy — All rights reserved."
