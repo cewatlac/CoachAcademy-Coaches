@@ -1,0 +1,92 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Competitive Programming & SWE coaching with a focus on Algorithms, Data Structures, and robust back-end practices.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "metrics": [
+    { "label": "Programs", "value": "30+" },
+    { "label": "Expert Coaches", "value": "80+" },
+    { "label": "Students", "value": "45k+" },
+    { "label": "Years of Experience", "value": "10+" },
+    { "label": "Tracks", "value": "12+" }
+  ],
+  "coach": {
+    "name": "Marwan Mohi Eldeen",
+    "role": "Software Engineer & Competitive Programming Coach",
+    "university": "Faculty of Computers & Artificial Intelligence, Cairo University — Information Systems (2021–2025)",
+    "photo": "assets/marwan.jpg",
+    "snapshot": [
+      "Coach at Coach Academy (CP & Problem Solving)",
+      "Mentor at DotPy (Data Science & Coding)",
+      "Active in ICPC ecosystem; Google Hash Code participant (2022)"
+    ],
+    "skills": [
+      "C#","C++","Python","Java","JavaScript","Dart","PHP",
+      "ASP.NET Core",".NET","Django","Spring Boot","React",
+      "MySQL","PostgreSQL","SQLite","SQL Server","MongoDB",
+      "OOP","Data Structures & Algorithms","SOLID","Design Patterns",
+      "Microservices","REST APIs","Testing (Selenium, JUnit)","JWT","CI/CD Basics",
+      "Azure","Agile (Scrum)","Git (branching, PRs)"
+    ],
+    "links": {
+      "icpcid": "https://icpc.global/ICPCID/KDIBZ4S8304R",
+      "codeforces": "https://codeforces.com/profile/Marwan_MohiEldeen",
+      "vjudge": "https://vjudge.net/user/MEGA_MIND310"
+    },
+    "achievements": [
+      "ECPC finals — best rank 63 / 235 (Egypt-wide)",
+      "ICPC Regional participation",
+      "Google Hash Code participant (2022)"
+    ],
+    "projects": [
+      "Problem Solving Assistant (PSA): Django, PostgreSQL, React, Flutter — NLP-based helper with roadmap recommender",
+      "E-Commerce Backend (ASP.NET Core, SQL Server) — JWT auth, RBAC, optimized queries",
+      "Library Management (C#, MySQL) — CRUD + normalized schema",
+      "Instapy clone backend (Java) — SOLID, Factory/Strategy patterns",
+      "Student Affairs Portal (Django + Ajax) — admin efficiency +40%",
+      "Orders & Notifications Module (Spring Boot) — 12 REST endpoints, perf +40%"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How to request this coach for corporate training?",
+        "a": "Use the WhatsApp button to share your requirements. We will coordinate schedules and program details."
+      },
+      {
+        "q": "Does the coach handle university and graduates segments?",
+        "a": "Yes. Focus on Universities and Graduates; sessions are typically online."
+      },
+      {
+        "q": "What topics can this coach teach?",
+        "a": "Competitive Programming, OOP, Databases, .NET/ASP.NET Core, REST APIs, Testing basics and more."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
