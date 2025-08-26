@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coach Academy — Coach Profile (Assem)</title>
+  <title>Coach Academy — Coach Profile (Assem Amr Abdelfattah)</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
         <div class="brand-text">
           <h1 class="org">Coach <span>Academy</span></h1>
-          <p class="org-sub">Coach Profile — Anonymized</p>
+          <p class="org-sub">Coach Profile — Anonymized (Name Only)</p>
         </div>
       </div>
       <nav class="nav">
@@ -29,15 +29,16 @@
     </div>
   </header>
 
-  <!-- HERO (coach-only) -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
         <div class="eyebrow" id="hero-eyebrow">Coach Academy</div>
-        <h2 class="hero-title" id="hero-title">Backend Engineer & Competitive Programming Coach</h2>
+        <h2 class="hero-title" id="coach-name"></h2>
+        <h3 class="hero-role" id="coach-role-hero"></h3>
         <p class="hero-sub" id="hero-sub">
-          Practical, project-based mentoring with a strong focus on algorithms, data structures,
-          and modern back-end engineering.
+          Practical, project-based mentoring with a strong focus on Algorithms, Data Structures,
+          and modern Back-End engineering.
         </p>
         <div class="hero-ctas">
           <a class="btn btn-primary" id="hero-cta1" target="_blank" rel="noopener">Contact on WhatsApp</a>
@@ -51,12 +52,12 @@
     </div>
   </section>
 
-  <!-- METRICS (global) -->
+  <!-- METRICS -->
   <section class="metrics">
     <div class="container metrics-grid" id="metrics-grid"></div>
   </section>
 
-  <!-- ABOUT / SNAPSHOT -->
+  <!-- ABOUT -->
   <section id="about" class="about">
     <div class="container">
       <div class="coach-card">
@@ -64,25 +65,22 @@
           <img class="coach-photo" id="coach-photo" src="assets/assem.jpg" alt="Coach photo" />
         </div>
         <div class="coach-body">
-          <h3 class="coach-role" id="coach-role"></h3>
+          <h3 class="coach-name" id="about-coach-name"></h3>
+          <p class="coach-role" id="about-coach-role"></p>
           <p class="muted" id="coach-university"></p>
 
           <h4 class="coach-subtitle">Snapshot</h4>
-          <ul class="bullets" id="coach-snapshot">
-            <!-- populated from JS (or default bullets) -->
-          </ul>
+          <ul class="bullets" id="coach-snapshot"></ul>
 
           <h4 class="coach-subtitle">Core Skills</h4>
           <ul class="coach-tags" id="coach-skills"></ul>
 
-          <div class="links-row" id="coach-links">
-            <!-- ICPC / Codeforces / Vjudge (allowed) -->
-          </div>
+          <div class="links-row" id="coach-links"></div>
 
           <div class="coach-cta">
             <div class="note">
-              This profile intentionally hides personal identifiers (name, phone, emails, address, banking).
-              Coach Academy shares details later in the hiring process upon request.
+              This profile intentionally hides personal identifiers (email, phone, address, banking).
+              Coach Academy will share details later in the hiring process upon request.
             </div>
             <a class="btn btn-primary" id="about-cta" target="_blank" rel="noopener">Contact on WhatsApp</a>
           </div>
