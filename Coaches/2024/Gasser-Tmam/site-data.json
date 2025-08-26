@@ -9,74 +9,62 @@
   },
   "hero": {
     "eyebrow": "Coach Academy",
-    "subline": "Training Manager & Problem Solving Coach with experience in SWE, Networking, and Education.",
+    "subline": "Cyber Security Consultant | Penetration Testing (Web, Mobile, Network, Wireless, Active Directory). ITI Cybersecurity Diploma.",
     "badges": [
       { "label": "Expert Coaches", "value": "80+" },
       { "label": "Students", "value": "45k+" }
     ]
   },
-  "metrics": [
-    { "label": "Programs", "value": "30+" },
-    { "label": "Expert Coaches", "value": "80+" },
-    { "label": "Students", "value": "45k+" },
-    { "label": "Years of Experience", "value": "10+" },
-    { "label": "Tracks", "value": "12+" }
-  ],
   "coach": {
-    "name": "Ahmed Ashraf Abdelazez Sabry",
-    "role": "Training Manager & Competitive Programming Coach",
-    "university": "Thebes Academy, B.S. in Electronics and Communication Engineering (2018–2023)",
-    "photo": "assets/ahmed.jpg",
+    "name": "Gasser Dahshan",
+    "role": "Cyber Security Consultant & VAPT Trainer",
+    "education": "ITI (9-Month Professional Cyber Security Diploma) — 2023–present; B.Sc. Communication & Electronics, Thebes Academy — 2018–2023 (A+)",
+    "photo": "assets/gasser.jpg",
     "snapshot": [
-      "Founder of PST.community",
-      "Training Manager at Coach Academy",
-      "Teaching Assistant at AUC & MSA",
-      "Co-founder of Thebes CPC"
+      "Web, Mobile, Network, Wireless & Active Directory PenTesting",
+      "Vulnerability Assessment & Reporting | Threat Modeling",
+      "Burp Suite, OWASP ZAP, Nmap, SQLMap, Metasploit, Wireshark"
     ],
     "skills": [
-      "C++","Python","JavaScript","C#",
-      "Django","SQLAlchemy","Spring","HTML","CSS","JS",
-      "OOP","Data Structures","Algorithms","Databases","Design Patterns",
-      "Problem Solving","Networking","IoT","CCNA","MCSA",
-      "Team Leadership","Content Development"
+      "Windows","Linux",
+      "C","C++","Python (basics)","Bash (basics)",
+      "HTML","CSS","JavaScript (basics)","PHP (basics)","MySQL (basics)",
+      "VMware Workstation","VirtualBox",
+      "PortSwigger","TryHackMe","VulnHub","Hack The Box","CyberTalents",
+      "Windows Server","Linux Admin",
+      "ITIL4",
+      "VAPT","Network Security","Network Protocols","Cisco Routing","Social Engineering","Active Directory"
     ],
-    "links": {
-      "icpcid": "https://icpc.global/ICPCID/K62456GWACO5",
-      "codeforces": "https://codeforces.com/profile/CEWATLAC",
-      "vjudge": "https://vjudge.net/user/CEWATLAC"
-    },
     "achievements": [
-      "ECPC Finalist ×4",
-      "CP Coach for 100+ teams",
-      "ECPC Judge",
-      "IEEE competition top 25 in Egypt",
-      "Participated in Google Code Jam & Meta Hacker Cup"
+      "eJPTv1 — Cert ID 3135194",
+      "ecPPTv2 — Cert ID 1727803",
+      "eWAPTv2 — Cert ID 101046138",
+      "Completed CCNA 200-301 & ENCOR 350-401 coursework",
+      "PortSwigger Web Security labs"
     ],
     "projects": [
-      "PST.community — online platform for problem solvers",
-      "Training frameworks & systems for Coach Academy",
-      "Authored educational content adopted in universities"
+      "Smart Link System (graduation) — services hub with security focus (Grade A+)"
     ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "How to request this coach for corporate training?",
-        "a": "Use the WhatsApp button to share your requirements. We will coordinate schedules and program details."
+        "q": "What penetration testing areas can this coach cover?",
+        "a": "Web, mobile, network, wireless, and Active Directory. Includes reporting, methodology, and tools."
       },
       {
-        "q": "What subjects can the coach cover?",
-        "a": "Competitive Programming, SWE, Networking, IoT, Problem Solving, Python, Circuits, PLC and more."
+        "q": "Does the coach teach hands-on labs?",
+        "a": "Yes. Uses platforms like PortSwigger, TryHackMe, Hack The Box and custom vulnerable labs."
       },
       {
-        "q": "Does the coach teach school students?",
-        "a": "Yes. Experience with school, university, and graduates segments."
+        "q": "What’s the tooling stack?",
+        "a": "Burp Suite, OWASP ZAP, Nmap, SQLMap, Metasploit, Wireshark; Windows/Linux environments and VMs."
       }
     ]
   },
   "footer": {
-    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "blurb": "Empowering talent through hands-on, industry-aligned security coaching.",
     "ctaText": "Contact on WhatsApp",
     "links": [
       { "label": "About", "href": "#about" },

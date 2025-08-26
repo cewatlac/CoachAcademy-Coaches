@@ -1,0 +1,83 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Software Engineer & AI Engineer with expertise in Flutter, Full-Stack, and Data Science. Founder of Cominde and experienced instructor at Coach Academy and Gensystem.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "coach": {
+    "name": "Joshua George",
+    "role": "Software Engineer | AI Engineer | Instructor",
+    "university": "Bachelor of Computers and Artificial Intelligence, Cairo University (2020–2024), GPA: 3.52/4.00, Rank: 17th",
+    "photo": "assets/joshua.jpg",
+    "snapshot": [
+      "Founder of Cominde startup",
+      "Mobile App Developer at ELARABI for Training & Human Development",
+      "Data Scientist at Outlier",
+      "Software Developer at X-Sell Technologies",
+      "Flutter Instructor at Coach Academy",
+      "Supabase Instructor at Gensystem",
+      "Prof Informatica at Don Bosco Cairo"
+    ],
+    "skills": [
+      "Flutter","Supabase","Node.js","PHP","Firebase","AI/ML",
+      "TensorFlow","PyTorch","Python","MATLAB","Dart","JavaScript",
+      "Full-Stack Development","Databases","Networking","System Design",
+      "Algorithms","Data Structures","Problem Solving","Arduino","Robotics"
+    ],
+    "achievements": [
+      "1st Place in Autocars Challenge (Auto Line Forward Cars)",
+      "Google Hash Code participant",
+      "11th place — ICPC Cairo FCAI Collegiate Programming Contest (2023)",
+      "27th place — ICPC Cairo FCAI Collegiate Programming Contest (2022)",
+      "Ranked in Orange Digital Center Hackathon (2022)"
+    ],
+    "projects": [
+      "Motor Fault Detection in Legged Robots using AI (Graduation Project)",
+      "E-commerce & Auction Apps for Saudi Market — ELARABI",
+      "Hotel & Limousine Booking App — KIRODEV (France/Switzerland)",
+      "Car Repair Service Apps — zTechnium (UAE)",
+      "Cominde client projects — multiple domains"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How to request this coach for corporate training?",
+        "a": "Use the WhatsApp button to share your requirements. We will coordinate schedules and program details."
+      },
+      {
+        "q": "What are the coach's main areas of expertise?",
+        "a": "Mobile app development (Flutter), AI & ML, Backend with Node.js/PHP, Supabase, Full-stack projects."
+      },
+      {
+        "q": "Does the coach have teaching experience?",
+        "a": "Yes. Instructor at Coach Academy (Flutter), Gensystem (Supabase), and Don Bosco Cairo (Informatics)."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
