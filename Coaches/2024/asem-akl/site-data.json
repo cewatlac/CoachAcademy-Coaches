@@ -8,16 +8,11 @@
     "whatsapp": "201102919193"
   },
   "hero": {
-    "eyebrow": "Specialized training for career success",
-    "headline": "Build Real-World Tech Skills, Guided by Industry Experts.",
-    "subline": "Gain hands-on experience and elevate your coding proficiency with live, interactive classes designed to empower your tech career.",
-    "ctaText": "Join Now",
-    "ctaLink": "",
-    "cardTitle": "Practical, Project-Based Learning",
-    "cardSub": "Led by top tech mentors",
+    "eyebrow": "Coach Academy",
+    "subline": "Practical, project-based mentoring focused on Algorithms, Data Structures, and modern Back-End engineering.",
     "badges": [
-      { "label": "Assisted Students", "value": "150k+" },
-      { "label": "Expert Coaches", "value": "80+" }
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
     ]
   },
   "metrics": [
@@ -27,91 +22,69 @@
     { "label": "Years of Experience", "value": "10+" },
     { "label": "Tracks", "value": "12+" }
   ],
-  "partners": [],
-  "tracks_config": {
-    "title": "",
-    "sub": ""
+  "coach": {
+    "role": "Backend Engineer & Competitive Programming Coach",
+    "university": "Faculty of Computers & Information, Fayoum University (2022–2026)",
+    "photo": "assets/assem.jpg",
+    "snapshot": [
+      "Problem Solving, Algorithms & Data Structures",
+      "Back-end with Node.js & Express",
+      "MongoDB & SQL (design, performance)",
+      "Git/GitHub, Code Review & CI basics"
+    ],
+    "skills": [
+      "Algorithms","Data Structures","C++","Python","JavaScript",
+      "Node.js","Express.js","MongoDB","SQL","RESTful APIs","Docker",
+      "OOP","Computational Geometry","DP Optimizations","Flows","FFT",
+      "Math","Computer Architecture","Angular","Problem Solving","Teamwork"
+    ],
+    "links": {
+      "icpcid": "https://icpc.global/ICPCID/1RCP7AZLZHH0",
+      "codeforces": "https://codeforces.com/profile/BluoCaroot",
+      "vjudge": "https://vjudge.net/user/Assem_Amr"
+    },
+    "achievements": [
+      "ECPC Qualifiers — 4th (2024)",
+      "ECPC Finals — 30th (2024)",
+      "ACPC Finals — 21st (2024)",
+      "Reached Codeforces Expert (2000+ problems solved)",
+      "IEEE Xtreme 17 — Rank 290",
+      "IEEE Xtreme 18 — Rank 527"
+    ],
+    "projects": [
+      "E-commerce Backend APIs — Node.js, Express, MongoDB, Stripe integration",
+      "Contest Training Toolkit — Structured problem sets & progress tracking",
+      "Repository pattern abstractions over MongoDB/SQL"
+    ]
   },
-  "tracks": [],
-  "coaches": [
-    {
-      "role": "Backend Engineer & Competitive Programming Coach",
-      "university": "Faculty of Computers & Information, Fayoum University (2022–2026)",
-      "achievements": [
-        "ECPC Qualifiers — 4th (2024)",
-        "ECPC Finals — 30th (2024)",
-        "ACPC Finals — 21st (2024)",
-        "Reached Codeforces Expert (2000+ problems solved)",
-        "IEEE Xtreme 17 — Rank 290",
-        "IEEE Xtreme 18 — Rank 527",
-        "ICPC ID: https://icpc.global/ICPCID/1RCP7AZLZHH0",
-        "Codeforces: https://codeforces.com/profile/BluoCaroot",
-        "Vjudge: https://vjudge.net/user/Assem_Amr"
-      ],
-      "skills": [
-        "Algorithms","Data Structures","C++","Python","JavaScript",
-        "Node.js","Express.js","MongoDB","SQL","RESTful APIs","Docker",
-        "OOP","Computational Geometry","DP Optimizations","Flows","FFT",
-        "Math","Computer Architecture","Angular","Problem Solving","Communication","Teamwork"
-      ],
-      "projects": [
-        "E-commerce Backend APIs — Node.js, Express, MongoDB, Stripe integration",
-        "Contest Training Toolkit — Structured problem sets & progress tracking",
-        "Repository pattern abstractions over MongoDB/SQL"
-      ],
-      "photo": "assets/assem.jpg",
-      "coach_level": "Senior",
-      "experience_ca": "New Comers (Coach Academy, 2025–Present)",
-      "experience_other": "Head of Newcomers Training, Fayoum University ICPC Community",
-      "segments": "Universities, Graduates",
-      "max_hours_per_week": "15",
-      "availability_start": "2025-01-17",
-      "open_to_extra_tasks": "Yes"
-    }
-  ],
   "faq": {
-    "title": "Find The Right Courses For Your Careers",
+    "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "How to enroll for a Training Course?",
-        "a": "<ul><li><strong>Explore Courses:</strong> Browse our catalog to find the track that matches your goals.</li><li><strong>Register:</strong> Open the program page and click “Enroll Now”.</li><li><strong>Complete Payment:</strong> Follow the secure checkout instructions.</li><li><strong>Start Learning:</strong> You’ll receive an email with access details and your live sessions schedule.</li></ul>"
+        "q": "How to request this coach for corporate training?",
+        "a": "Use the WhatsApp contact button to share your requirements. We will coordinate schedules and program details."
       },
       {
-        "q": "Are the training courses interactive or recorded?",
-        "a": "Live, interactive sessions with practical exercises. Selected sessions may provide recordings for revision."
+        "q": "Are sessions live and interactive?",
+        "a": "Yes. Live, interactive coaching with practice-focused assignments."
       },
       {
-        "q": "Who will be the instructor/coach for my course?",
-        "a": "Industry experts and ICPC-experienced coaches from Coach Academy."
-      },
-      {
-        "q": "What placement support do I receive after completing the program?",
-        "a": "Interview preparation, mock interviews, and referrals through our partner network."
+        "q": "Can the coach support interview preparation?",
+        "a": "Yes. Algorithmic problem-solving, mock interviews, and feedback."
       }
     ]
   },
-  "subscribe": {
-    "enabled": true,
-    "title": "Subscribe Now!",
-    "sub": "Know everything new about our waves, rounds and offers."
-  },
   "footer": {
-    "blurb": "Gain hands-on experience and elevate your coding proficiency with live, interactive classes designed to empower your tech career.",
-    "ctaText": "Join Now",
-    "ctaLink": "",
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
     "links": [
-      { "label": "Home", "href": "#" },
-      { "label": "Programs", "href": "#tracks" },
-      { "label": "Coaches", "href": "#coaches" },
-      { "label": "FAQ", "href": "#faq" },
-      { "label": "Contact", "href": "#" }
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
     ],
     "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
     "email_public": "info@coach-academy.net",
-    "hours": "Sun–Thu, 11 AM – 8 PM",
-    "social": {
-      "whatsapp": "https://wa.me/201102919193"
-    },
     "copyright": "© 2025 Coach Academy — All rights reserved."
   }
 }
