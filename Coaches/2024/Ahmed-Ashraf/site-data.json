@@ -1,0 +1,91 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Training Manager & Problem Solving Coach with experience in SWE, Networking, and Education.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "metrics": [
+    { "label": "Programs", "value": "30+" },
+    { "label": "Expert Coaches", "value": "80+" },
+    { "label": "Students", "value": "45k+" },
+    { "label": "Years of Experience", "value": "10+" },
+    { "label": "Tracks", "value": "12+" }
+  ],
+  "coach": {
+    "name": "Ahmed Ashraf Abdelazez Sabry",
+    "role": "Training Manager & Competitive Programming Coach",
+    "university": "Thebes Academy, B.S. in Electronics and Communication Engineering (2018–2023)",
+    "photo": "assets/ahmed.jpg",
+    "snapshot": [
+      "Founder of PST.community",
+      "Training Manager at Coach Academy",
+      "Teaching Assistant at AUC & MSA",
+      "Co-founder of Thebes CPC"
+    ],
+    "skills": [
+      "C++","Python","JavaScript","C#",
+      "Django","SQLAlchemy","Spring","HTML","CSS","JS",
+      "OOP","Data Structures","Algorithms","Databases","Design Patterns",
+      "Problem Solving","Networking","IoT","CCNA","MCSA",
+      "Team Leadership","Content Development"
+    ],
+    "links": {
+      "icpcid": "https://icpc.global/ICPCID/K62456GWACO5",
+      "codeforces": "https://codeforces.com/profile/CEWATLAC",
+      "vjudge": "https://vjudge.net/user/CEWATLAC"
+    },
+    "achievements": [
+      "ECPC Finalist ×4",
+      "CP Coach for 100+ teams",
+      "ECPC Judge",
+      "IEEE competition top 25 in Egypt",
+      "Participated in Google Code Jam & Meta Hacker Cup"
+    ],
+    "projects": [
+      "PST.community — online platform for problem solvers",
+      "Training frameworks & systems for Coach Academy",
+      "Authored educational content adopted in universities"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How to request this coach for corporate training?",
+        "a": "Use the WhatsApp button to share your requirements. We will coordinate schedules and program details."
+      },
+      {
+        "q": "What subjects can the coach cover?",
+        "a": "Competitive Programming, SWE, Networking, IoT, Problem Solving, Python, Circuits, PLC and more."
+      },
+      {
+        "q": "Does the coach teach school students?",
+        "a": "Yes. Experience with school, university, and graduates segments."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
