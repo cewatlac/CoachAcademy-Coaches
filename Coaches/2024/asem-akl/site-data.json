@@ -23,6 +23,7 @@
     { "label": "Tracks", "value": "12+" }
   ],
   "coach": {
+    "name": "Assem Amr Abdelfattah",
     "role": "Backend Engineer & Competitive Programming Coach",
     "university": "Faculty of Computers & Information, Fayoum University (2022–2026)",
     "photo": "assets/assem.jpg",
