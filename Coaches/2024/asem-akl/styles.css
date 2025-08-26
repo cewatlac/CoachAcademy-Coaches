@@ -57,7 +57,8 @@ body{
   background: rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25);
   padding:.35rem .6rem; border-radius:999px;
 }
-.hero-title{ margin:.6rem 0 .4rem; font-size:clamp(1.7rem, 1.1rem + 2.4vw, 2.6rem); font-weight:800; }
+.hero-title{ margin:.6rem 0 .2rem; font-size:clamp(1.9rem, 1.2rem + 2.6vw, 2.8rem); font-weight:800; }
+.hero-role{ margin:.1rem 0 1rem; font-size:1.1rem; font-weight:700; opacity:.95; }
 .hero-sub{ margin:0 0 1rem; color:rgba(255,255,255,.95); max-width:65ch; }
 .hero-ctas{ display:flex; gap:.6rem; flex-wrap:wrap; }
 .hero-badges{ display:flex; gap:.7rem; flex-wrap:wrap; margin-top:.9rem; }
@@ -88,7 +89,8 @@ body{
 }
 @media (max-width:760px){ .coach-card{ grid-template-columns: 1fr; } }
 .coach-photo{ width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:12px; border:1px solid var(--border); background:#eef2ff; }
-.coach-role{ margin:.2rem 0 .2rem; color:var(--ink); font-size:1.25rem; }
+.coach-name{ margin:.2rem 0 .2rem; color:var(--ink); font-size:1.35rem; font-weight:800; }
+.coach-role{ margin:0; color:var(--ink); font-weight:600; }
 .coach-subtitle{ margin:.8rem 0 .35rem; color:var(--ink); }
 .muted{ color:var(--muted); }
 .bullets{ margin:.2rem 0 0; padding-left:1.2rem; }
@@ -99,7 +101,7 @@ body{
 .links-row a{ text-decoration:none; font-weight:700; color:var(--brand); border:1px solid var(--brand); padding:.3rem .6rem; border-radius:999px; background:#fff; }
 .links-row a:hover{ background:#eef2ff; }
 .coach-cta{ display:flex; align-items:center; justify-content:space-between; gap:.8rem; flex-wrap:wrap; margin-top:.8rem; }
-.coach-cta .note{ color:var(--muted); }
+.coach-cta .note{ color:var(--muted); max-width:60ch; }
 
 /* Sections */
 .section-heading{ margin:1rem 0 .4rem; color:var(--ink); }
