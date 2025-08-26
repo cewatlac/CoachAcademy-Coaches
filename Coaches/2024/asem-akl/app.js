@@ -1,307 +1,128 @@
-/**
- * Coach Academy — Anonymized Template Renderer
- * - Loads JSON data from site-data.json
- * - Sanitizes personal fields (ignored from render)
- * - Renders hero, metrics, partners, tracks, coaches, FAQ, footer
- */
+(async function init(){
+  const res = await fetch("site-data.json", { cache: "no-store" });
+  const data = await res.json();
 
-// === CONFIG: keys to strip/ignore (won't render) ===
-const PERSONAL_KEYS = new Set([
-  // from your sheet — any direct identifiers
-  "Email Address","Your Work Phone Number","Your WhatsApp Number","Your Work Gmail",
-  "Date of Birth","ID Front / Back PDF Only","Signed CA NDA","Signed CA Coaches Policy",
-  "Facebook URL","LinkedIn URL","CV","Your Address","Bank Account / Smart Wallet",
-  "Bank Name","Bank Branch","Bank Account","Bank Account Holder's Name",
-  "Instapay Account","Smart Wallet Number",
-  // URLs that could identify the person directly (we keep Codeforces only as rating text if you prefer later)
-  "ICPCID URl","Codeforces Handel URL","Vjudge URL"
-]);
-
-// optional: decide which public fields we DO allow from coach object
-const ALLOWED_COACH_PUBLIC = new Set([
-  "role","university","achievements","skills","projects","photo","segments",
-  "experience_ca","experience_other","coach_level","max_hours_per_week","availability_start",
-  "open_to_extra_tasks"
-]);
-
-// Helper: create element
-const el = (tag, attrs = {}, ...children) => {
-  const node = document.createElement(tag);
-  Object.entries(attrs).forEach(([k,v]) => {
-    if (k === "class") node.className = v;
-    else if (k.startsWith("data-")) node.setAttribute(k, v);
-    else if (k === "html") node.innerHTML = v;
-    else node.setAttribute(k, v);
-  });
-  children.flat().forEach(c => {
-    if (c == null) return;
-    if (typeof c === "string") node.appendChild(document.createTextNode(c));
-    else node.appendChild(c);
-  });
-  return node;
-};
-
-// Sanitize a raw "coach" object (possibly includes personal fields)
-function sanitizeCoach(raw) {
-  const sanitized = {};
-  // Allow safe public fields if present
-  for (const key of Object.keys(raw)) {
-    if (PERSONAL_KEYS.has(key)) continue; // drop personal
-    if (ALLOWED_COACH_PUBLIC.has(key)) sanitized[key] = raw[key];
+  // brand color override
+  if (data.brand?.primary) {
+    document.documentElement.style.setProperty("--brand", data.brand.primary);
   }
-  // Defaults
-  if (!sanitized.role) sanitized.role = "Software & Competitive Programming Coach";
-  if (!sanitized.skills) sanitized.skills = [];
-  if (!sanitized.achievements) sanitized.achievements = [];
-  if (!sanitized.projects) sanitized.projects = [];
-  if (!sanitized.university) sanitized.university = "";
-  return sanitized;
-}
+  if (data.brand?.gradient2) {
+    document.documentElement.style.setProperty("--brand-2", data.brand.gradient2);
+  }
 
-function setAttrIf(elm, attr, val) {
-  if (!val) return;
-  elm.setAttribute(attr, val);
-}
-
-// Render Hero
-function renderHero(hero, contacts) {
-  document.getElementById("hero-title").textContent = hero.headline || "Build Real-World Tech Skills, Guided by Industry Experts.";
-  document.getElementById("hero-sub").textContent = hero.subline || "Gain hands-on experience and elevate your coding proficiency with live, interactive classes designed to empower your tech career.";
-  document.getElementById("hero-eyebrow").textContent = hero.eyebrow || "Specialized training for career success";
-  document.getElementById("hero-card-title").textContent = hero.cardTitle || "Practical, Project-Based Learning";
-  document.getElementById("hero-card-sub").textContent = hero.cardSub || "Led by top tech mentors";
-
-  const cta1 = document.getElementById("hero-cta1");
-  cta1.textContent = hero.ctaText || "Join Now";
-  cta1.href = hero.ctaLink || (contacts?.whatsapp ? `https://wa.me/${contacts.whatsapp}` : "#");
-
+  // WhatsApp in header & buttons
+  const wa = data.contacts?.whatsapp ? `https://wa.me/${data.contacts.whatsapp}` : "#";
   const navWa = document.getElementById("nav-whatsapp");
-  navWa.textContent = "WhatsApp";
-  navWa.href = contacts?.whatsapp ? `https://wa.me/${contacts.whatsapp}` : "#";
+  navWa.href = wa;
+  const heroCta = document.getElementById("hero-cta1");
+  heroCta.href = wa;
+  const aboutCta = document.getElementById("about-cta");
+  aboutCta.href = wa;
+
+  // Hero copy & badges
+  document.getElementById("hero-title").textContent = data.coach?.role || "Software & Competitive Programming Coach";
+  document.getElementById("hero-sub").textContent = data.hero?.subline || "Practical, project-based mentoring with SWE & CP focus.";
+  document.getElementById("hero-eyebrow").textContent = data.hero?.eyebrow || "Coach Academy";
 
   const badgesWrap = document.getElementById("hero-badges");
-  badgesWrap.innerHTML = "";
-  (hero.badges || []).forEach(b => {
-    const badge = el("div", { class:"badge" },
-      el("div", { class:"badge-value" }, b.value || ""),
-      el("div", { class:"badge-label" }, b.label || "")
-    );
-    badgesWrap.appendChild(badge);
-  });
-}
-
-// Render Metrics
-function renderMetrics(metrics) {
-  const grid = document.getElementById("metrics-grid");
-  grid.innerHTML = "";
-  (metrics || []).forEach(m => {
-    grid.appendChild(
-      el("div", { class:"metric" },
-        el("div", { class:"metric-value" }, m.value || ""),
-        el("div", { class:"metric-label" }, m.label || "")
-      )
-    );
-  });
-}
-
-// Render Partners
-function renderPartners(partners) {
-  const wrap = document.getElementById("partners-logos");
-  wrap.innerHTML = "";
-  (partners || []).forEach(p => {
-    // p can be string (name) or object {name, logo}
-    if (typeof p === "string") {
-      wrap.appendChild(el("img", { src:"assets/partner-placeholder.png", alt: `${p} logo`, title:p }));
-    } else {
-      wrap.appendChild(el("img", { src: p.logo || "assets/partner-placeholder.png", alt: `${p.name || "Partner"} logo`, title: p.name || "Partner" }));
-    }
-  });
-}
-
-// Render Tracks
-function renderTracks(tracks, config) {
-  if (config?.title) document.getElementById("tracks-title").textContent = config.title;
-  if (config?.sub) document.getElementById("tracks-sub").textContent = config.sub;
-
-  const grid = document.getElementById("tracks-grid");
-  grid.innerHTML = "";
-  (tracks || []).forEach(t => {
-    grid.appendChild(
-      el("article", { class:"track-card" },
-        el("img", { class:"track-img", src: t.image || "assets/track-placeholder.jpg", alt: t.title || "Track" }),
-        el("div", { class:"track-content" },
-          el("h4", { class:"track-title" }, t.title || ""),
-          el("div", { class:"track-meta" },
-            el("span", { class:"pill" }, t.audience || ""),
-            el("span", { class:"pill" }, t.hours || "")
-          ),
-          el("p", { class:"track-desc" }, t.desc || ""),
-          el("a", { class:"btn btn-outline", target:"_blank", rel:"noopener", href: t.link || "#" }, "Learn More")
-        )
-      )
-    );
-  });
-}
-
-// Render Coaches
-function renderCoaches(rawCoaches, contacts) {
-  const grid = document.getElementById("coaches-grid");
-  grid.innerHTML = "";
-
-  (rawCoaches || []).forEach(c => {
-    const coach = sanitizeCoach(c); // strip personal
-    const tags = (coach.skills || []).slice(0, 10).map(s => el("li", {}, s));
-
-    const achievements = el("ul", { class:"bullets" },
-      ...((coach.achievements||[]).map(x => el("li", {}, x)))
-    );
-    const projects = el("ul", { class:"bullets" },
-      ...((coach.projects||[]).map(x => el("li", {}, x)))
-    );
-
-    const card = el("article", { class:"coach-card" },
-      el("div", {},
-        el("img", { class:"coach-photo", src: coach.photo || "assets/coach-photo-placeholder.jpg", alt:"Coach photo" })
-      ),
-      el("div", { class:"coach-body" },
-        el("h4", { class:"coach-role" }, coach.role),
-        el("ul", { class:"coach-tags" }, tags),
-        el("div", { class:"coach-grid" },
-          el("div", {},
-            el("h5", { class:"coach-subtitle" }, "Snapshot"),
-            el("ul", { class:"bullets" },
-              ...(coach.snapshot || [
-                "Problem Solving, Algorithms & Data Structures",
-                "Back-end with Node.js & Express",
-                "MongoDB & SQL (design, performance)",
-                "Git/GitHub, Code Review & CI basics"
-              ]).map(x => el("li", {}, x))
-            ),
-            el("h5", { class:"coach-subtitle" }, "Projects"),
-            projects
-          ),
-          el("div", {},
-            coach.university ? el("div", {},
-              el("h5", { class:"coach-subtitle" }, "Education"),
-              el("p", { class:"muted" , html: coach.university })
-            ) : null,
-            (coach.achievements?.length ? el("div", {},
-              el("h5", { class:"coach-subtitle" }, "Competitive Programming"),
-              achievements
-            ) : null)
-          )
-        ),
-        el("div", { class:"coach-cta" },
-          el("div", { class:"note" }, "This profile intentionally hides personal identifiers (name, phone, emails, social links). Coach Academy will share details upon request during later hiring stages."),
-          el("a", {
-            class:"btn btn-primary",
-            target:"_blank",
-            rel:"noopener",
-            href: contacts?.whatsapp ? `https://wa.me/${contacts.whatsapp}?text=Hello%20Coach%20Academy%2C%20I%27m%20interested%20in%20this%20coach.` : "#"
-          }, "Contact on WhatsApp")
-        )
-      )
-    );
-    grid.appendChild(card);
-  });
-}
-
-// Render FAQ
-function renderFAQ(items, title) {
-  if (title) document.getElementById("faq-title").textContent = title;
-  const list = document.getElementById("faq-list");
-  list.innerHTML = "";
-  (items || []).forEach((f, i) => {
-    const det = el("details", { class:"faq-item", ...(i===0 ? {open:""} : {}) },
-      el("summary", {}, f.q || ""),
-      el("div", { class:"faq-body", html: f.a || "" })
-    );
-    list.appendChild(det);
-  });
-}
-
-// Render Footer
-function renderFooter(footer, contacts) {
-  document.getElementById("footer-blurb").textContent = footer.blurb || "Gain hands-on experience and elevate your coding proficiency with live, interactive classes designed to empower your tech career.";
-  const cta = document.getElementById("footer-cta");
-  cta.textContent = footer.ctaText || "Join Now";
-  cta.href = footer.ctaLink || (contacts?.whatsapp ? `https://wa.me/${contacts.whatsapp}` : "#");
-
-  // Links
-  const linksUl = document.getElementById("footer-links"); linksUl.innerHTML = "";
-  (footer.links || [
-    {label:"Home", href:"#"},
-    {label:"Programs", href:"#tracks"},
-    {label:"Coaches", href:"#coaches"},
-    {label:"FAQ", href:"#faq"},
-    {label:"Contact", href:"#"}
-  ]).forEach(l => linksUl.appendChild(el("li", {}, el("a", { href:l.href || "#"}, l.label || ""))));
-
-  // Contact
-  const contactUl = document.getElementById("footer-contact"); contactUl.innerHTML = "";
-  if (footer.address) contactUl.appendChild(el("li", {}, footer.address));
-  if (footer.email_public) contactUl.appendChild(el("li", {}, el("a", { href:`mailto:${footer.email_public}`}, footer.email_public)));
-  if (contacts?.whatsapp) contactUl.appendChild(el("li", {}, el("a", { href:`tel:+${contacts.whatsapp}`}, `(+${contacts.whatsapp.slice(0,2)}) ${contacts.whatsapp.slice(2)}`)));
-
-  // Social
-  const socialWrap = document.getElementById("footer-social"); socialWrap.innerHTML = "";
-  const social = footer.social || {};
-  Object.entries(social).forEach(([k,v]) => {
-    if (!v) return;
-    socialWrap.appendChild(el("a", { href:v, target:"_blank", rel:"noopener" }, k.charAt(0).toUpperCase()+k.slice(1)));
+  (data.hero?.badges || []).forEach(b=>{
+    const div = document.createElement("div");
+    div.className = "badge";
+    div.innerHTML = `<div class="badge-value">${b.value || ""}</div><div>${b.label || ""}</div>`;
+    badgesWrap.appendChild(div);
   });
 
-  // Hours
-  document.getElementById("footer-hours").innerHTML = footer.hours ? `<strong>Work Hours</strong><br>${footer.hours}` : "";
+  // Metrics
+  const metricsGrid = document.getElementById("metrics-grid");
+  (data.metrics || []).forEach(m=>{
+    const div = document.createElement("div");
+    div.className = "metric";
+    div.innerHTML = `<div class="metric-value">${m.value || ""}</div><div class="metric-label">${m.label || ""}</div>`;
+    metricsGrid.appendChild(div);
+  });
 
-  // Copy
-  document.getElementById("copyright").textContent = footer.copyright || `© ${new Date().getFullYear()} Coach Academy — All rights reserved.`;
-}
+  // Coach card
+  document.getElementById("coach-role").textContent = data.coach?.role || "";
+  document.getElementById("coach-university").textContent = data.coach?.university || "";
 
-// Load JSON & render
-(async function init(){
-  try{
-    const res = await fetch("site-data.json", { cache:"no-store" });
-    const data = await res.json();
+  // photo
+  const ph = data.coach?.photo || "assets/coach-photo-placeholder.jpg";
+  document.getElementById("coach-photo").src = ph;
+  document.getElementById("coach-photo-hero").src = ph;
 
-    // global styling overrides (optional)
-    if (data.brand?.primary) {
-      document.documentElement.style.setProperty("--brand", data.brand.primary);
-    }
-    if (data.brand?.gradient2) {
-      document.documentElement.style.setProperty("--brand-2", data.brand.gradient2);
-    }
+  // snapshot default or from JSON
+  const snapshotUl = document.getElementById("coach-snapshot");
+  const snapshot = data.coach?.snapshot?.length ? data.coach.snapshot : [
+    "Problem Solving, Algorithms & Data Structures",
+    "Back-end with Node.js & Express",
+    "MongoDB & SQL (design, performance)",
+    "Git/GitHub, Code Review & CI basics"
+  ];
+  snapshot.forEach(s=>{
+    const li = document.createElement("li");
+    li.textContent = s;
+    snapshotUl.appendChild(li);
+  });
 
-    // Hero
-    renderHero(data.hero || {}, data.contacts || { whatsapp: "201102919193" });
+  // skills
+  const skillsUl = document.getElementById("coach-skills");
+  (data.coach?.skills || []).forEach(s=>{
+    const li = document.createElement("li"); li.textContent = s; skillsUl.appendChild(li);
+  });
 
-    // Metrics
-    renderMetrics(data.metrics || []);
+  // allowed links (no personal links like Facebook/LinkedIn/emails/phones)
+  const linksWrap = document.getElementById("coach-links");
+  [["ICPC ID","icpcid"],["Codeforces","codeforces"],["Vjudge","vjudge"]].forEach(([label,key])=>{
+    const url = data.coach?.links?.[key];
+    if(!url) return;
+    const a = document.createElement("a");
+    a.href = url; a.target="_blank"; a.rel="noopener";
+    a.textContent = label;
+    linksWrap.appendChild(a);
+  });
 
-    // Partners
-    renderPartners(data.partners || []);
+  // achievements
+  const achUl = document.getElementById("achievements-list");
+  (data.coach?.achievements || []).forEach(a=>{
+    const li = document.createElement("li"); li.textContent = a; achUl.appendChild(li);
+  });
 
-    // Tracks
-    renderTracks(data.tracks || [], data.tracks_config || {});
+  // projects
+  const prUl = document.getElementById("projects-list");
+  (data.coach?.projects || []).forEach(p=>{
+    const li = document.createElement("li"); li.textContent = p; prUl.appendChild(li);
+  });
 
-    // Coaches (sanitize inside)
-    renderCoaches(data.coaches || [], data.contacts || { whatsapp: "201102919193" });
+  // FAQ
+  document.getElementById("faq-title").textContent = data.faq?.title || "Frequently Asked Questions";
+  const faqList = document.getElementById("faq-list");
+  (data.faq?.items || []).forEach((f,i)=>{
+    const det = document.createElement("details");
+    det.className = "faq-item";
+    if(i===0) det.open = true;
+    det.innerHTML = `<summary>${f.q}</summary><div class="faq-body">${f.a}</div>`;
+    faqList.appendChild(det);
+  });
 
-    // FAQ
-    renderFAQ(data.faq?.items || [], data.faq?.title);
+  // Footer
+  document.getElementById("footer-blurb").textContent = data.footer?.blurb || "";
+  const fcta = document.getElementById("footer-cta");
+  fcta.textContent = data.footer?.ctaText || "Join Now";
+  fcta.href = wa;
 
-    // Subscribe (toggle)
-    if (data.subscribe?.enabled === false) {
-      document.getElementById("subscribe-section").style.display = "none";
-    } else {
-      document.getElementById("subscribe-title").textContent = data.subscribe?.title || "Subscribe Now!";
-      document.getElementById("subscribe-sub").textContent = data.subscribe?.sub || "Know everything new about our waves, rounds and offers.";
-    }
+  const linksUl = document.getElementById("footer-links");
+  (data.footer?.links || []).forEach(l=>{
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${l.href || '#'}">${l.label || ''}</a>`;
+    linksUl.appendChild(li);
+  });
 
-    // Footer
-    renderFooter(data.footer || {}, data.contacts || { whatsapp: "201102919193" });
-
-  }catch(err){
-    console.error("Failed to load site-data.json", err);
+  const contactUl = document.getElementById("footer-contact");
+  if (data.footer?.address) {
+    const li = document.createElement("li"); li.textContent = data.footer.address; contactUl.appendChild(li);
   }
+  if (data.footer?.email_public) {
+    const li = document.createElement("li"); li.textContent = data.footer.email_public; contactUl.appendChild(li);
+  }
+  document.getElementById("copyright").textContent = data.footer?.copyright || `© ${new Date().getFullYear()} Coach Academy — All rights reserved.`;
 })();
