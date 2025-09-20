@@ -4,9 +4,6 @@
     "gradient2": "#1e3a8a",
     "font": "Poppins"
   },
-  "contacts": {
-    "whatsapp": "201102919193"
-  },
   "hero": {
     "eyebrow": "Coach Academy",
     "subline": "Competitive Programming & SWE coaching with a focus on Algorithms, Data Structures, and robust back-end practices.",
@@ -23,53 +20,51 @@
     { "label": "Tracks", "value": "12+" }
   ],
   "coach": {
-    "name": "Marwan Ahmed Abd El-Monem",
+    "name": "Marwan Ahmed Abdel-monem",
     "role": "Back-End Engineer & Competitive Programming Coach",
     "university": "Faculty of Computers & Artificial Intelligence, Cairo University — Information Systems (2021–2025)",
     "photo": "assets/marwan.jpg",
     "snapshot": [
-      "Back-End engineer with SOLID & design-pattern focus (ASP.NET Core, Django, Laravel).  [oai_citation:1‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Data Science & Coding mentor at DotPy (2023).  [oai_citation:2‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Founder of Star Union; President, Student Union FCAI-CU (2023–2025).  [oai_citation:3‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Active in ICPC ecosystem; ECPC finalist (best rank 63/235).  [oai_citation:4‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Prefers Both: online & onsite training; segments: Universities, Grads, School."
+      "Back-End engineer focused on ASP.NET Core, Django, and Spring Boot with SOLID & design patterns.",
+      "Competitive Programming: ICPC Regional Rounds; ECPC finals best rank 63/235.",
+      "Segments served: Universities, Graduates, School.",
+      "Delivery: Both online and onsite."
     ],
     "skills": [
-      "C#","C++","Python","Java","Dart","JavaScript","PHP",
+      "C#","C++","Python","Java","JavaScript","Dart","PHP",
       "ASP.NET Core",".NET","Django","Spring Boot","Laravel","React",
       "MySQL","PostgreSQL","SQLite","SQL Server","MongoDB",
-      "REST APIs","Microservices","JSON serialization",
+      "REST APIs","Microservices","JWT","Testing (Selenium, JUnit)",
       "OOP","Data Structures & Algorithms","SOLID","Design Patterns",
-      "Testing (Selenium WebDriver, JUnit)","JWT","CI/CD Basics",
-      "Azure","Agile (Scrum)","Git (branching, PRs, merge-conflict resolution)",
-      "SSIS (ETL)","Power BI","Big Data (Spark, Hadoop)","Data Science (NumPy, Pandas, Matplotlib, Keras, TensorFlow)"
+      "CI/CD Basics","Agile (Scrum)","Azure","Git (branching, PRs)"
     ],
-    "links": {
-      "icpcid": "https://icpc.global/private/person/814195/ICPCID",
-      "codeforces": "https://codeforces.com/profile/Maro",
-      "vjudge": "https://vjudge.net/user/maro312",
-      "github": "https://github.com/maro312",
-    },
     "achievements": [
-      "ECPC finals — best rank 63 / 235 (Egypt-wide).  [oai_citation:5‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "ICPC Regional Rounds participation.",
-      "Google Hash Code/contest participation (competitive programming involvement).  [oai_citation:6‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)"
+      "ICPC Regional Rounds participant",
+      "ECPC finals — best rank 63 / 235 (Egypt-wide)",
+      "Google Hash Code participant (2022)"
     ],
     "projects": [
-      "E-Commerce Backend (ASP.NET Core, SQL Server) — JWT auth, RBAC; optimized queries and indexes reduced response time by ~35%.  [oai_citation:7‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Library Management (C#, MySQL, WinForms) — CRUD + normalized schema, ERD design.  [oai_citation:8‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Instapay-style Digital Payment Simulation (Java) — SOLID; Factory/Strategy patterns.  [oai_citation:9‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Student Affairs Portal (Django + Ajax + SQLite) — CRUD & dynamic filtering; admin efficiency +40%.  [oai_citation:10‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Orders & Notifications Module (Spring Boot) — 12 REST endpoints; perf +40%; UML docs.  [oai_citation:11‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)",
-      "Registration Page (Laravel + SMTP + Ajax) — i18n, email verification, external API integration.  [oai_citation:12‡Marwan-Ahmed-Abd-El-Monem - Marwan Ahmed.pdf](file-service://file-VWbQQoRFRWfanMCmChskpj)"
-    ]
+      "E-Commerce Backend (ASP.NET Core, SQL Server) — JWT auth, RBAC; optimized queries and indexes",
+      "Library Management (C#, MySQL) — CRUD + normalized schema, ERD design",
+      "Instapay-style payment simulation (Java) — SOLID; Factory/Strategy patterns",
+      "Student Affairs Portal (Django + Ajax) — dynamic filtering; admin efficiency gains",
+      "Orders & Notifications Module (Spring Boot) — 12 REST endpoints; performance improvements",
+      "Registration Page (Laravel + SMTP + Ajax) — i18n, email verification, API integration"
+    ],
+    "links": {
+      "codeforces": "https://codeforces.com/profile/Maro",
+      "vjudge": "https://vjudge.net/user/maro312",
+      "icpcid": "https://icpc.global/private/person/814195/ICPCID",
+      "github": "",
+      "leetcode": ""
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
         "q": "How to request this coach for corporate training?",
-        "a": "Use the WhatsApp button to share your requirements. We will coordinate schedules and program details."
+        "a": "Please go through Coach Academy’s official portal or your assigned account manager. Personal contacts are intentionally omitted."
       },
       {
         "q": "Does the coach handle university, graduates, and school segments?",
@@ -77,21 +72,18 @@
       },
       {
         "q": "What topics can this coach teach?",
-        "a": "Competitive Programming (incl. Suffix Array focus), OOP, Databases, .NET/ASP.NET Core, REST APIs, Testing basics, and more."
+        "a": "Competitive Programming (e.g., Suffix Array), OOP, Databases, .NET/ASP.NET Core, REST APIs, and Testing basics."
       }
     ]
   },
   "footer": {
     "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
-    "ctaText": "Contact on WhatsApp",
     "links": [
       { "label": "About", "href": "#about" },
       { "label": "Achievements", "href": "#achievements" },
       { "label": "Projects", "href": "#projects" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "address": "4 Omar El Nagar Street, El-Matarya, Cairo, Egypt",
-    "email_public": "info@coach-academy.net",
     "copyright": "© 2025 Coach Academy — All rights reserved."
   }
 }
