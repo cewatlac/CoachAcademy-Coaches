@@ -1,0 +1,84 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {},
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Full-stack (MERN) developer focused on React/Next.js and Node/Express. Builds responsive UIs, secure APIs, and integrates payments, media, and auth with modern tooling.",
+    "badges": [
+      { "label": "Stack", "value": "MERN" },
+      { "label": "Projects", "value": "8+" }
+    ]
+  },
+  "coach": {
+    "name": "Badr Shaban Mohamed",
+    "role": "Full-Stack Developer (MERN) | Frontend & Backend Engineer",
+    "university": "BIS Student (3rd year), GPA 3.0",
+    "photo": "assets/badr.jpg",
+    "snapshot": [
+      "Frontend training at Elevate IT (12/2024–present).",
+      "Backend training at Route IT (10/2023–04/2024).",
+      "Projects include e-commerce (Stripe), job portal, content curation (UpVote), messaging (Sra7a), and exam platform.",
+      "Backends with Node.js/Express, JWT auth, Cloudinary, Docker, cron jobs.",
+      "Modern UI with React, Next.js, Tailwind, Redux Toolkit, React Query."
+    ],
+    "skills": [
+      "HTML", "CSS", "JavaScript", "TypeScript",
+      "React", "Next.js", "Redux Toolkit", "React Query",
+      "Node.js", "Express", "REST APIs",
+      "MongoDB", "Mongoose", "MySQL", "PostgreSQL",
+      "JWT Authentication", "Stripe", "Cloudinary", "Docker",
+      "AWS (basic)", "Algorithms", "Data Structures", "OOP",
+      "Git"
+    ],
+    "achievements": [
+      "Completed structured backend and frontend training programs.",
+      "Built full-stack features: auth, payments, media, background jobs, and error handling.",
+      "Maintains active portfolio with modern TypeScript codebases.",
+      "Foundational CS skills in algorithms, data structures, and OOP."
+    ],
+    "projects": [
+      "Rose-Ecommerce — Next.js, TypeScript, Tailwind, NextAuth, React Query; responsive storefront and i18n.",
+      "E-Commerce Platform — Express, MongoDB, Stripe, Cloudinary, Nodemailer, Docker; auth, payments, media handling.",
+      "JobSearch App — Express, MongoDB; HR posting and applicant comparison.",
+      "UpVote — Content curation with rich media and categories.",
+      "Sra7a App — Anonymous messaging platform.",
+      "Exam App — Next.js, Tailwind, NextAuth, Next-Intl; programming exam workflows.",
+      "Goo Web — React SPA with API integration.",
+      "Move App — React SPA demonstrating routing and data fetching."
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What does Badr specialize in?",
+        "a": "Building full-stack JavaScript applications with React/Next.js and Node/Express, focusing on clean APIs and practical product features."
+      },
+      {
+        "q": "Does Badr have real project experience?",
+        "a": "Yes — e-commerce with payments, content curation, messaging, exam delivery, and more."
+      },
+      {
+        "q": "What can Badr teach?",
+        "a": "JavaScript/TypeScript fundamentals, React and Next.js patterns, REST API design in Node/Express, and project structuring."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Learn More",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "",
+    "email_public": "",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}

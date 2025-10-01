@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Academy — Coach Profile (Badr Shaban)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-primary: #002366;
+      --brand-gradient2: #1e3a8a;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <div class="brand-text">
+          <h1 class="org">Coach <span>Academy</span></h1>
+          <p class="org-sub">Coach Profile — Anonymized (Name Only)</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">Coach Academy</div>
+        <h2 class="hero-title">Badr Shaban</h2>
+        <h3 class="hero-role">Full-Stack (MERN) Developer | React/Next.js • Node/Express | Trainer</h3>
+        <p class="hero-sub">
+          Full-stack developer focused on modern JavaScript ecosystems. Builds responsive frontends with React/Next.js and scalable backends with Node.js/Express and MongoDB. Experienced with authentication, payments, cloud media, and containerization.
+        </p>
+        <div class="hero-badges">
+          <div class="badge"><strong>MERN</strong><span>Full Stack</span></div>
+          <div class="badge"><strong>8+</strong><span>Portfolio Projects</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="coach-photo-hero" src="assets/badr.jpg" alt="Portrait of Badr Shaban" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="coach-card">
+        <div class="coach-media">
+          <img class="coach-photo" src="assets/badr.jpg" alt="Badr Shaban photo" />
+        </div>
+        <div class="coach-body">
+          <h3 class="coach-name">Badr Shaban Mohamed</h3>
+          <p class="coach-role">Full-Stack Developer (MERN) | Frontend & Backend Engineer</p>
+          <p class="muted">BIS Student (3rd year) — GPA: 3.0</p>
+
+          <h4 class="coach-subtitle">Snapshot</h4>
+          <ul class="bullets">
+            <li>Frontend training (12/2024–present); Backend training (10/2023–04/2024).</li>
+            <li>Hands-on projects: e-commerce (Stripe), job portal, content curation (UpVote), anonymous messaging, exams platform.</li>
+            <li>Backends with Node.js/Express, Auth (JWT), Cloud Media (Cloudinary), Dockerized services, cron jobs.</li>
+            <li>Strong JS/TS foundations with React, Next.js, Tailwind, Redux Toolkit, and API integrations.</li>
+          </ul>
+
+          <h4 class="coach-subtitle">Core Skills</h4>
+          <ul class="coach-tags">
+            <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li><li class="tag">TypeScript</li>
+            <li class="tag">React</li><li class="tag">Next.js</li><li class="tag">Redux Toolkit</li><li class="tag">React Query</li>
+            <li class="tag">Node.js</li><li class="tag">Express</li><li class="tag">REST APIs</li>
+            <li class="tag">MongoDB</li><li class="tag">Mongoose</li><li class="tag">MySQL</li><li class="tag">PostgreSQL</li>
+            <li class="tag">Auth (JWT)</li><li class="tag">Stripe</li><li class="tag">Cloudinary</li><li class="tag">Docker</li>
+            <li class="tag">AWS (basic)</li><li class="tag">Algorithms</li><li class="tag">Data Structures</li><li class="tag">OOP</li>
+            <li class="tag">Git</li><li class="tag">CI/CD (basic)</li>
+          </ul>
+
+          <!-- No external/personal links to keep the profile contact-free -->
+          <div class="coach-links" style="margin-top:1rem; display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <h3 class="section-heading">Training & Highlights</h3>
+      <ul class="bullets big" id="achievements-list">
+        <li>Frontend Developer Track — (12/2024–present).</li>
+        <li>Backend Developer Track —  (10/2023–04/2024).</li>
+        <li>Built production-style features: authentication/authorization, payments, media uploads, error handling, background jobs.</li>
+        <li>Certifications & bootcamps: Algorithms & Data Structures, Node.js, AWS, Web3, Cloud-Native basecamp.</li>
+        <li>Active portfolio with modern UI/UX and TypeScript codebases.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3 class="section-heading">Selected Projects</h3>
+      <ul class="bullets" id="projects-list">
+        <li><strong>Rose-Ecommerce</strong> — Next.js, TypeScript, Tailwind, NextAuth, React Query. Responsive storefront, brand/product management, i18n.</li>
+        <li><strong>E-Commerce Platform</strong> — Express, MongoDB, Stripe, Cloudinary, Nodemailer, Docker. Secure auth, payments, media handling, robust error/async flow.</li>
+        <li><strong>JobSearch App</strong> — Express, MongoDB. HR posting and applicant comparison workflows.</li>
+        <li><strong>UpVote</strong> — Content curation (Pinterest-like) with categories and rich media.</li>
+        <li><strong>Sra7a App</strong> — Anonymous messaging with auth and moderation basics.</li>
+        <li><strong>Exam App</strong> — Next.js, Tailwind, NextAuth, Next-Intl. Programming exam delivery and submissions.</li>
+        <li><strong>Goo Web</strong> — React SPA with API integration and state management.</li>
+        <li><strong>Move App</strong> — React SPA demonstrating routing, data fetching, and UI patterns.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h3 class="section-heading">Frequently Asked Questions</h3>
+      <div id="faq-list">
+        <div class="faq-item">
+          <h4 class="faq-q">What does Badr specialize in?</h4>
+          <p class="faq-a">Modern JavaScript development across the MERN stack: React/Next.js on the frontend and Node/Express on the backend, with strong data and API design.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-q">Does Badr have real project experience?</h4>
+          <p class="faq-a">Yes — multiple full-stack apps covering auth, payments, cloud media, messaging, dashboards, and exam workflows.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-q">What about teaching or mentoring?</h4>
+          <p class="faq-a">Comfortable guiding newcomers through JavaScript fundamentals, React patterns, and backend API best practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <p class="muted">Empowering talent through hands-on, industry-aligned tech coaching.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2025 Coach Academy — All rights reserved.</div>
+  </footer>
+</body>
+</html>
