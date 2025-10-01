@@ -11,8 +11,7 @@
     "badges": [
       { "label": "ACPC", "value": "2024 Qualifier" },
       { "label": "ECPC 2024", "value": "17th" },
-      { "label": "Codeforces", "value": "2000+ solves" },
-      { "label": "LeetCode", "value": "600+ solves" }
+      { "label": "Meta", "value": "Hacker Cup R2" }
     ]
   },
   "coach": {
