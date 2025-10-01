@@ -7,57 +7,60 @@
   "contacts": {},
   "hero": {
     "eyebrow": "Coach Academy",
-    "subline": "Electrical Engineering student (Electronics & Communications), ICPC World Finalist and ACPC medalist with deep experience in algorithms, data structures, and coaching. 6K+ solved problems across major online judges.",
+    "subline": "Fourth-year Computer Science student and competitive programmer. ACPC 2024 qualifier; ECPC 2024 rank 17; ECPCQ 2023 rank 3; Meta Hacker Cup 2023 Round 2 (1784th). Active on Codeforces (2000+) and LeetCode (600+).",
     "badges": [
-      { "label": "Problems Solved", "value": "6K+" },
-      { "label": "Distinction", "value": "ICPC World Finalist" }
+      { "label": "ACPC", "value": "2024 Qualifier" },
+      { "label": "ECPC 2024", "value": "17th" },
+      { "label": "Codeforces", "value": "2000+ solves" },
+      { "label": "LeetCode", "value": "600+ solves" }
     ]
   },
   "coach": {
-    "name": "Anas Maged Ahmed",
-    "role": "Software Engineer | Competitive Programmer | Instructor",
-    "university": "B.Sc. Electrical Engineering (Electronics & Communications), Sohag University",
-    "photo": "assets/anas.jpg",
+    "name": "Omar Mohamed Sanad",
+    "role": "Software Engineer | Competitive Programmer",
+    "university": "B.Sc. Computer Science — Suez Canal University (2021–present)",
+    "photo": "assets/sanad.jpg",
     "snapshot": [
-      "ICPC World Finalist; ACPC 2024 Silver (6th), 2× ACPC Finalist",
-      "ECPC Gold 2024 (4th) and Bronze 2023 (10th)",
-      "6K+ solved problems (Codeforces, LeetCode, AtCoder, VJudge, CodeChef)",
-      "Instructor at ICPC Sohag — 300+ students/year",
-      "Problem setter/tester for ECPC and regional contests"
+      "ACPC 2024 qualifier; ECPC 2024 — 17th; ECPCQ 2023 — 3rd.",
+      "Meta Hacker Cup 2023 — Round 2 (rank 1784).",
+      "2000+ Codeforces solves and 600+ LeetCode solves.",
+      "Volunteer IT Head — ICPC Suez Canal Community; led DSA/problem-solving sessions and platform improvements."
     ],
     "skills": [
-      "C", "C++", "C#", "Python", "JavaScript", "SQL",
-      "Node.js", ".NET", "Flask",
-      "OOP", "Data Structures", "Algorithms", "Design Patterns",
-      "Git", "Postman", "Jira", "GCP"
+      "C", "C++", "Python", "Java", "JavaScript",
+      "Dart/Flutter", "HTML", "CSS",
+      "OOP", "SOLID", "Data Structures", "Algorithms",
+      "Problem Solving", "Networking",
+      "Git", "GitHub", "LaTeX", "Regex", "Markdown",
+      "MySQL", "Linux", "Windows"
     ],
     "achievements": [
-      "ICPC World Finalist; ACPC 2024 Silver (6th), 2× ACPC Finalist",
-      "ECPC: Gold 2024 (4th), Bronze 2023 (10th)",
-      "Upper Egypt Qualification: 2nd place (2024 & 2023)",
-      "6K+ solved problems across major OJs",
-      "Community instructor and problem setter/tester"
+      "ACPC 2024 — Qualified",
+      "ECPC 2024 — 17th place",
+      "ECPCQ 2023 — 3rd place",
+      "Meta Hacker Cup 2023 — Round 2 (rank 1784)",
+      "Problem Solves — 2000+ Codeforces, 600+ LeetCode"
     ],
     "projects": [
-      "News Pulse — Blog/news site with REST APIs and JWT auth (Node.js, Express, MongoDB)",
-      "Minesweeper — Console game with OOP, exceptions, ASCII/ANSI UI (C++)",
-      "Chess Game — Console chess using OOP/OOD and ANSI coloring (C++)"
+      "Traveling Website — Responsive front-end with HTML, CSS, JavaScript",
+      "Hotel Reservation System — Python project focused on file handling and data structures",
+      "Learn About Animals — Flutter/Dart educational app using OOP and clean code"
     ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "What are Anas’s main areas of expertise?",
-        "a": "Competitive Programming, Algorithms, Data Structures, and training problem-solving skills."
+        "q": "What are Coach Sanad’s main areas of expertise?",
+        "a": "Data Structures, Algorithms, competitive programming, and strong OOP/SOLID foundations."
       },
       {
-        "q": "Does Anas have teaching experience?",
-        "a": "Yes. He supports 300+ students yearly via ICPC Sohag sessions and Codeforces contests."
+        "q": "Does Coach Sanad have teaching experience?",
+        "a": "Yes — volunteered as IT Head at the ICPC Suez Canal Community, delivering DSA sessions and supporting contest/problem-set curation."
       },
       {
         "q": "Any notable achievements?",
-        "a": "ICPC World Finalist, ACPC Silver (2024), ECPC Gold (2024), and 6K+ solved problems."
+        "a": "ACPC 2024 qualifier, ECPC 2024 rank 17, ECPCQ 2023 rank 3, Meta Hacker Cup 2023 Round 2 (1784th), thousands of solved problems."
       }
     ]
   },
@@ -70,8 +73,8 @@
       { "label": "Projects", "href": "#projects" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "address": "Egypt",
-    "email_public": "info@coach-academy.net",
+    "address": "",
+    "email_public": "",
     "copyright": "© 2025 Coach Academy — All rights reserved."
   }
 }
