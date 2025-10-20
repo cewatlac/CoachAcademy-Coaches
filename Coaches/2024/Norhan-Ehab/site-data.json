@@ -1,0 +1,85 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {},
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Competitive Programmer passionate about algorithms, data structures, and problem solving. Active on LeetCode, Codeforces, and VJudge with a strong ICPC record.",
+    "badges": [
+      { "label": "ICPC", "value": "ACPC Finalist 2025" },
+      { "label": "LeetCode", "value": "Active Problem Solver" },
+      { "label": "Codeforces", "value": "Expert Level" }
+    ]
+  },
+  "coach": {
+    "name": "Norhan Ihab Abdulrahman Elsayed",
+    "role": "Competitive Programmer | Problem Solving Mentor | Software Engineer",
+    "university": "B.Eng. in Computer & Control Systems Engineering, Mansoura University (2020–2025) — Accumulated Grade: 95.73%",
+    "photo": "assets/norhan.jpg",
+    "snapshot": [
+      "ACPC 2025 Finalist, 3× ECPC Finalist, and Bronze Medalist in ACPC Girls 2023 & 2024.",
+      "Active problem solver on LeetCode, Codeforces (MiraculousN), and VJudge.",
+      "Regular mentor at IEEE Student Chapter and ICPC Mansoura Community.",
+      "Strong command of computational geometry, dynamic programming, graph algorithms, and mathematical optimization.",
+      "Practices problem solving daily and helps others improve their algorithmic thinking."
+    ],
+    "skills": [
+      "C", "C++", "Algorithms", "Data Structures",
+      "Dynamic Programming", "Graph Theory", "Greedy Algorithms",
+      "Computational Geometry", "Number Theory", "Math for Competitions",
+      "LeetCode", "Codeforces", "VJudge", "Problem Analysis",
+      "Teaching", "Teamwork", "Contest Preparation", "Git"
+    ],
+    "achievements": [
+      "ACPC 2025 Finalist — ranked 39/260 teams.",
+      "ECPC Finalist (2021, 2022, 2024).",
+      "Bronze Medalist — ACPC Girls 2023 & 2024.",
+      "Top 7% worldwide in International Youth Mathematical Championship (IYMC 2019).",
+      "Bronze Medal in MYMC (2018, 2019).",
+      "Mentored students in ICPC Mansoura and IEEE Student Chapter training camps."
+    ],
+    "projects": [
+      "Competitive Problem Archive — organized +500 solved problems categorized by topic.",
+      "Algorithm Visualizer — mini C++ console project for pathfinding and recursion demos.",
+      "Smart Home Simulation — embedded project with automation sensors.",
+      "Smart Wallet — embedded and logic-based hardware prototype."
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What is Norhan most passionate about?",
+        "a": "Problem solving and algorithms — she enjoys tackling new challenges daily on platforms like LeetCode and Codeforces."
+      },
+      {
+        "q": "Which contests has she competed in?",
+        "a": "ACPC (Finalist 2025), ECPC (3× Finalist), ACPC Girls (Bronze Medalist), IYMC, MYMC, and IEEEXtreme."
+      },
+      {
+        "q": "How does she contribute to the community?",
+        "a": "She mentors students in ICPC Mansoura Community and IEEE, conducts upsolving sessions, and posts problem-solving videos on YouTube."
+      },
+      {
+        "q": "What are her goals?",
+        "a": "To continue mastering algorithms, contribute to open-source PS resources, and help new programmers strengthen their logical problem-solving skills."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering coders through problem-solving excellence and ICPC-style mentorship.",
+    "ctaText": "Explore More",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "",
+    "email_public": "norhan.nrr3@gmail.com",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
