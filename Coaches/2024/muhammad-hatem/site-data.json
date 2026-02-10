@@ -9,83 +9,84 @@
   },
   "hero": {
     "eyebrow": "Coach Academy",
-    "subline": "Practical, project-based mentoring focused on Algorithms, Data Structures, and modern Back-End engineering.",
+    "subline": "STEM & Programming Instructor | Programming Basics, OOP, Python/C/C++, Robotics (Arduino/Raspberry Pi), IoT basics, and AI for kids.",
     "badges": [
       { "label": "Expert Coaches", "value": "80+" },
       { "label": "Students", "value": "45k+" }
     ]
   },
-  "metrics": [
-    { "label": "Programs", "value": "30+" },
-    { "label": "Expert Coaches", "value": "80+" },
-    { "label": "Students", "value": "45k+" },
-    { "label": "Years of Experience", "value": "10+" },
-    { "label": "Tracks", "value": "12+" }
-  ],
   "coach": {
-    "name": "Assem Amr Abdelfattah",
-    "role": "Backend Engineer & Competitive Programming Coach",
-    "university": "Faculty of Computers & Information, Fayoum University (2022–2026)",
-    "photo": "assets/assem.jpg",
+    "name": "Muhammad Hatem Muhammad",
+    "role": "STEM, Programming & Robotics Instructor",
+    "education": "B.Sc. Engineering — Suez Canal University (2024)",
+    "photo": "assets/muhammad-hatem.jpg",
     "snapshot": [
-      "Problem Solving, Algorithms & Data Structures",
-      "Back-end with Node.js & Express",
-      "MongoDB & SQL (design, performance)",
-      "Git/GitHub, Code Review & CI basics"
+      "Programming Basics and OOP (Python / C / C++)",
+      "Beginner Scratch + AI for Kids foundations",
+      "Robotics: Arduino, Raspberry Pi, sensors & electronics basics",
+      "IoT basics and introductory networking & Linux",
+      "Teaching skills: presentation, communication, classroom management"
     ],
     "skills": [
-      "Algorithms","Data Structures","C++","Python","JavaScript",
-      "Node.js","Express.js","MongoDB","SQL","RESTful APIs","Docker",
-      "OOP","Computational Geometry","DP Optimizations","Flows","FFT",
-      "Math","Computer Architecture","Angular","Problem Solving","Teamwork"
+      "Programming Basics",
+      "OOP",
+      "Scratch (Beginner)",
+      "Python",
+      "C / C++",
+      "Java",
+      "HTML / CSS",
+      "SQL (MySQL / PostgreSQL)",
+      "AI for Kids",
+      "Prompt Engineering",
+      "Robotics",
+      "Arduino",
+      "Raspberry Pi",
+      "IoT Basics",
+      "Sensors & Electronics Basics",
+      "Networking Fundamentals",
+      "Linux Basics",
+      "Presentation Skills",
+      "Communication Skills",
+      "Classroom Management",
+      "Teamwork & Collaboration",
+      "Leadership Skills",
+      "Interview Preparation",
+      "Online Delivery"
     ],
-    "links": {
-      "icpcid": "https://icpc.global/ICPCID/1RCP7AZLZHH0",
-      "codeforces": "https://codeforces.com/profile/BluoCaroot",
-      "vjudge": "https://vjudge.net/user/Assem_Amr"
-    },
     "achievements": [
-      "ECPC Qualifiers — 4th (2024)",
-      "ECPC Finals — 30th (2024)",
-      "ACPC Finals — 21st (2024)",
-      "Reached Codeforces Expert (2000+ problems solved)",
-      "IEEE Xtreme 17 — Rank 290",
-      "IEEE Xtreme 18 — Rank 527"
+      "Delivers STEM + programming tracks with practical labs and structured progression"
     ],
     "projects": [
-      "E-commerce Backend APIs — Node.js, Express, MongoDB, Stripe integration",
-      "Contest Training Toolkit — Structured problem sets & progress tracking",
-      "Repository pattern abstractions over MongoDB/SQL"
+      "Robotics / IoT practice projects (details shared upon request through Coach Academy)"
     ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "How to request this coach for corporate training?",
-        "a": "Use the WhatsApp contact button to share your requirements. We will coordinate schedules and program details."
+        "q": "What topics can this coach teach?",
+        "a": "Programming basics, OOP, Python/C/C++, beginner Scratch, robotics with Arduino/Raspberry Pi, IoT basics, and AI-for-kids foundations."
       },
       {
-        "q": "Are sessions live and interactive?",
-        "a": "Yes. Live, interactive coaching with practice-focused assignments."
+        "q": "Is the training hands-on?",
+        "a": "Yes—includes practical labs, small projects, and guided exercises appropriate for different age groups."
       },
       {
-        "q": "Can the coach support interview preparation?",
-        "a": "Yes. Algorithmic problem-solving, mock interviews, and feedback."
+        "q": "How can I communicate?",
+        "a": "Use the WhatsApp button on this page."
       }
     ]
   },
   "footer": {
-    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
-    "ctaText": "Contact on WhatsApp",
+    "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
+    "ctaText": "Communicate on WhatsApp",
     "links": [
       { "label": "About", "href": "#about" },
       { "label": "Achievements", "href": "#achievements" },
       { "label": "Projects", "href": "#projects" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
-    "email_public": "info@coach-academy.net",
-    "copyright": "© 2025 Coach Academy — All rights reserved."
+    "contact_note": "Personal contact details are hidden. Please use the WhatsApp button to communicate.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
   }
 }
