@@ -4,6 +4,9 @@
     "gradient2": "#1e3a8a",
     "font": "Poppins"
   },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
   "hero": {
     "eyebrow": "Coach Academy",
     "subline": "Teaching Assistant & ITI Instructor | Programming Basics, Algorithms & Data Structures, C/C++, Flutter, Embedded Systems.",
@@ -16,7 +19,7 @@
     "name": "Ahmed Khalil Alsayed",
     "role": "Teaching Assistant & ITI Instructor",
     "education": "B.Sc. Engineering — Alexandria University (2023)",
-    "photo": "assets/ahmed.jpg",
+    "photo": "assets/ahmed-khalil.jpg",
     "snapshot": [
       "Programming Basics and structured problem solving",
       "Algorithms & Data Structures (C/C++) with practical exercises",
@@ -58,21 +61,21 @@
         "a": "Practice-first: guided labs, problem sets, and step-by-step feedback. Suitable for university students and adult learners."
       },
       {
-        "q": "How can I contact the coach?",
-        "a": "This page is anonymized. Coach Academy shares verified contact details after an official request and approval."
+        "q": "How can I communicate?",
+        "a": "Communication is available via the WhatsApp button on this page."
       }
     ]
   },
   "footer": {
     "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
-    "ctaText": "Request Contact via Coach Academy",
+    "ctaText": "Communicate on WhatsApp",
     "links": [
       { "label": "About", "href": "#about" },
       { "label": "Achievements", "href": "#achievements" },
       { "label": "Projects", "href": "#projects" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "contact_note": "Contact details are intentionally hidden. Please request contact through Coach Academy.",
+    "contact_note": "Contact details are intentionally hidden. Please use the WhatsApp button to communicate.",
     "copyright": "© 2026 Coach Academy — All rights reserved."
   }
 }

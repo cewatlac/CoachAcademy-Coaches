@@ -24,7 +24,7 @@
         <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-outline" id="nav-cta" href="#faq">How to Contact</a>
+        <a class="btn btn-outline" id="nav-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -38,12 +38,13 @@
         <h3 class="hero-role" id="coach-role-hero"></h3>
         <p class="hero-sub" id="hero-sub"></p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" id="hero-cta1" href="#faq">Request Contact via Coach Academy</a>
+          <a class="btn btn-primary" id="hero-cta1" target="_blank" rel="noopener">Communicate on WhatsApp</a>
         </div>
         <div class="hero-badges" id="hero-badges"></div>
       </div>
       <div class="hero-visual">
-        <img id="coach-photo-hero" class="coach-photo-hero" src="assets/ahmed-khalil.jpg alt="Coach portrait" />
+        <!-- ✅ fixed src quotes -->
+        <img id="coach-photo-hero" class="coach-photo-hero" src="assets/ahmed-khalil.jpg" alt="Coach portrait" />
       </div>
     </div>
   </section>
@@ -68,10 +69,10 @@
 
           <div class="coach-cta">
             <div class="note">
-              This profile intentionally hides personal identifiers (emails, phones, addresses, direct profile links).
-              Coach Academy can share verified contact details later upon request.
+              This profile intentionally hides personal identifiers (emails, addresses, direct profile links).
+              Communication is available via WhatsApp through Coach Academy.
             </div>
-            <a class="btn btn-primary" id="about-cta" href="#faq">Request Contact via Coach Academy</a>
+            <a class="btn btn-primary" id="about-cta" target="_blank" rel="noopener">Communicate on WhatsApp</a>
           </div>
         </div>
       </div>
@@ -108,7 +109,7 @@
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
         <p class="muted" id="footer-blurb"></p>
-        <a class="btn btn-outline" id="footer-cta" href="#faq">Request Contact</a>
+        <a class="btn btn-outline" id="footer-cta" target="_blank" rel="noopener">Communicate on WhatsApp</a>
       </div>
       <div class="footer-col">
         <h5>Quick Links</h5>
@@ -131,6 +132,13 @@
     if (data.brand?.primary) document.documentElement.style.setProperty("--brand", data.brand.primary);
     if (data.brand?.gradient2) document.documentElement.style.setProperty("--brand-2", data.brand.gradient2);
 
+    // ✅ WhatsApp links (no number displayed, only link)
+    const wa = data.contacts?.whatsapp ? `https://wa.me/${data.contacts.whatsapp}` : "#";
+    document.getElementById("nav-whatsapp").href = wa;
+    document.getElementById("hero-cta1").href = wa;
+    document.getElementById("about-cta").href = wa;
+    document.getElementById("footer-cta").href = wa;
+
     // HERO content
     document.getElementById("coach-name").textContent = data.coach?.name || "Coach";
     document.getElementById("coach-role-hero").textContent = data.coach?.role || "Instructor";
@@ -150,6 +158,7 @@
     document.getElementById("about-coach-role").textContent = data.coach?.role || "";
     document.getElementById("coach-university").textContent = data.coach?.education || "";
 
+    // ✅ image path comes from JSON (must match the real file name exactly)
     const ph = data.coach?.photo || "assets/coach-photo-placeholder.jpg";
     document.getElementById("coach-photo").src = ph;
     document.getElementById("coach-photo-hero").src = ph;
@@ -202,7 +211,7 @@
     // Footer
     document.getElementById("footer-blurb").textContent = data.footer?.blurb || "";
     const fcta = document.getElementById("footer-cta");
-    fcta.textContent = data.footer?.ctaText || "Request Contact";
+    fcta.textContent = data.footer?.ctaText || "Communicate on WhatsApp";
 
     const linksUl = document.getElementById("footer-links");
     (data.footer?.links || []).forEach(l=>{
@@ -214,7 +223,7 @@
     // Contact section (intentionally anonymized)
     const contactUl = document.getElementById("footer-contact");
     const li1 = document.createElement("li");
-    li1.textContent = data.footer?.contact_note || "Contact details are shared by Coach Academy upon request.";
+    li1.textContent = data.footer?.contact_note || "Communication is available via WhatsApp link.";
     contactUl.appendChild(li1);
 
     document.getElementById("copyright").textContent =
