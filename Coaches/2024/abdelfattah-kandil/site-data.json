@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {},
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Computer Science student & Competitive Programmer with strong skills in Algorithms, Data Structures, and Backend Development (.NET, ASP.NET Core). Candidate Master on Codeforces with proven ICPC results.",
+    "badges": [
+      { "label": "Problems Solved", "value": "3000+" },
+      { "label": "Contests Participated", "value": "150+" }
+    ]
+  },
+  "coach": {
+    "name": "Moataz Mohammed",
+    "role": "Computer Science Student | Competitive Programmer | Backend Developer",
+    "university": "Bachelor’s Degree — Faculty of Computers & AI, Fayoum University (Oct 2022 – Jun 2026), GPA 3.77/4.00",
+    "photo": "assets/moataz.jpg",
+    "snapshot": [
+      "Candidate Master on Codeforces (Top ~30 in Egypt)",
+      "21st place at Africa & Arab Collegiate Programming Contest 2024",
+      "30th place at Egyptian Collegiate Programming Contest 2024",
+      ".NET backend training (DEPI & ITI) with RESTful APIs and EF Core",
+      "Community leader & instructor at Fayoum ICPC Community (taught 500+ students)"
+    ],
+    "skills": [
+      "C++", "C#", "Python", "SQL",
+      ".NET", "ASP.NET Core", "Entity Framework", "RESTful APIs",
+      "OOP", "Data Structures", "Algorithms", "SOLID Principles", "Design Patterns"
+    ],
+    "achievements": [
+      "Candidate Master on Codeforces; solved 3000+ problems and joined 150+ contests",
+      "Ranked 21st in the Africa & Arab Collegiate Programming Contest 2024",
+      "Ranked 30th in the Egyptian Collegiate Programming Contest 2024",
+      "Community leadership and mentorship within Fayoum ICPC Community"
+    ],
+    "projects": [
+      "Shop Drop — E-commerce web app with authentication, product management, cart, and order flow (C#/.NET, MVC, EF Core, SQL)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What are Moataz’s main areas of expertise?",
+        "a": "Competitive Programming, Algorithms, Data Structures, and Backend Development with .NET and RESTful APIs."
+      },
+      {
+        "q": "Does Moataz have teaching experience?",
+        "a": "Yes. He has led and taught structured DSA sessions, mentoring 500+ students via the Fayoum ICPC Community."
+      },
+      {
+        "q": "Any notable achievements?",
+        "a": "Candidate Master on Codeforces, 21st at AACPC 2024, 30th at ECPC 2024, and 3000+ solved problems."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Learn More",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
