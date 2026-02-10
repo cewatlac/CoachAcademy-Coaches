@@ -1,0 +1,78 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Teaching Assistant & ITI Instructor | Programming Basics, Algorithms & Data Structures, C/C++, Flutter, Embedded Systems.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "coach": {
+    "name": "Ahmed Khalil Alsayed",
+    "role": "Teaching Assistant & ITI Instructor",
+    "education": "B.Sc. Engineering — Alexandria University (2023)",
+    "photo": "assets/ahmed.jpg",
+    "snapshot": [
+      "Programming Basics and structured problem solving",
+      "Algorithms & Data Structures (C/C++) with practical exercises",
+      "Flutter fundamentals and applied mobile projects",
+      "Embedded Systems foundations and hands-on labs",
+      "Hybrid/part-time teaching support and mentoring"
+    ],
+    "skills": [
+      "Problem Solving",
+      "Algorithms",
+      "Data Structures",
+      "C",
+      "C++",
+      "Flutter",
+      "Embedded Systems",
+      "Teaching & Mentoring",
+      "Lab Design",
+      "Hybrid Delivery"
+    ],
+    "achievements": [
+      "Teaching Assistant experience",
+      "ITI instruction experience (as stated in submitted profile)",
+      "Delivers beginner-to-intermediate tracks with practice-first approach"
+    ],
+    "projects": [
+      "Graduation project (details available upon request through Coach Academy)",
+      "Sample assignments and labs for Programming Basics / DSA / Flutter (shared upon request)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What topics can this coach teach?",
+        "a": "Programming Basics, Algorithms & Data Structures (especially in C/C++), introductory Flutter, and Embedded Systems fundamentals with hands-on practice."
+      },
+      {
+        "q": "What is the teaching style?",
+        "a": "Practice-first: guided labs, problem sets, and step-by-step feedback. Suitable for university students and adult learners."
+      },
+      {
+        "q": "How can I contact the coach?",
+        "a": "This page is anonymized. Coach Academy shares verified contact details after an official request and approval."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
+    "ctaText": "Request Contact via Coach Academy",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "contact_note": "Contact details are intentionally hidden. Please request contact through Coach Academy.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
+  }
+}

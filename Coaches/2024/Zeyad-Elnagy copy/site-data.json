@@ -1,0 +1,78 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Software Developer & Competitive Programmer with strong skills in Algorithms, OOP, and Web Development. Active in ICPC contests and experienced mentor.",
+    "badges": [
+      { "label": "Problems Solved", "value": "1600+" },
+      { "label": "Students Mentored", "value": "Many" }
+    ]
+  },
+  "coach": {
+    "name": "Zyad Mohamed Elnaghy",
+    "role": "Software Developer | Competitive Programmer | Mentor",
+    "university": "Bachelor of Computer Science and Informatics, Suez Canal University (2021 – present)",
+    "photo": "assets/zyad.jpg",
+    "snapshot": [
+      "ICPC Suez Canal University Mentor",
+      "Solved 1600+ problems on Codeforces & LeetCode",
+      "Specialized in Algorithms and Data Structures",
+      "Built responsive websites with React, HTML, CSS, JS",
+      "Developed visualization tools for sorting algorithms (C++/SFML)"
+    ],
+    "skills": [
+      "C++","Python","Java","C","HTML5","CSS","JavaScript","ReactJS",
+      "Next.js","Bootstrap 5","MySQL","Git","GitHub","Linux",
+      "OOP","SOLID Principles","Data Structures","Algorithms","Problem Solving",
+      "Competitive Programming","Networking"
+    ],
+    "achievements": [
+      "Mentored students in ICPC regional training",
+      "Ranked in ICPC Suez Canal University contests",
+      "Contributed to open-source projects on GitHub",
+      "Participated in multiple competitive programming contests"
+    ],
+    "projects": [
+      "Traveling Website – Front-end responsive website using HTML, CSS, JS",
+      "Visualization of Sorting Algorithms – Interactive tool using C++ and SFML",
+      "Multiple academic and self-driven projects (React, Databases, System Design)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How to request this coach for competitive programming mentorship?",
+        "a": "Use the WhatsApp button to share your requirements. We will coordinate sessions and training details."
+      },
+      {
+        "q": "What are the coach's main areas of expertise?",
+        "a": "Algorithms, Data Structures, OOP, Web Development (React, Next.js), and Competitive Programming."
+      },
+      {
+        "q": "Does the coach have teaching experience?",
+        "a": "Yes. Zyad has mentored ICPC teams and guided peers on problem-solving platforms like Codeforces and LeetCode."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "Port Said, Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Practical, project-based mentoring focused on Algorithms, Data Structures, and modern Back-End engineering.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "metrics": [
+    { "label": "Programs", "value": "30+" },
+    { "label": "Expert Coaches", "value": "80+" },
+    { "label": "Students", "value": "45k+" },
+    { "label": "Years of Experience", "value": "10+" },
+    { "label": "Tracks", "value": "12+" }
+  ],
+  "coach": {
+    "name": "Assem Amr Abdelfattah",
+    "role": "Backend Engineer & Competitive Programming Coach",
+    "university": "Faculty of Computers & Information, Fayoum University (2022–2026)",
+    "photo": "assets/assem.jpg",
+    "snapshot": [
+      "Problem Solving, Algorithms & Data Structures",
+      "Back-end with Node.js & Express",
+      "MongoDB & SQL (design, performance)",
+      "Git/GitHub, Code Review & CI basics"
+    ],
+    "skills": [
+      "Algorithms","Data Structures","C++","Python","JavaScript",
+      "Node.js","Express.js","MongoDB","SQL","RESTful APIs","Docker",
+      "OOP","Computational Geometry","DP Optimizations","Flows","FFT",
+      "Math","Computer Architecture","Angular","Problem Solving","Teamwork"
+    ],
+    "links": {
+      "icpcid": "https://icpc.global/ICPCID/1RCP7AZLZHH0",
+      "codeforces": "https://codeforces.com/profile/BluoCaroot",
+      "vjudge": "https://vjudge.net/user/Assem_Amr"
+    },
+    "achievements": [
+      "ECPC Qualifiers — 4th (2024)",
+      "ECPC Finals — 30th (2024)",
+      "ACPC Finals — 21st (2024)",
+      "Reached Codeforces Expert (2000+ problems solved)",
+      "IEEE Xtreme 17 — Rank 290",
+      "IEEE Xtreme 18 — Rank 527"
+    ],
+    "projects": [
+      "E-commerce Backend APIs — Node.js, Express, MongoDB, Stripe integration",
+      "Contest Training Toolkit — Structured problem sets & progress tracking",
+      "Repository pattern abstractions over MongoDB/SQL"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How to request this coach for corporate training?",
+        "a": "Use the WhatsApp contact button to share your requirements. We will coordinate schedules and program details."
+      },
+      {
+        "q": "Are sessions live and interactive?",
+        "a": "Yes. Live, interactive coaching with practice-focused assignments."
+      },
+      {
+        "q": "Can the coach support interview preparation?",
+        "a": "Yes. Algorithmic problem-solving, mock interviews, and feedback."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "72B ElManial St, ElManial ElGharby, Cairo, Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
