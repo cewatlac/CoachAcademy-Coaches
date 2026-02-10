@@ -1,0 +1,75 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "UI/UX Fundamentals | Practical, assignment-based learning for adult learners.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "coach": {
+    "name": "Salma Abdo Mahmoud Salama",
+    "role": "UI/UX Fundamentals Instructor",
+    "education": "B.Sc. Agriculture — Alexandria University (2023)",
+    "photo": "assets/salma-abdo.jpg",
+    "snapshot": [
+      "UI/UX fundamentals with hands-on exercises",
+      "Wireframes and basic interactive prototypes",
+      "Understanding user needs and basic user research",
+      "Design basics: hierarchy, spacing, typography, and simple layout rules"
+    ],
+    "skills": [
+      "UI/UX Fundamentals",
+      "Wireframing",
+      "Prototyping",
+      "User Research Basics",
+      "Usability Testing Basics",
+      "Design Handoff",
+      "Communication",
+      "Hybrid Delivery"
+    ],
+    "achievements": [
+      "UI/UX fundamentals track experience (as stated in submitted profile)"
+    ],
+    "projects": [
+      "UI/UX practice projects (details shared upon request through Coach Academy)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What can this coach teach?",
+        "a": "UI/UX fundamentals: wireframes, basic prototypes, core layout principles, and simple user-research practices."
+      },
+      {
+        "q": "Is the training hands-on?",
+        "a": "Yes—assignments, practical exercises, and small deliverables each session."
+      },
+      {
+        "q": "How can I communicate?",
+        "a": "Use the WhatsApp button on this page."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, outcome-driven coaching.",
+    "ctaText": "Communicate on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "contact_note": "Personal contact details are hidden. Please use the WhatsApp button to communicate.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
+  }
+}
