@@ -1,0 +1,75 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Software Testing Engineer | Automated Testing (Hands-on, project-based).",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "coach": {
+    "name": "Hussein Hesham Mohamed Mahmoud Attia",
+    "role": "Software Testing Engineer (Automation)",
+    "education": "B.Sc. Computer Science — Faculty of Computers & Artificial Intelligence, Alexandria University (2024)",
+    "photo": "assets/hussein-attia.jpg",
+    "snapshot": [
+      "Automation testing focus (project-based delivery)",
+      "Testing workflows: test cases, execution, and defect reporting",
+      "Hands-on tasks aligned with real QA scenarios",
+      "Suitable for multiple age groups (as stated in submitted profile)"
+    ],
+    "skills": [
+      "Software Testing",
+      "Automated Testing",
+      "Test Design",
+      "Bug Reporting",
+      "Regression Testing",
+      "QA Workflows",
+      "Project-Based Delivery",
+      "Onsite Delivery"
+    ],
+    "achievements": [
+      "Automation testing experience (as stated in submitted profile)"
+    ],
+    "projects": [
+      "Automation testing projects (details shared upon request through Coach Academy)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What can this coach teach?",
+        "a": "Software Testing fundamentals with a focus on Automation Testing, including test design, execution, and practical project workflows."
+      },
+      {
+        "q": "Is the training hands-on?",
+        "a": "Yes—project-based delivery with exercises, assignments, and applied practice."
+      },
+      {
+        "q": "How can I communicate?",
+        "a": "Use the WhatsApp button on this page."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
+    "ctaText": "Communicate on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "contact_note": "Personal contact details are hidden. Please use the WhatsApp button to communicate.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
+  }
+}
