@@ -3,16 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coach Academy — Coach Profile (Moataz Mohammed)</title>
+  <title>Coach Academy — Coach Profile (Abdelfattah Kandil)</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --brand-primary: #002366;
-      --brand-gradient2: #1e3a8a;
-    }
-  </style>
 </head>
 <body>
   <!-- HEADER -->
@@ -22,7 +16,7 @@
         <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
         <div class="brand-text">
           <h1 class="org">Coach <span>Academy</span></h1>
-          <p class="org-sub">Coach Profile — Anonymized (Name Only)</p>
+          <p class="org-sub">Coach Profile — Anonymized (No Contact Details)</p>
         </div>
       </div>
       <nav class="nav">
@@ -30,29 +24,26 @@
         <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#faq">FAQ</a>
+        <a class="btn btn-outline" id="nav-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero" style="background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));">
+  <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <div class="eyebrow">Coach Academy</div>
-        <h2 class="hero-title">Moataz Mohammed</h2>
-        <h3 class="hero-role">Computer Science Student | Competitive Programmer | Backend Developer</h3>
-        <p class="hero-sub">
-          Motivated Computer Science student at Fayoum University with strong expertise in algorithms, data structures, 
-          and software engineering. Candidate Master on Codeforces with extensive competitive programming achievements 
-          and practical backend development experience.
-        </p>
-        <div class="hero-badges">
-          <div class="badge"><strong>3000+</strong><span>Problems Solved</span></div>
-          <div class="badge"><strong>150+</strong><span>Contests Participated</span></div>
+        <div class="eyebrow" id="hero-eyebrow">Coach Academy</div>
+        <h2 class="hero-title" id="coach-name"></h2>
+        <h3 class="hero-role" id="coach-role-hero"></h3>
+        <p class="hero-sub" id="hero-sub"></p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" id="hero-cta1" target="_blank" rel="noopener">Communicate on WhatsApp</a>
         </div>
+        <div class="hero-badges" id="hero-badges"></div>
       </div>
       <div class="hero-visual">
-        <img class="coach-photo-hero" src="assets/moataz.jpg" alt="Portrait of Moataz Mohammed" />
+        <img id="coach-photo-hero" class="coach-photo-hero" src="assets/abdelfattah-kandil.jpg" alt="Coach portrait" />
       </div>
     </div>
   </section>
@@ -62,35 +53,25 @@
     <div class="container">
       <div class="coach-card">
         <div class="coach-media">
-          <img class="coach-photo" src="assets/moataz.jpg" alt="Moataz Mohammed photo" />
+          <img class="coach-photo" id="coach-photo" src="assets/abdelfattah-kandil.jpg" alt="Coach photo" />
         </div>
         <div class="coach-body">
-          <h3 class="coach-name">Moataz Mohammed</h3>
-          <p class="coach-role">Computer Science Student | Competitive Programmer | Backend Developer</p>
-          <p class="muted">Bachelor of Computer Science, Fayoum University (2022 – 2026) — GPA: 3.77/4.00</p>
+          <h3 class="coach-name" id="about-coach-name"></h3>
+          <p class="coach-role" id="about-coach-role"></p>
+          <p class="muted" id="coach-university"></p>
 
           <h4 class="coach-subtitle">Snapshot</h4>
-          <ul class="bullets">
-            <li>Candidate Master on Codeforces (Top 30 in Egypt)</li>
-            <li>Solved 3000+ problems and participated in 150+ contests</li>
-            <li>21st place in Africa & Arab Collegiate Programming Contest 2024</li>
-            <li>30th place in Egyptian Collegiate Programming Contest 2024</li>
-            <li>Backend developer trained in .NET, ASP.NET Core, and REST APIs</li>
-          </ul>
+          <ul class="bullets" id="coach-snapshot"></ul>
 
           <h4 class="coach-subtitle">Core Skills</h4>
-          <ul class="coach-tags">
-            <li class="tag">C++</li><li class="tag">C#</li><li class="tag">Python</li><li class="tag">SQL</li>
-            <li class="tag">.NET</li><li class="tag">ASP.NET Core</li><li class="tag">Entity Framework</li>
-            <li class="tag">RESTful APIs</li><li class="tag">OOP</li><li class="tag">Data Structures</li>
-            <li class="tag">Algorithms</li><li class="tag">Design Patterns</li>
-          </ul>
+          <ul class="coach-tags" id="coach-skills"></ul>
 
-          <div class="coach-links" style="margin-top:1rem;">
-            <a class="btn btn-outline" href="https://github.com/m0atazm0hammed" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-outline" href="https://codeforces.com/profile/Moatazoleq" target="_blank" rel="noopener">Codeforces</a>
-            <a class="btn btn-outline" href="https://icpc.global/ICPCID/DEGRHLWHOWKY" target="_blank" rel="noopener">ICPC ID</a>
-            <a class="btn btn-outline" href="https://vjudge.net/user/m0atazm0hammed" target="_blank" rel="noopener">VJudge</a>
+          <div class="coach-cta">
+            <div class="note">
+              This profile intentionally hides personal identifiers (emails, phones, addresses, direct profile links).
+              Communication is available via WhatsApp through Coach Academy.
+            </div>
+            <a class="btn btn-primary" id="about-cta" target="_blank" rel="noopener">Communicate on WhatsApp</a>
           </div>
         </div>
       </div>
@@ -100,13 +81,8 @@
   <!-- ACHIEVEMENTS -->
   <section id="achievements" class="achievements">
     <div class="container">
-      <h3 class="section-heading">Competitive Programming & Achievements</h3>
-      <ul class="bullets big" id="achievements-list">
-        <li>Candidate Master on Codeforces — Top 30 in Egypt</li>
-        <li>Ranked 21st in The Africa and Arab Collegiate Programming Contest 2024</li>
-        <li>Ranked 30th in The Egyptian Collegiate Programming Contest 2024</li>
-        <li>Solved 3000+ algorithmic problems across Codeforces, VJudge, and other platforms</li>
-      </ul>
+      <h3 class="section-heading">Certifications & Activities</h3>
+      <ul class="bullets big" id="achievements-list"></ul>
     </div>
   </section>
 
@@ -114,30 +90,15 @@
   <section id="projects" class="projects">
     <div class="container">
       <h3 class="section-heading">Selected Projects</h3>
-      <ul class="bullets" id="projects-list">
-        <li><strong>Shop Drop</strong> — E-commerce platform with user auth, product management, and order system (C#/.NET, MVC)</li>
-      </ul>
+      <ul class="bullets" id="projects-list"></ul>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="faq">
     <div class="container">
-      <h3 class="section-heading">Frequently Asked Questions</h3>
-      <div id="faq-list">
-        <div class="faq-item">
-          <h4 class="faq-q">What are Moataz's main areas of expertise?</h4>
-          <p class="faq-a">Competitive Programming, Algorithms, Data Structures, Backend Development, and Software Engineering.</p>
-        </div>
-        <div class="faq-item">
-          <h4 class="faq-q">Does Moataz have teaching experience?</h4>
-          <p class="faq-a">Yes. Moataz has mentored over 500 students in data structures and algorithms through Fayoum ICPC Community.</p>
-        </div>
-        <div class="faq-item">
-          <h4 class="faq-q">What are Moataz's notable achievements?</h4>
-          <p class="faq-a">Candidate Master on Codeforces, ICPC rankings (21st in Africa & Arab, 30th in ECPC), and 3000+ solved problems.</p>
-        </div>
-      </div>
+      <h3 class="section-heading" id="faq-title"></h3>
+      <div id="faq-list"></div>
     </div>
   </section>
 
@@ -146,19 +107,114 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
-        <p class="muted">Empowering talent through hands-on, industry-aligned tech coaching.</p>
+        <p class="muted" id="footer-blurb"></p>
+        <a class="btn btn-outline" id="footer-cta" target="_blank" rel="noopener">Communicate on WhatsApp</a>
       </div>
       <div class="footer-col">
         <h5>Quick Links</h5>
-        <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
+        <ul class="footer-links" id="footer-links"></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="contact" id="footer-contact"></ul>
       </div>
     </div>
-    <div class="copy">© 2025 Coach Academy — All rights reserved.</div>
+    <div class="copy" id="copyright"></div>
   </footer>
+
+  <script>
+  (async function init(){
+    const res = await fetch("site-data.json", { cache: "no-store" });
+    const data = await res.json();
+
+    if (data.brand?.primary) document.documentElement.style.setProperty("--brand", data.brand.primary);
+    if (data.brand?.gradient2) document.documentElement.style.setProperty("--brand-2", data.brand.gradient2);
+
+    // WhatsApp link (link only)
+    const wa = data.contacts?.whatsapp ? `https://wa.me/${data.contacts.whatsapp}` : "#";
+    document.getElementById("nav-whatsapp").href = wa;
+    document.getElementById("hero-cta1").href = wa;
+    document.getElementById("about-cta").href = wa;
+    document.getElementById("footer-cta").href = wa;
+
+    document.getElementById("coach-name").textContent = data.coach?.name || "Coach";
+    document.getElementById("coach-role-hero").textContent = data.coach?.role || "Instructor";
+    document.getElementById("hero-eyebrow").textContent = data.hero?.eyebrow || "Coach Academy";
+    document.getElementById("hero-sub").textContent = data.hero?.subline || "Hands-on learning with clear outcomes.";
+
+    const badgesWrap = document.getElementById("hero-badges");
+    (data.hero?.badges || []).forEach(b=>{
+      const div = document.createElement("div");
+      div.className = "badge";
+      div.innerHTML = `<div class="badge-value">${b.value || ""}</div><div>${b.label || ""}</div>`;
+      badgesWrap.appendChild(div);
+    });
+
+    document.getElementById("about-coach-name").textContent = data.coach?.name || "";
+    document.getElementById("about-coach-role").textContent = data.coach?.role || "";
+    document.getElementById("coach-university").textContent = data.coach?.education || "";
+
+    const ph = data.coach?.photo || "assets/coach-photo-placeholder.jpg";
+    document.getElementById("coach-photo").src = ph;
+    document.getElementById("coach-photo-hero").src = ph;
+
+    const snapshotUl = document.getElementById("coach-snapshot");
+    (data.coach?.snapshot?.length ? data.coach.snapshot : []).forEach(s=>{
+      const li = document.createElement("li");
+      li.textContent = s;
+      snapshotUl.appendChild(li);
+    });
+
+    const skillsUl = document.getElementById("coach-skills");
+    (data.coach?.skills || []).forEach(s=>{
+      const li = document.createElement("li");
+      li.textContent = s;
+      skillsUl.appendChild(li);
+    });
+
+    const achUl = document.getElementById("achievements-list");
+    (data.coach?.achievements || []).forEach(a=>{
+      const li = document.createElement("li");
+      li.textContent = a;
+      achUl.appendChild(li);
+    });
+
+    const prUl = document.getElementById("projects-list");
+    (data.coach?.projects || []).forEach(p=>{
+      const li = document.createElement("li");
+      li.textContent = p;
+      prUl.appendChild(li);
+    });
+
+    document.getElementById("faq-title").textContent = data.faq?.title || "Frequently Asked Questions";
+    const faqList = document.getElementById("faq-list");
+    (data.faq?.items || []).forEach((f,i)=>{
+      const det = document.createElement("details");
+      det.className = "faq-item";
+      if(i===0) det.open = true;
+      det.innerHTML = `<summary>${f.q}</summary><div class="faq-body">${f.a}</div>`;
+      faqList.appendChild(det);
+    });
+
+    document.getElementById("footer-blurb").textContent = data.footer?.blurb || "";
+    const fcta = document.getElementById("footer-cta");
+    fcta.textContent = data.footer?.ctaText || "Communicate on WhatsApp";
+
+    const linksUl = document.getElementById("footer-links");
+    (data.footer?.links || []).forEach(l=>{
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${l.href || '#'}">${l.label || ''}</a>`;
+      linksUl.appendChild(li);
+    });
+
+    const contactUl = document.getElementById("footer-contact");
+    const li1 = document.createElement("li");
+    li1.textContent = data.footer?.contact_note || "Personal contact details are hidden. Please use the WhatsApp button.";
+    contactUl.appendChild(li1);
+
+    document.getElementById("copyright").textContent =
+      data.footer?.copyright || `© ${new Date().getFullYear()} Coach Academy — All rights reserved.`;
+  })();
+  </script>
 </body>
 </html>
