@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Academy — Coach Profile (Assem Amr Abdelfattah)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <div class="brand-text">
+          <h1 class="org">Coach <span>Academy</span></h1>
+          <p class="org-sub">Coach Profile — Anonymized (Name Only)</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-outline" id="nav-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow" id="hero-eyebrow">Coach Academy</div>
+        <h2 class="hero-title" id="coach-name"></h2>
+        <h3 class="hero-role" id="coach-role-hero"></h3>
+        <p class="hero-sub" id="hero-sub">
+          Practical, project-based mentoring with a strong focus on Algorithms, Data Structures,
+          and modern Back-End engineering.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" id="hero-cta1" target="_blank" rel="noopener">Contact on WhatsApp</a>
+        </div>
+        <div class="hero-badges" id="hero-badges"></div>
+      </div>
+
+      <div class="hero-visual">
+        <img id="coach-photo-hero" class="coach-photo-hero" src="assets/assem.jpg" alt="Coach portrait" />
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="metrics">
+    <div class="container metrics-grid" id="metrics-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="coach-card">
+        <div class="coach-media">
+          <img class="coach-photo" id="coach-photo" src="assets/assem.jpg" alt="Coach photo" />
+        </div>
+        <div class="coach-body">
+          <h3 class="coach-name" id="about-coach-name"></h3>
+          <p class="coach-role" id="about-coach-role"></p>
+          <p class="muted" id="coach-university"></p>
+
+          <h4 class="coach-subtitle">Snapshot</h4>
+          <ul class="bullets" id="coach-snapshot"></ul>
+
+          <h4 class="coach-subtitle">Core Skills</h4>
+          <ul class="coach-tags" id="coach-skills"></ul>
+
+          <div class="links-row" id="coach-links"></div>
+
+          <div class="coach-cta">
+            <div class="note">
+              This profile intentionally hides personal identifiers (email, phone, address, banking).
+              Coach Academy will share details later in the hiring process upon request.
+            </div>
+            <a class="btn btn-primary" id="about-cta" target="_blank" rel="noopener">Contact on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <h3 class="section-heading">Competitive Programming Achievements</h3>
+      <ul class="bullets big" id="achievements-list"></ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3 class="section-heading">Selected Projects</h3>
+      <ul class="bullets" id="projects-list"></ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h3 class="section-heading" id="faq-title"></h3>
+      <div id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <p class="muted" id="footer-blurb"></p>
+        <a class="btn btn-outline" id="footer-cta" target="_blank" rel="noopener">Join Now</a>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links" id="footer-links"></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Info</h5>
+        <ul class="contact" id="footer-contact"></ul>
+      </div>
+    </div>
+    <div class="copy" id="copyright"></div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
