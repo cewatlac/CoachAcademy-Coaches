@@ -9,70 +9,76 @@
   },
   "hero": {
     "eyebrow": "Coach Academy",
-    "subline": "Software Developer & Competitive Programmer with strong skills in Algorithms, OOP, and Web Development. Active in ICPC contests and experienced mentor.",
+    "subline": "Programming Instructor | Scratch (Beginner/Advanced), Python fundamentals, and Cybersecurity/Networking basics for school & university learners.",
     "badges": [
-      { "label": "Problems Solved", "value": "1600+" },
-      { "label": "Students Mentored", "value": "Many" }
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
     ]
   },
   "coach": {
-    "name": "Zyad Mohamed Elnaghy",
-    "role": "Software Developer | Competitive Programmer | Mentor",
-    "university": "Bachelor of Computer Science and Informatics, Suez Canal University (2021 – present)",
-    "photo": "assets/zyad.jpg",
+    "name": "Kerelous Khalil Nassif",
+    "role": "Programming & Cybersecurity Fundamentals Instructor",
+    "education": "B.Sc. Computer Science — Minia University (2022)",
+    "photo": "assets/kerelous-nassif.jpg",
     "snapshot": [
-      "ICPC Suez Canal University Mentor",
-      "Solved 1600+ problems on Codeforces & LeetCode",
-      "Specialized in Algorithms and Data Structures",
-      "Built responsive websites with React, HTML, CSS, JS",
-      "Developed visualization tools for sorting algorithms (C++/SFML)"
+      "Scratch (Beginner & Advanced): games and interactive stories",
+      "Python basics for school/teens and introductory programming tracks",
+      "Cybersecurity fundamentals and safe practices",
+      "Networking fundamentals + network security basics",
+      "Linux basics + Docker basics + CI/CD basics (intro level)",
+      "Career guidance and interview preparation for tech students"
     ],
     "skills": [
-      "C++","Python","Java","C","HTML5","CSS","JavaScript","ReactJS",
-      "Next.js","Bootstrap 5","MySQL","Git","GitHub","Linux",
-      "OOP","SOLID Principles","Data Structures","Algorithms","Problem Solving",
-      "Competitive Programming","Networking"
+      "Programming Basics",
+      "Scratch (Beginner)",
+      "Scratch (Advanced — Games & Stories)",
+      "Python",
+      "Cybersecurity Fundamentals",
+      "Network Security Basics",
+      "Networking Fundamentals",
+      "Linux Basics",
+      "Docker Basics",
+      "CI/CD Basics",
+      "Digital Literacy",
+      "Career Guidance for Tech Students",
+      "Freelancing Basics",
+      "Interview Preparation",
+      "Hybrid Delivery"
     ],
     "achievements": [
-      "Mentored students in ICPC regional training",
-      "Ranked in ICPC Suez Canal University contests",
-      "Contributed to open-source projects on GitHub",
-      "Participated in multiple competitive programming contests"
+      "Hands-on teaching across programming + security fundamentals with structured progression"
     ],
     "projects": [
-      "Traveling Website – Front-end responsive website using HTML, CSS, JS",
-      "Visualization of Sorting Algorithms – Interactive tool using C++ and SFML",
-      "Multiple academic and self-driven projects (React, Databases, System Design)"
+      "Teaching labs and training exercises (details shared upon request through Coach Academy)"
     ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "How to request this coach for competitive programming mentorship?",
-        "a": "Use the WhatsApp button to share your requirements. We will coordinate sessions and training details."
+        "q": "What can this coach teach?",
+        "a": "Scratch (beginner/advanced), Python fundamentals, and introductory cybersecurity/networking concepts for different age groups."
       },
       {
-        "q": "What are the coach's main areas of expertise?",
-        "a": "Algorithms, Data Structures, OOP, Web Development (React, Next.js), and Competitive Programming."
+        "q": "Does the coach offer practical exercises?",
+        "a": "Yes—interactive Scratch projects, Python practice tasks, and guided labs for security/networking fundamentals."
       },
       {
-        "q": "Does the coach have teaching experience?",
-        "a": "Yes. Zyad has mentored ICPC teams and guided peers on problem-solving platforms like Codeforces and LeetCode."
+        "q": "How can I communicate?",
+        "a": "Use the WhatsApp button on this page."
       }
     ]
   },
   "footer": {
-    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
-    "ctaText": "Contact on WhatsApp",
+    "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
+    "ctaText": "Communicate on WhatsApp",
     "links": [
       { "label": "About", "href": "#about" },
       { "label": "Achievements", "href": "#achievements" },
       { "label": "Projects", "href": "#projects" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "address": "Port Said, Egypt",
-    "email_public": "info@coach-academy.net",
-    "copyright": "© 2025 Coach Academy — All rights reserved."
+    "contact_note": "Personal contact details are hidden. Please use the WhatsApp button to communicate.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
   }
 }
