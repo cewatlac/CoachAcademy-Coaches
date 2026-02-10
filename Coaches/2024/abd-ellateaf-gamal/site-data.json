@@ -1,0 +1,92 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "STEM & Programming Instructor | Computational Thinking, Python/C++, Robotics (Arduino), AI fundamentals, and hands-on learning for kids & teens.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "coach": {
+    "name": "Abd Ellateaf Gamal Ahmed",
+    "role": "STEM, Programming & Robotics Instructor",
+    "education": "B.Sc. Engineering — Al-Azhar University (2024)",
+    "photo": "assets/abd-ellateaf-gamal.jpg",
+    "snapshot": [
+      "Logic games & thinking skills for younger learners",
+      "Computational Thinking + Programming Basics progression",
+      "OOP foundations + Software Engineering fundamentals + requirements basics",
+      "Python + C/C++ + data analysis with Python (intro level)",
+      "AI fundamentals for juniors (concepts + simple practice)",
+      "Robotics: Arduino + sensors & electronics basics",
+      "Teaching methodology + presentation/communication skills"
+    ],
+    "skills": [
+      "Logic Games & Thinking Skills",
+      "Computational Thinking",
+      "Programming Basics",
+      "OOP",
+      "Software Engineering Fundamentals",
+      "Requirements Analysis",
+      "Python",
+      "C / C++",
+      "Data Analysis with Python",
+      "AI Fundamentals",
+      "Robotics",
+      "Arduino",
+      "Sensors & Electronics Basics",
+      "Math through Coding",
+      "English through Coding",
+      "Presentation Skills",
+      "Communication Skills",
+      "Teaching Methodology",
+      "Teamwork & Collaboration",
+      "Leadership Skills",
+      "Interview Preparation",
+      "Hybrid Delivery"
+    ],
+    "achievements": [
+      "Structured junior STEM tracks with practical labs and clear learning outcomes"
+    ],
+    "projects": [
+      "Training exercises and classroom projects (details shared upon request through Coach Academy)"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What can this coach teach?",
+        "a": "Junior STEM tracks: computational thinking, programming basics, Python/C++, OOP, and robotics labs using Arduino and sensors."
+      },
+      {
+        "q": "Is the training hands-on?",
+        "a": "Yes—includes guided exercises, small projects, and labs suitable for kids and early teens."
+      },
+      {
+        "q": "How can I communicate?",
+        "a": "Use the WhatsApp button on this page."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
+    "ctaText": "Communicate on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "contact_note": "Personal contact details are hidden. Please use the WhatsApp button to communicate.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
+  }
+}
