@@ -1,0 +1,94 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Computer Science graduate and part-time instructor with experience teaching programming, logic, and introductory AI topics for school and university learners.",
+    "badges": [
+      { "label": "Expert Coaches", "value": "80+" },
+      { "label": "Students", "value": "45k+" }
+    ]
+  },
+  "coach": {
+    "name": "Alaa Fouad Mohamed",
+    "role": "Programming, Logic & Intro AI Instructor",
+    "education": "Bachelor's Degree — Computers & Artificial Intelligence / Computer Science, Helwan University (2025)",
+    "photo": "assets/alaa-fouad.jpg",
+    "snapshot": [
+      "Graduate of Computer Science / Computers & Artificial Intelligence from Helwan University",
+      "Available for part-time hybrid instruction",
+      "Interested in teaching school students and university learners",
+      "Can support learning tracks from logic and problem solving to programming fundamentals",
+      "Open to internship-based onboarding and structured coaching environments",
+      "Comfortable teaching large-group sessions based on prior session experience"
+    ],
+    "skills": [
+      "Logic Games & Thinking Skills",
+      "Algorithms & Data Structures",
+      "OOP",
+      "Design Patterns",
+      "Git & GitHub",
+      "Minecraft Coding",
+      "Roblox Studio",
+      "Game Design",
+      "Java",
+      "Machine Learning Basics",
+      "Computer Vision Basics",
+      "Math through Coding",
+      "Hybrid Delivery",
+      "Part-time Teaching",
+      "School & University Tracks"
+    ],
+    "achievements": [
+      "HCIA-AI International Certificate",
+      "Completed bachelor's degree in Computer Science / Computers & Artificial Intelligence in 2025",
+      "Interested in teaching learners across multiple age groups and academic stages",
+      "Can contribute to programming, problem-solving, and introductory AI learning tracks"
+    ],
+    "projects": [
+      "Interactive logic and thinking activities for young learners",
+      "Introductory programming sessions in Java and object-oriented programming",
+      "Beginner-level machine learning and computer vision awareness sessions",
+      "Game-oriented learning activities using Minecraft Coding and Roblox Studio"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What can this coach teach?",
+        "a": "The coach can teach logic and thinking skills, algorithms and data structures, OOP, design patterns, Git/GitHub, Java, game-oriented learning, and introductory machine learning and computer vision topics."
+      },
+      {
+        "q": "Which learner groups are suitable?",
+        "a": "This coach is suitable for school learners across multiple age groups as well as university students in introductory and foundational computing tracks."
+      },
+      {
+        "q": "Is the coach available online or offline?",
+        "a": "The coach is available in a hybrid format through Coach Academy, depending on scheduling and program needs."
+      },
+      {
+        "q": "How can I communicate?",
+        "a": "Use the WhatsApp button on this page."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, outcome-driven technical coaching.",
+    "ctaText": "Communicate on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "contact_note": "Personal contact details are hidden. Please use the WhatsApp button to communicate.",
+    "copyright": "© 2026 Coach Academy — All rights reserved."
+  }
+}
