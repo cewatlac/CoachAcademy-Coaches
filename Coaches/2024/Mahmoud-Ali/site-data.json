@@ -1,0 +1,101 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Embedded Software Engineer with strong background in embedded systems, automotive bus technologies, RTOS, C/C++, microcontrollers, and system-level project implementation. Experienced in applied engineering projects across CubeSat systems, automotive communication, and embedded software training.",
+    "badges": [
+      { "label": "Specialization", "value": "Embedded Systems" },
+      { "label": "Track", "value": "Automotive & RTOS" }
+    ]
+  },
+  "coach": {
+    "name": "Mahmoud Ali Ahmed",
+    "role": "Embedded Software Engineer | Automotive & Embedded Systems Mentor",
+    "university": "B.Sc. in Communication & Electronics Engineering, Assiut University",
+    "photo": "assets/mahmoud.jpg",
+    "snapshot": [
+      "Embedded Software Engineer with strong focus on automotive and microcontroller-based systems",
+      "Worked on communication protocols and buses including CAN, CAN-FD, LIN, UDS, and Ethernet",
+      "Hands-on experience with STM32, AVR, ESP8266, bootloaders, RTOS, and embedded Linux topics",
+      "Contributed to CubeSat and automotive engineering projects with implementation responsibility on embedded software components",
+      "Built practical experience through IMT School training tracks, ITIDA automotive scholarship, and EGSA internship"
+    ],
+    "skills": [
+      "C",
+      "C++",
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "RTOS",
+      "STM32",
+      "AVR",
+      "ESP8266",
+      "CAN",
+      "CAN-FD",
+      "LIN",
+      "UDS",
+      "Ethernet",
+      "Embedded Linux",
+      "Yocto",
+      "Jenkins",
+      "Git",
+      "Docker",
+      "UML",
+      "PlantUML",
+      "Postman",
+      "AUTOSAR Basics"
+    ],
+    "achievements": [
+      "Completed multiple embedded systems and automotive training tracks at IMT School",
+      "Selected for ITIDA Automotive Scholarship covering RTOS, automotive standards, software engineering, testing, cybersecurity, and embedded Linux",
+      "Completed internship at the Egyptian Space Agency in onboard computer work for CubeSat systems",
+      "Worked on CubeSat graduation project with onboard computer and ground station control system responsibilities",
+      "Worked on automotive communication and diagnostics systems in motorsport-related engineering work"
+    ],
+    "projects": [
+      "CubeSat Embedded System — onboard computer implementation, subsystem data construction/deconstruction, scheduled task handling, and ground station communication support",
+      "Automotive Bus Network — communication bus implementations using MCP2515, MCP2517-FD, and Ethernet controllers",
+      "STM32 Bootloader Project — bootloader implementation including hex parsing and flash interface",
+      "IoT with ESP8266 — Wi-Fi-connected embedded application using ESP8266",
+      "Smart Home Embedded Project — UART Bluetooth and NEC-protocol IR sensor-based smart home system",
+      "Automotive Diagnostics System — CAN communication, diagnostics, error storage, and display interfacing in embedded automotive context"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How can I request Mahmoud for coaching or training?",
+        "a": "Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals."
+      },
+      {
+        "q": "What are Mahmoud’s main areas of expertise?",
+        "a": "Embedded systems, automotive embedded software, C/C++, RTOS, microcontrollers, communication protocols, and practical embedded project implementation."
+      },
+      {
+        "q": "Does Mahmoud have hands-on project experience?",
+        "a": "Yes. His background includes CubeSat engineering work, automotive communication systems, bootloaders, IoT applications, and embedded software training projects."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}

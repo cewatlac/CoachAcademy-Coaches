@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Academy — Coach Profile (Mahmoud Ali Ahmed)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-primary: #002366;
+      --brand-gradient2: #1e3a8a;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 10px 30px rgba(2, 35, 102, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .org {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.1;
+    }
+
+    .org span { color: var(--brand-primary); }
+
+    .org-sub {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: var(--brand-primary);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-outline {
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+      background: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #eff6ff;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));
+      color: #fff;
+      padding: 72px 0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.1;
+    }
+
+    .hero-role {
+      margin: 10px 0 14px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-sub {
+      max-width: 720px;
+      margin: 0 0 22px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .badge {
+      min-width: 170px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .badge strong {
+      display: block;
+      font-size: 1.35rem;
+      margin-bottom: 4px;
+    }
+
+    .badge span {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .coach-photo-hero {
+      width: min(100%, 360px);
+      aspect-ratio: 1 / 1;
+      border-radius: 28px;
+      object-fit: cover;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .coach-card {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .coach-photo {
+      width: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      background: #e2e8f0;
+    }
+
+    .coach-name {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    .coach-role {
+      margin: 8px 0 6px;
+      font-weight: 600;
+      color: var(--brand-primary);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .coach-subtitle,
+    .section-heading {
+      margin: 28px 0 14px;
+      font-size: 1.3rem;
+    }
+
+    .bullets {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .bullets li {
+      margin-bottom: 10px;
+    }
+
+    .coach-tags {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tag {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: var(--brand-primary);
+      border: 1px solid #dbeafe;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .coach-cta {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 580px;
+    }
+
+    .section-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .faq-a {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      background: #0f172a;
+      color: #fff;
+      padding-top: 56px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.8fr 1fr;
+      gap: 28px;
+      padding-bottom: 36px;
+    }
+
+    .footer-col h5 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    .footer-links,
+    .contact {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li,
+    .contact li {
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .copy {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+      padding: 18px 16px;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.72);
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .coach-card,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .header-inner {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <div class="brand-text">
+          <h1 class="org">Coach <span>Academy</span></h1>
+          <p class="org-sub">Coach Profile</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-outline"
+           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Mahmoud."
+           target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">Coach Academy</div>
+        <h2 class="hero-title">Mahmoud Ali Ahmed</h2>
+        <h3 class="hero-role">Embedded Software Engineer | Automotive & Embedded Systems Mentor</h3>
+        <p class="hero-sub">
+          Embedded Software Engineer with strong background in embedded systems, automotive bus technologies,
+          RTOS, C/C++, microcontrollers, and system-level project implementation. Experienced in applied
+          engineering projects across CubeSat systems, automotive communication, and embedded software training.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary"
+             href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Mahmoud."
+             target="_blank" rel="noopener">Contact on WhatsApp</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">
+            <strong>Embedded Systems</strong>
+            <span>C, C++, RTOS, MCU Development</span>
+          </div>
+          <div class="badge">
+            <strong>Automotive Track</strong>
+            <span>CAN, LIN, UDS, Diagnostics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img class="coach-photo-hero" src="assets/mahmoud.jpg" alt="Portrait of Mahmoud Ali Ahmed" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="coach-card">
+        <div class="coach-media">
+          <img class="coach-photo" src="assets/mahmoud.jpg" alt="Mahmoud Ali Ahmed photo" />
+        </div>
+
+        <div class="coach-body">
+          <h3 class="coach-name">Mahmoud Ali Ahmed</h3>
+          <p class="coach-role">Embedded Software Engineer | Automotive & Embedded Systems Mentor</p>
+          <p class="muted">B.Sc. in Communication & Electronics Engineering, Assiut University</p>
+
+          <h4 class="coach-subtitle">Snapshot</h4>
+          <ul class="bullets">
+            <li>Embedded Software Engineer with strong focus on automotive and microcontroller-based systems</li>
+            <li>Worked on communication protocols and buses including CAN, CAN-FD, LIN, UDS, and Ethernet</li>
+            <li>Hands-on experience with STM32, AVR, ESP8266, bootloaders, RTOS, and embedded Linux topics</li>
+            <li>Contributed to CubeSat and automotive engineering projects with implementation responsibility on embedded software components</li>
+            <li>Built practical experience through IMT School training tracks, ITIDA automotive scholarship, and EGSA internship</li>
+          </ul>
+
+          <h4 class="coach-subtitle">Core Skills</h4>
+          <ul class="coach-tags">
+            <li class="tag">C</li>
+            <li class="tag">C++</li>
+            <li class="tag">Data Structures</li>
+            <li class="tag">Algorithms</li>
+            <li class="tag">OOP</li>
+            <li class="tag">RTOS</li>
+            <li class="tag">STM32</li>
+            <li class="tag">AVR</li>
+            <li class="tag">ESP8266</li>
+            <li class="tag">CAN</li>
+            <li class="tag">CAN-FD</li>
+            <li class="tag">LIN</li>
+            <li class="tag">UDS</li>
+            <li class="tag">Ethernet</li>
+            <li class="tag">Embedded Linux</li>
+            <li class="tag">Yocto</li>
+            <li class="tag">Jenkins</li>
+            <li class="tag">Git</li>
+            <li class="tag">Docker</li>
+            <li class="tag">UML</li>
+            <li class="tag">PlantUML</li>
+            <li class="tag">Postman</li>
+            <li class="tag">AUTOSAR Basics</li>
+          </ul>
+
+          <div class="coach-cta">
+            <div class="note">
+              This public profile intentionally hides personal identifiers such as phone number,
+              email, exact address, and other sensitive personal details. All requests are handled
+              through Coach Academy only.
+            </div>
+
+            <a class="btn btn-outline"
+               href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Mahmoud."
+               target="_blank" rel="noopener">Request via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <div class="section-box">
+        <h3 class="section-heading">Experience & Highlights</h3>
+        <ul class="bullets">
+          <li>Completed multiple embedded systems and automotive training tracks at IMT School</li>
+          <li>Selected for ITIDA Automotive Scholarship covering RTOS, automotive standards, software engineering, testing, cybersecurity, and embedded Linux</li>
+          <li>Completed internship at the Egyptian Space Agency in onboard computer work for CubeSat systems</li>
+          <li>Worked on CubeSat graduation project with onboard computer and ground station control system responsibilities</li>
+          <li>Worked on automotive communication and diagnostics systems in motorsport-related engineering work</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-box">
+        <h3 class="section-heading">Selected Projects</h3>
+        <ul class="bullets">
+          <li><strong>CubeSat Embedded System</strong> — onboard computer implementation, subsystem data construction/deconstruction, scheduled task handling, and ground station communication support</li>
+          <li><strong>Automotive Bus Network</strong> — communication bus implementations using MCP2515, MCP2517-FD, and Ethernet controllers</li>
+          <li><strong>STM32 Bootloader Project</strong> — bootloader implementation including hex parsing and flash interface</li>
+          <li><strong>IoT with ESP8266</strong> — Wi-Fi-connected embedded application using ESP8266</li>
+          <li><strong>Smart Home Embedded Project</strong> — UART Bluetooth and NEC-protocol IR sensor-based smart home system</li>
+          <li><strong>Automotive Diagnostics System</strong> — CAN communication, diagnostics, error storage, and display interfacing in embedded automotive context</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-box">
+        <h3 class="section-heading">Frequently Asked Questions</h3>
+
+        <div class="faq-item">
+          <h4 class="faq-q">How can I request Mahmoud for coaching or training?</h4>
+          <p class="faq-a">
+            Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-q">What are Mahmoud’s main areas of expertise?</h4>
+          <p class="faq-a">
+            Embedded systems, automotive embedded software, C/C++, RTOS, microcontrollers, communication protocols, and practical embedded project implementation.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-q">Does Mahmoud have hands-on project experience?</h4>
+          <p class="faq-a">
+            Yes. His background includes CubeSat engineering work, automotive communication systems, bootloaders, IoT applications, and embedded software training projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <p class="muted" style="color: rgba(255,255,255,0.8);">
+          Empowering talent through hands-on, industry-aligned tech coaching.
+        </p>
+        <a class="btn btn-outline"
+           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Mahmoud."
+           target="_blank" rel="noopener"
+           style="border-color: rgba(255,255,255,0.4); color: #fff; background: transparent;">
+          Contact on WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Info</h5>
+        <ul class="contact">
+          <li><strong>Address:</strong> Egypt</li>
+          <li><strong>Email:</strong> <a href="mailto:info@coach-academy.net">info@coach-academy.net</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/201102919193" target="_blank" rel="noopener">+20 110 291 9193</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy">© 2025 Coach Academy — All rights reserved.</div>
+  </footer>
+</body>
+</html>
