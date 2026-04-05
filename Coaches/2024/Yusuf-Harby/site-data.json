@@ -9,7 +9,7 @@
   },
   "hero": {
     "eyebrow": "Coach Academy",
-    "subline": "Programming Instructor and Computer Science undergraduate with a strong focus on Flutter development, problem solving, and practical programming education. Combines technical depth with mentoring, leadership, and experience supporting learners across multiple age groups.",
+    "subline": "Programming Instructor with a strong focus on Flutter development, problem solving, and practical programming education. Combines technical depth with mentoring, leadership, and experience supporting learners across multiple age groups.",
     "badges": [
       { "label": "Problems Solved", "value": "1500+" },
       { "label": "Competitive Programming", "value": "ECPC 2024 Qualified" }
@@ -18,7 +18,6 @@
   "coach": {
     "name": "Yusuf Harby",
     "role": "Software Engineer | Flutter Developer | Programming Instructor",
-    "university": "B.Sc. in Computer Science & AI, Benha University",
     "photo": "assets/yusuf.jpg",
     "snapshot": [
       "Programming instructor with a strong focus on Flutter development and practical learning",

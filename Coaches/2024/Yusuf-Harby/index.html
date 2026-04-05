@@ -17,10 +17,8 @@
       --border: #e2e8f0;
       --shadow: 0 10px 30px rgba(2, 35, 102, 0.08);
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       font-family: "Poppins", sans-serif;
@@ -28,14 +26,11 @@
       background: var(--bg);
       line-height: 1.6;
     }
-
     a { text-decoration: none; color: inherit; }
-
     .container {
       width: min(1120px, calc(100% - 32px));
       margin: 0 auto;
     }
-
     .site-header {
       position: sticky;
       top: 0;
@@ -44,7 +39,6 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
     }
-
     .header-inner {
       display: flex;
       align-items: center;
@@ -52,47 +46,39 @@
       gap: 24px;
       padding: 16px 0;
     }
-
     .brand {
       display: flex;
       align-items: center;
       gap: 14px;
     }
-
     .logo {
       width: 46px;
       height: 46px;
       border-radius: 12px;
       object-fit: cover;
     }
-
     .org {
       margin: 0;
       font-size: 1.2rem;
       line-height: 1.1;
     }
-
     .org span { color: var(--brand-primary); }
-
     .org-sub {
       margin: 4px 0 0;
       color: var(--muted);
       font-size: 0.9rem;
     }
-
     .nav {
       display: flex;
       align-items: center;
       gap: 18px;
       flex-wrap: wrap;
     }
-
     .nav a {
       color: var(--text);
       font-weight: 600;
       font-size: 0.95rem;
     }
-
     .btn {
       display: inline-flex;
       align-items: center;
@@ -103,40 +89,26 @@
       transition: 0.25s ease;
       border: 1px solid transparent;
     }
-
     .btn-primary {
       background: #fff;
       color: var(--brand-primary);
     }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: var(--shadow);
-    }
-
     .btn-outline {
       border-color: var(--brand-primary);
       color: var(--brand-primary);
       background: #fff;
     }
-
-    .btn-outline:hover {
-      background: #eff6ff;
-    }
-
     .hero {
       background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));
       color: #fff;
       padding: 72px 0;
     }
-
     .hero-inner {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 40px;
       align-items: center;
     }
-
     .eyebrow {
       display: inline-block;
       margin-bottom: 12px;
@@ -147,33 +119,28 @@
       font-size: 0.9rem;
       font-weight: 600;
     }
-
     .hero-title {
       margin: 0;
       font-size: clamp(2rem, 4vw, 3.3rem);
       line-height: 1.1;
     }
-
     .hero-role {
       margin: 10px 0 14px;
       font-size: 1.2rem;
       font-weight: 600;
       color: rgba(255,255,255,0.92);
     }
-
     .hero-sub {
       max-width: 720px;
       margin: 0 0 22px;
       color: rgba(255,255,255,0.92);
     }
-
     .hero-badges {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
       margin-top: 24px;
     }
-
     .badge {
       min-width: 170px;
       padding: 16px 18px;
@@ -181,23 +148,19 @@
       background: rgba(255,255,255,0.12);
       border: 1px solid rgba(255,255,255,0.16);
     }
-
     .badge strong {
       display: block;
       font-size: 1.2rem;
       margin-bottom: 4px;
     }
-
     .badge span {
       font-size: 0.92rem;
       color: rgba(255,255,255,0.88);
     }
-
     .hero-visual {
       display: flex;
       justify-content: center;
     }
-
     .coach-photo-hero {
       width: min(100%, 360px);
       aspect-ratio: 1 / 1;
@@ -207,11 +170,7 @@
       border: 1px solid rgba(255,255,255,0.18);
       box-shadow: var(--shadow);
     }
-
-    section {
-      padding: 72px 0;
-    }
-
+    section { padding: 72px 0; }
     .coach-card {
       display: grid;
       grid-template-columns: 320px 1fr;
@@ -222,7 +181,6 @@
       padding: 28px;
       box-shadow: var(--shadow);
     }
-
     .coach-photo {
       width: 100%;
       border-radius: 22px;
@@ -230,38 +188,26 @@
       aspect-ratio: 4 / 5;
       background: #e2e8f0;
     }
-
     .coach-name {
       margin: 0;
       font-size: 2rem;
       line-height: 1.15;
     }
-
     .coach-role {
       margin: 8px 0 6px;
       font-weight: 600;
       color: var(--brand-primary);
     }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .coach-subtitle,
-    .section-heading {
+    .muted { color: var(--muted); }
+    .coach-subtitle, .section-heading {
       margin: 28px 0 14px;
       font-size: 1.3rem;
     }
-
     .bullets {
       padding-left: 18px;
       margin: 0;
     }
-
-    .bullets li {
-      margin-bottom: 10px;
-    }
-
+    .bullets li { margin-bottom: 10px; }
     .coach-tags {
       list-style: none;
       display: flex;
@@ -270,7 +216,6 @@
       padding: 0;
       margin: 0;
     }
-
     .tag {
       padding: 10px 14px;
       border-radius: 999px;
@@ -280,7 +225,6 @@
       font-size: 0.92rem;
       font-weight: 600;
     }
-
     .coach-cta {
       margin-top: 24px;
       display: flex;
@@ -288,7 +232,6 @@
       gap: 14px;
       align-items: center;
     }
-
     .note {
       padding: 14px 16px;
       border-radius: 16px;
@@ -298,7 +241,6 @@
       font-size: 0.95rem;
       max-width: 580px;
     }
-
     .section-box {
       background: var(--card);
       border: 1px solid var(--border);
@@ -306,59 +248,47 @@
       padding: 28px;
       box-shadow: var(--shadow);
     }
-
     .faq-item {
       padding: 18px 0;
       border-bottom: 1px solid var(--border);
     }
-
     .faq-item:last-child {
       border-bottom: none;
       padding-bottom: 0;
     }
-
     .faq-q {
       margin: 0 0 8px;
       font-size: 1.05rem;
     }
-
     .faq-a {
       margin: 0;
       color: var(--muted);
     }
-
     .site-footer {
       background: #0f172a;
       color: #fff;
       padding-top: 56px;
     }
-
     .footer-grid {
       display: grid;
       grid-template-columns: 1.3fr 0.8fr 1fr;
       gap: 28px;
       padding-bottom: 36px;
     }
-
     .footer-col h5 {
       margin-top: 0;
       margin-bottom: 14px;
       font-size: 1rem;
     }
-
-    .footer-links,
-    .contact {
+    .footer-links, .contact {
       list-style: none;
       padding: 0;
       margin: 0;
     }
-
-    .footer-links li,
-    .contact li {
+    .footer-links li, .contact li {
       margin-bottom: 10px;
       color: rgba(255,255,255,0.84);
     }
-
     .copy {
       border-top: 1px solid rgba(255,255,255,0.12);
       text-align: center;
@@ -366,21 +296,12 @@
       font-size: 0.92rem;
       color: rgba(255,255,255,0.72);
     }
-
     @media (max-width: 900px) {
-      .hero-inner,
-      .coach-card,
-      .footer-grid {
+      .hero-inner, .coach-card, .footer-grid {
         grid-template-columns: 1fr;
       }
-
-      .nav {
-        display: none;
-      }
-
-      .header-inner {
-        justify-content: center;
-      }
+      .nav { display: none; }
+      .header-inner { justify-content: center; }
     }
   </style>
 </head>
@@ -414,7 +335,7 @@
         <h2 class="hero-title">Yusuf Harby</h2>
         <h3 class="hero-role">Software Engineer | Flutter Developer | Programming Instructor</h3>
         <p class="hero-sub">
-          Programming Instructor and Computer Science undergraduate with a strong focus on Flutter development,
+          Programming Instructor with a strong focus on Flutter development,
           problem solving, and practical programming education. Combines technical depth with mentoring,
           leadership, and experience supporting learners across multiple age groups.
         </p>
@@ -453,7 +374,7 @@
         <div class="coach-body">
           <h3 class="coach-name">Yusuf Harby</h3>
           <p class="coach-role">Software Engineer | Flutter Developer | Programming Instructor</p>
-          <p class="muted">B.Sc. in Computer Science & AI, Benha University</p>
+          <p class="muted">Programming, mentoring, and applied software project experience</p>
 
           <h4 class="coach-subtitle">Snapshot</h4>
           <ul class="bullets">
