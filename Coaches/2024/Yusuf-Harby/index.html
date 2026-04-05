@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Academy — Coach Profile (Yusuf Harby)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-primary: #002366;
+      --brand-gradient2: #1e3a8a;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 10px 30px rgba(2, 35, 102, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .org {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.1;
+    }
+
+    .org span { color: var(--brand-primary); }
+
+    .org-sub {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: var(--brand-primary);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-outline {
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+      background: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #eff6ff;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));
+      color: #fff;
+      padding: 72px 0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.1;
+    }
+
+    .hero-role {
+      margin: 10px 0 14px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-sub {
+      max-width: 720px;
+      margin: 0 0 22px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .badge {
+      min-width: 170px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .badge strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    .badge span {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .coach-photo-hero {
+      width: min(100%, 360px);
+      aspect-ratio: 1 / 1;
+      border-radius: 28px;
+      object-fit: cover;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .coach-card {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .coach-photo {
+      width: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      background: #e2e8f0;
+    }
+
+    .coach-name {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    .coach-role {
+      margin: 8px 0 6px;
+      font-weight: 600;
+      color: var(--brand-primary);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .coach-subtitle,
+    .section-heading {
+      margin: 28px 0 14px;
+      font-size: 1.3rem;
+    }
+
+    .bullets {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .bullets li {
+      margin-bottom: 10px;
+    }
+
+    .coach-tags {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tag {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: var(--brand-primary);
+      border: 1px solid #dbeafe;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .coach-cta {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 580px;
+    }
+
+    .section-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .faq-a {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      background: #0f172a;
+      color: #fff;
+      padding-top: 56px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.8fr 1fr;
+      gap: 28px;
+      padding-bottom: 36px;
+    }
+
+    .footer-col h5 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    .footer-links,
+    .contact {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li,
+    .contact li {
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .copy {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+      padding: 18px 16px;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.72);
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .coach-card,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .header-inner {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <div class="brand-text">
+          <h1 class="org">Coach <span>Academy</span></h1>
+          <p class="org-sub">Coach Profile</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-outline"
+           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Yusuf."
+           target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">Coach Academy</div>
+        <h2 class="hero-title">Yusuf Harby</h2>
+        <h3 class="hero-role">Software Engineer | Flutter Developer | Programming Instructor</h3>
+        <p class="hero-sub">
+          Programming Instructor and Computer Science undergraduate with a strong focus on Flutter development,
+          problem solving, and practical programming education. Combines technical depth with mentoring,
+          leadership, and experience supporting learners across multiple age groups.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary"
+             href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Yusuf."
+             target="_blank" rel="noopener">Contact on WhatsApp</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">
+            <strong>1500+</strong>
+            <span>Problems Solved</span>
+          </div>
+          <div class="badge">
+            <strong>ECPC 2024</strong>
+            <span>Qualified Competitor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img class="coach-photo-hero" src="assets/yusuf.jpg" alt="Portrait of Yusuf Harby" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="coach-card">
+        <div class="coach-media">
+          <img class="coach-photo" src="assets/yusuf.jpg" alt="Yusuf Harby photo" />
+        </div>
+
+        <div class="coach-body">
+          <h3 class="coach-name">Yusuf Harby</h3>
+          <p class="coach-role">Software Engineer | Flutter Developer | Programming Instructor</p>
+          <p class="muted">B.Sc. in Computer Science & AI, Benha University</p>
+
+          <h4 class="coach-subtitle">Snapshot</h4>
+          <ul class="bullets">
+            <li>Programming instructor with a strong focus on Flutter development and practical learning</li>
+            <li>Strong background in C++, Python, Java, software engineering, and data structures & algorithms</li>
+            <li>Leader of the ICPC Benha Community with mentoring and training experience</li>
+            <li>Experienced in teaching programming, computational thinking, Scratch, MIT App Inventor, and beginner-friendly development tracks</li>
+            <li>Combines technical instruction, competitive programming, and community leadership</li>
+          </ul>
+
+          <h4 class="coach-subtitle">Core Skills</h4>
+          <ul class="coach-tags">
+            <li class="tag">Flutter</li>
+            <li class="tag">Dart</li>
+            <li class="tag">Firebase</li>
+            <li class="tag">API Integration</li>
+            <li class="tag">C++</li>
+            <li class="tag">Python</li>
+            <li class="tag">Java</li>
+            <li class="tag">SQL</li>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Data Structures</li>
+            <li class="tag">Algorithms</li>
+            <li class="tag">OOP</li>
+            <li class="tag">SOLID Principles</li>
+            <li class="tag">Problem Solving</li>
+            <li class="tag">Git</li>
+            <li class="tag">GitHub</li>
+            <li class="tag">Mentoring</li>
+            <li class="tag">Communication</li>
+          </ul>
+
+          <div class="coach-cta">
+            <div class="note">
+              This public profile intentionally hides personal identifiers such as phone number,
+              email address, and detailed personal contact information. All coaching requests are handled through Coach Academy only.
+            </div>
+
+            <a class="btn btn-outline"
+               href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Yusuf."
+               target="_blank" rel="noopener">Request via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <div class="section-box">
+        <h3 class="section-heading">Experience & Highlights</h3>
+        <ul class="bullets">
+          <li>Works as Technical Operator at Coach Academy, supporting programming course operations</li>
+          <li>Programming Instructor with experience teaching Python, Scratch, MIT App Inventor, Pictoblox, Flutter, and LEGO Spike</li>
+          <li>Leader of the ICPC Benha Community and active CP Coach for student training</li>
+          <li>Rated Specialist on Codeforces with 1500+ solved algorithmic problems</li>
+          <li>Qualified to ECPC 2024 and secured 31st place in the ECPC 2024 qualifications</li>
+          <li>Awarded Best Team in the Flutter Track BootCamp at GDG On Campus Bootcamp – Benha University</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-box">
+        <h3 class="section-heading">Selected Projects</h3>
+        <ul class="bullets">
+          <li><strong>Movie App</strong> — team-built movie browsing app with search, favorites, API integration, Hive local storage, loading placeholders, and Jira-based workflow</li>
+          <li><strong>BMI Calculator</strong> — Flutter app for BMI calculation with reusable widgets, clean UI, and organized architecture</li>
+          <li><strong>Contact App</strong> — mobile app for adding, viewing, and editing contacts with splash screen and clean list/grid views</li>
+          <li><strong>Space App</strong> — responsive Flutter application presenting solar system information with animations, reusable widgets, and structured models</li>
+          <li><strong>Pizza Zone</strong> — Java and MySQL desktop application for restaurant pizza orders, admin login, pricing updates, and invoice review</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-box">
+        <h3 class="section-heading">Frequently Asked Questions</h3>
+
+        <div class="faq-item">
+          <h4 class="faq-q">How can I request Yusuf for coaching or training?</h4>
+          <p class="faq-a">
+            Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-q">What are Yusuf’s main teaching and technical strengths?</h4>
+          <p class="faq-a">
+            Flutter development, programming fundamentals, problem solving, competitive programming, Python instruction, and practical learner support.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-q">Does Yusuf have mentoring and community leadership experience?</h4>
+          <p class="faq-a">
+            Yes. He leads the ICPC Benha Community, coaches students in problem solving, and has taught learners in multiple educational environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
+        <p class="muted" style="color: rgba(255,255,255,0.8);">
+          Empowering talent through hands-on, industry-aligned tech coaching.
+        </p>
+        <a class="btn btn-outline"
+           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Yusuf."
+           target="_blank" rel="noopener"
+           style="border-color: rgba(255,255,255,0.4); color: #fff; background: transparent;">
+          Contact on WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Info</h5>
+        <ul class="contact">
+          <li><strong>Address:</strong> Egypt</li>
+          <li><strong>Email:</strong> <a href="mailto:info@coach-academy.net">info@coach-academy.net</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/201102919193" target="_blank" rel="noopener">+20 110 291 9193</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy">© 2025 Coach Academy — All rights reserved.</div>
+  </footer>
+</body>
+</html>

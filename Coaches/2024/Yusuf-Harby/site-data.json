@@ -1,0 +1,98 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Programming Instructor and Computer Science undergraduate with a strong focus on Flutter development, problem solving, and practical programming education. Combines technical depth with mentoring, leadership, and experience supporting learners across multiple age groups.",
+    "badges": [
+      { "label": "Problems Solved", "value": "1500+" },
+      { "label": "Competitive Programming", "value": "ECPC 2024 Qualified" }
+    ]
+  },
+  "coach": {
+    "name": "Yusuf Harby",
+    "role": "Software Engineer | Flutter Developer | Programming Instructor",
+    "university": "B.Sc. in Computer Science & AI, Benha University",
+    "photo": "assets/yusuf.jpg",
+    "snapshot": [
+      "Programming instructor with a strong focus on Flutter development and practical learning",
+      "Strong background in C++, Python, Java, software engineering, and data structures & algorithms",
+      "Leader of the ICPC Benha Community with mentoring and training experience",
+      "Experienced in teaching programming, computational thinking, Scratch, MIT App Inventor, and beginner-friendly development tracks",
+      "Combines technical instruction, competitive programming, and community leadership"
+    ],
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "API Integration",
+      "C++",
+      "Python",
+      "Java",
+      "SQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "SOLID Principles",
+      "Problem Solving",
+      "Git",
+      "GitHub",
+      "Mentoring",
+      "Communication"
+    ],
+    "achievements": [
+      "Works as Technical Operator at Coach Academy, supporting programming course operations",
+      "Programming Instructor with experience teaching Python, Scratch, MIT App Inventor, Pictoblox, Flutter, and LEGO Spike",
+      "Leader of the ICPC Benha Community and active CP Coach for student training",
+      "Rated Specialist on Codeforces with 1500+ solved algorithmic problems",
+      "Qualified to ECPC 2024 and secured 31st place in the ECPC 2024 qualifications",
+      "Awarded Best Team in the Flutter Track BootCamp at GDG On Campus Bootcamp – Benha University"
+    ],
+    "projects": [
+      "Movie App — team-built movie browsing app with search, favorites, API integration, Hive local storage, loading placeholders, and Jira-based workflow",
+      "BMI Calculator — Flutter app for BMI calculation with reusable widgets, clean UI, and organized architecture",
+      "Contact App — mobile app for adding, viewing, and editing contacts with splash screen and clean list/grid views",
+      "Space App — responsive Flutter application presenting solar system information with animations, reusable widgets, and structured models",
+      "Pizza Zone — Java and MySQL desktop application for restaurant pizza orders, admin login, pricing updates, and invoice review"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How can I request Yusuf for coaching or training?",
+        "a": "Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals."
+      },
+      {
+        "q": "What are Yusuf’s main teaching and technical strengths?",
+        "a": "Flutter development, programming fundamentals, problem solving, competitive programming, Python instruction, and practical learner support."
+      },
+      {
+        "q": "Does Yusuf have mentoring and community leadership experience?",
+        "a": "Yes. He leads the ICPC Benha Community, coaches students in problem solving, and has taught learners in multiple educational environments."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
