@@ -1,0 +1,100 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Software Engineer and programming instructor with strong background in problem solving, algorithms, OOP, kids programming platforms, Flutter, and frontend learning tools. Experienced in teaching children and mentoring learners across practical technical tracks.",
+    "badges": [
+      { "label": "Problems Solved", "value": "1200+" },
+      { "label": "Kids Taught", "value": "1500+" }
+    ]
+  },
+  "coach": {
+    "name": "Aassem Alaa Eldeen",
+    "role": "Software Engineer | Programming Instructor | Problem Solving Mentor",
+    "university": "Faculty of Engineering, Al-Azhar University — Systems and Computers Department",
+    "photo": "assets/aassem.jpg",
+    "snapshot": [
+      "Software Engineer and instructor with experience across programming, problem solving, and technical training",
+      "Solved 1200+ problems on Codeforces and participated in ECPC twice",
+      "Strong knowledge in algorithms, data structures, OOP, and logical thinking",
+      "Teaches kids using platforms such as Scratch, Scratch Jr, App Inventor, PictoBlox, FlutterFlow, web basics, and Godot",
+      "Combines technical instruction with multimedia and presentation skills"
+    ],
+    "skills": [
+      "C++",
+      "Python",
+      "Java",
+      "Dart",
+      "Flutter",
+      "Problem Solving",
+      "Algorithms",
+      "Data Structures",
+      "OOP",
+      "Logic Design",
+      "Software Engineering",
+      "Agile",
+      "Scratch",
+      "Scratch Jr",
+      "App Inventor",
+      "PictoBlox",
+      "FlutterFlow",
+      "Godot",
+      "Figma",
+      "Adobe Photoshop",
+      "Adobe Premiere",
+      "Presentation Skills"
+    ],
+    "achievements": [
+      "More than 1200 solved problems on Codeforces",
+      "Participated in ECPC competition twice",
+      "Head of Problem Solving Track in IEEE Al-Azhar in 2022",
+      "Head of Media in AZSENCS student activity in 2024",
+      "3 years of experience teaching 1000+ kids at 3C School Academy",
+      "2 years of experience teaching 500+ kids at Megaminds Academy"
+    ],
+    "projects": [
+      "Problem Solving Training — algorithmic thinking, contest preparation, and structured practice guidance",
+      "Kids Programming Instruction — teaching programming foundations through Scratch, App Inventor, PictoBlox, and beginner-friendly platforms",
+      "Flutter Development Practice — mobile development learning and implementation using Dart and Flutter",
+      "Frontend Learning Support — web basics and React-focused learning pathway through practical projects",
+      "Multimedia & Print Design Work — banners, flyers, IDs, certificates, and related visual production tasks"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How can I request Aassem for coaching or training?",
+        "a": "Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals."
+      },
+      {
+        "q": "What are Aassem’s main teaching and technical strengths?",
+        "a": "Problem solving, algorithms, OOP, kids programming tools, Flutter, programming fundamentals, and learner-friendly technical instruction."
+      },
+      {
+        "q": "Does Aassem have teaching experience?",
+        "a": "Yes. He has several years of experience teaching children in academies and mentoring learners in programming and problem solving."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}
