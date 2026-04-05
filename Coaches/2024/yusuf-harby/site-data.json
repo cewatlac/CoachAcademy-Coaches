@@ -1,0 +1,98 @@
+{
+  "brand": {
+    "primary": "#002366",
+    "gradient2": "#1e3a8a",
+    "font": "Poppins"
+  },
+  "contacts": {
+    "whatsapp": "201102919193"
+  },
+  "hero": {
+    "eyebrow": "Coach Academy",
+    "subline": "Software Engineer with practical experience in frontend and full stack web development, with strong focus on React, Next.js, Angular, JavaScript, TypeScript, and building modern responsive web applications. Also brings prior teaching experience in training children.",
+    "badges": [
+      { "label": "Specialization", "value": "Frontend + Full Stack" },
+      { "label": "Teaching Background", "value": "Yes" }
+    ]
+  },
+  "coach": {
+    "name": "Ruba Ismail Sliem",
+    "role": "Software Engineer | Frontend & Full Stack Developer | Mentor",
+    "university": "Bachelor of Computer Science, Menoufia University",
+    "photo": "assets/ruba.jpg",
+    "snapshot": [
+      "Software Engineer with experience in React, Next.js, Angular, and Node.js",
+      "Built responsive and modern web applications using JavaScript and TypeScript",
+      "Worked on full stack projects with frontend, backend, APIs, authentication, and databases",
+      "Background in teaching and training, including working with children in structured learning environments",
+      "Interested in helping learners build strong programming and frontend development foundations"
+    ],
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Angular",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "REST APIs",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Redux Toolkit",
+      "Git",
+      "GitHub",
+      "OOP",
+      "Problem Solving",
+      "UI/UX Fundamentals"
+    ],
+    "achievements": [
+      "Worked on real-world frontend and full stack web development projects",
+      "Completed intensive training in modern web development technologies",
+      "Built applications involving authentication, dashboards, data flow, search, cart systems, and payments",
+      "Has prior educational experience training children in structured programs",
+      "Combines technical implementation with learner-friendly explanation and mentoring mindset"
+    ],
+    "projects": [
+      "Shipping Platform – Full stack website for managing orders, shipments, roles, and delivery cost calculation",
+      "Ecommerce Website – Full stack application with categories, search, forms, authentication, favorites, cart, and payment flow",
+      "Trending Movie App – Application for browsing and searching movies, TV shows, and actors with authentication features",
+      "Restaurant Website – React-based frontend project with dynamic meal browsing, cart, favorites, login, and order confirmation",
+      "Cashier Website – Product listing and kitchen-order workflow with totals, notes, and order processing",
+      "Landing Pages & UI Projects – Modern responsive interfaces using React, JavaScript, CSS, and UI libraries"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How can I request Ruba for coaching or training?",
+        "a": "Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals."
+      },
+      {
+        "q": "What are Ruba’s main teaching and technical strengths?",
+        "a": "Frontend Development, JavaScript, React, Next.js, Angular, programming foundations, and practical project-based learning."
+      },
+      {
+        "q": "Does Ruba have teaching experience?",
+        "a": "Yes. She has previous training experience, including working with children in structured educational programs, alongside her software development background."
+      }
+    ]
+  },
+  "footer": {
+    "blurb": "Empowering talent through hands-on, industry-aligned tech coaching.",
+    "ctaText": "Contact on WhatsApp",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "address": "Cairo, Egypt",
+    "email_public": "info@coach-academy.net",
+    "copyright": "© 2025 Coach Academy — All rights reserved."
+  }
+}

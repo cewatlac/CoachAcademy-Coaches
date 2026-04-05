@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session — Coach Academy</title>
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body data-page="session">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="../index.html" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit">
+          <img id="brandLogo" src="../assets/logo.png" alt="Coach Academy Logo" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name" id="brandName">Coach Academy</div>
+            <div class="brand-tagline" id="brandTagline">Mohamed Abdel-wahab</div>
+          </div>
+        </a>
+      </div>
+      <div class="header-actions">
+        <a class="btn ghost" href="../instructors/index.html">Instructors</a>
+        <button class="icon-btn" id="themeToggle" type="button">Toggle theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 26px 0 40px">
+    <div class="hero" style="padding:22px 22px 10px">
+      <div class="hero-inner" style="gap:16px">
+        <div class="hero-copy">
+          <div class="badge">Session</div>
+          <h1 id="pageTitle">Session</h1>
+          <div class="breadcrumbs" id="breadcrumbs"></div>
+          <div class="meta" id="sessionMeta" style="margin-top:10px"></div>
+        </div>
+      </div>
+    </div>
+
+    <section style="margin-top:18px">
+      <div class="card">
+        <h3 id="sessionTitle" style="margin-top:0">Topics</h3>
+        <div class="meta">Click any topic to open its page. Extras appear under their parent topic.</div>
+      </div>
+      <div id="topicsList" style="margin-top:14px"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="meta">© Coach Academy — Topics Portal</div>
+      <div class="meta">Static site • GitHub Pages ready</div>
+    </div>
+  </footer>
+
+  <script src="../shared/app.js"></script>
+</body>
+</html>

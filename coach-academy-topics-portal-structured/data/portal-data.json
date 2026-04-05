@@ -1,0 +1,3453 @@
+{
+  "brand": {
+    "name": "Coach Academy",
+    "tagline": "Mohamed Abdel-wahab",
+    "logo": "assets/logo.png"
+  },
+  "theme": {
+    "primary": "#002366",
+    "primary2": "#1e3a8a",
+    "accent": "#00B3A4",
+    "bg": "#f6f8fc",
+    "darkBg": "#0b1220",
+    "darkCard": "#101a2e"
+  },
+  "nav": [
+    {
+      "title": "Home",
+      "href": "index.html"
+    },
+    {
+      "title": "Tracks",
+      "href": "index.html#tracks"
+    },
+    {
+      "title": "Instructors",
+      "href": "instructors/index.html"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "assem-amr",
+      "name": "Assem Amr Abdelfattah",
+      "role": "Instructor",
+      "photo": "assets/instructors/assem.jpg",
+      "page": "instructors/assem-amr.html",
+      "highlights": [
+        "Coach Academy Instructor",
+        "Recorded sessions contributor"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fundamentals",
+      "title": "Fundamentals (C++ & Problem Solving Basics)",
+      "subtitle": "Sessions 1–8 • Core Programming Foundations",
+      "description": "Intro programming, conditions, loops, arrays/strings, complexity, functions, recursion, STL basics, and pointers.",
+      "sessions": [
+        {
+          "id": "s01-introduction-to-programming-conditions",
+          "number": 1,
+          "title": "Introduction to Programming & Conditions",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-programming",
+              "title": "What is Programming?",
+              "minutes": 10,
+              "notes": null,
+              "script": "1 - What is Programming? .docx",
+              "videos": []
+            },
+            {
+              "id": "programming-languages-overview-compiled-vs-interpreted",
+              "title": "Programming Languages Overview (Compiled vs Interpreted)",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Programming Languages Overview (Compiled vs Interpreted).docx",
+              "videos": []
+            },
+            {
+              "id": "setting-up-the-programming-environment",
+              "title": "Setting up the Programming Environment",
+              "minutes": 10,
+              "notes": "Add multiple videos: install VS Code, Visual Studio, Code::Blocks, CLion on Windows/Mac.",
+              "script": "3 - Setting up the Programming Environment.docx",
+              "videos": [
+                {
+                  "title": "Video 1",
+                  "url": "https://youtu.be/3tIqpEmWMLI?si=5rBtNy4_1WFty0ZH"
+                }
+              ]
+            },
+            {
+              "id": "extra-1-install-vs-code-windows-and-macos",
+              "title": "Extra 1 - Install VS Code (Windows and MacOS)",
+              "minutes": null,
+              "notes": null,
+              "script": "Extra 1 - Install VS Code (Windows and MacOS).docx",
+              "videos": [],
+              "parentId": "setting-up-the-programming-environment"
+            },
+            {
+              "id": "extra-2-install-visual-studio-windows-only",
+              "title": "Extra 2 - Install Visual Studio (Windows only)",
+              "minutes": null,
+              "notes": null,
+              "script": "Extra 2- Install Visual Studio (windows only).docx",
+              "videos": [],
+              "parentId": "setting-up-the-programming-environment"
+            },
+            {
+              "id": "extra-3-install-codeblocks-on-windows-and-macos",
+              "title": "Extra 3 - Install Codeblocks on Windows and MacOS",
+              "minutes": null,
+              "notes": null,
+              "script": "Extra 3- Install Codeblocks on Windows and MacOS.docx",
+              "videos": [],
+              "parentId": "setting-up-the-programming-environment"
+            },
+            {
+              "id": "extra-4-install-clion-for-windows-and-mac",
+              "title": "Extra 4 - Install CLion for Windows and Mac",
+              "minutes": null,
+              "notes": null,
+              "script": "Extra 4- Install Clion for Windows and Mac.docx",
+              "videos": [],
+              "parentId": "setting-up-the-programming-environment"
+            },
+            {
+              "id": "writing-your-first-program",
+              "title": "Writing Your First Program",
+              "minutes": 5,
+              "notes": "Need to explain `using namespace std` more.",
+              "script": "4 - Writing Your First Program.docx",
+              "videos": []
+            },
+            {
+              "id": "data-types-int-float-char-string-bool",
+              "title": "Data Types (int, float, char, string, bool)",
+              "minutes": 15,
+              "notes": null,
+              "script": "5 - Data Types (int, float, char, string, bool).docx",
+              "videos": []
+            },
+            {
+              "id": "variables-constants",
+              "title": "Variables & Constants",
+              "minutes": 10,
+              "notes": null,
+              "script": "6 - Variables & Constants.docx",
+              "videos": []
+            },
+            {
+              "id": "expression-operators-operators-precedence",
+              "title": "Expression / Operators / Operators Precedence",
+              "minutes": null,
+              "notes": null,
+              "script": "7 - expresstion / operators / operators  precedence.docx",
+              "videos": []
+            },
+            {
+              "id": "input-output-operations",
+              "title": "Input/Output Operations",
+              "minutes": 10,
+              "notes": null,
+              "script": "8 - Input/Output Operations.docx",
+              "videos": []
+            },
+            {
+              "id": "binary-decimal-hexadecimal-systems",
+              "title": "Binary, Decimal & Hexadecimal Systems",
+              "minutes": 15,
+              "notes": null,
+              "script": "9 - Binary, Decimal & Hexadecimal Systems.docx",
+              "videos": []
+            },
+            {
+              "id": "type-casting-and-type-promotion",
+              "title": "Type Casting and Type Promotion",
+              "minutes": 10,
+              "notes": null,
+              "script": "10 - Type Casting and Type Promotion.docx",
+              "videos": []
+            },
+            {
+              "id": "conditional-statements-if-else-if-else",
+              "title": "Conditional Statements (if, else if, else)",
+              "minutes": 10,
+              "notes": null,
+              "script": "11 - if, else if, else.docx",
+              "videos": []
+            },
+            {
+              "id": "nested-if-statements",
+              "title": "Nested if statements",
+              "minutes": 10,
+              "notes": null,
+              "script": "12 - Nested if statements.docx",
+              "videos": [],
+              "parentId": "conditional-statements-if-else-if-else"
+            },
+            {
+              "id": "logical-operators-and-or-not",
+              "title": "Logical Operators (AND, OR, NOT)",
+              "minutes": 10,
+              "notes": null,
+              "script": "13 - Logical Operators (AND, OR, NOT).docx",
+              "videos": [],
+              "parentId": "conditional-statements-if-else-if-else"
+            },
+            {
+              "id": "switch-case",
+              "title": "Switch Case",
+              "minutes": 10,
+              "notes": null,
+              "script": "14 - Switch Case.docx",
+              "videos": [],
+              "parentId": "conditional-statements-if-else-if-else"
+            },
+            {
+              "id": "if-vs-switch",
+              "title": "If vs Switch",
+              "minutes": null,
+              "notes": null,
+              "script": "15.docx",
+              "videos": [],
+              "parentId": "conditional-statements-if-else-if-else"
+            },
+            {
+              "id": "common-mistakes-in-conditions",
+              "title": "Common Mistakes in Conditions",
+              "minutes": 10,
+              "notes": null,
+              "script": "16 - Common Mistakes in Conditions.docx",
+              "videos": [],
+              "parentId": "conditional-statements-if-else-if-else"
+            }
+          ]
+        },
+        {
+          "id": "s02-loops",
+          "number": 2,
+          "title": "Loops",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "introduction-to-loops",
+              "title": "Introduction to Loops",
+              "minutes": 10,
+              "notes": "Include: dry run/tracing; time complexity awareness; off-by-one boundaries.",
+              "script": "1 - Introduction to Loops.docx",
+              "videos": []
+            },
+            {
+              "id": "for-loop",
+              "title": "For Loop",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - For Loop.docx",
+              "videos": []
+            },
+            {
+              "id": "while-loop",
+              "title": "While Loop",
+              "minutes": 10,
+              "notes": null,
+              "script": "3 - While Loop.docx",
+              "videos": []
+            },
+            {
+              "id": "do-while-loop",
+              "title": "Do-While Loop",
+              "minutes": 10,
+              "notes": null,
+              "script": "4 - Do-While Loop.docx",
+              "videos": []
+            },
+            {
+              "id": "loop-control-statements-break-continue",
+              "title": "Loop Control Statements (break, continue)",
+              "minutes": 15,
+              "notes": null,
+              "script": "5 - Loop Control Statements.docx",
+              "videos": []
+            },
+            {
+              "id": "jump-statement-goto",
+              "title": "Jump statement (goto)",
+              "minutes": null,
+              "notes": "Delete try/catch/throw from this session.",
+              "script": "6 - jump statement.docx",
+              "videos": []
+            },
+            {
+              "id": "nested-loops",
+              "title": "Nested Loops",
+              "minutes": 15,
+              "notes": null,
+              "script": "7 - Nested Loops.docx",
+              "videos": []
+            },
+            {
+              "id": "infinite-loops-and-loop-design-patterns",
+              "title": "Infinite Loops and Loop Design Patterns",
+              "minutes": 10,
+              "notes": null,
+              "script": "8 - Infinite Loops and Loop Design Patterns.docx",
+              "videos": []
+            },
+            {
+              "id": "real-life-examples-using-loops",
+              "title": "Real-life Examples using Loops",
+              "minutes": 20,
+              "notes": null,
+              "script": "9 - Real-life Examples using Loops.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s03-arrays-strings",
+          "number": 3,
+          "title": "Arrays & Strings",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-an-array",
+              "title": "What is an Array?",
+              "minutes": 10,
+              "notes": "Add: boundaries/buffer overflow; vector vs array preview; string iteration; string<->char[] conversion; suggested practice (palindrome, frequency, search).",
+              "script": "1 - What is an Array?.docx",
+              "videos": []
+            },
+            {
+              "id": "array-declaration-initialization",
+              "title": "Array Declaration & Initialization",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Array Declaration & Initialization.docx",
+              "videos": []
+            },
+            {
+              "id": "accessing-array-elements",
+              "title": "Accessing Array Elements",
+              "minutes": 10,
+              "notes": null,
+              "script": "3 - Accessing Array Elements.docx",
+              "videos": []
+            },
+            {
+              "id": "iterating-through-arrays",
+              "title": "Iterating Through Arrays",
+              "minutes": 10,
+              "notes": null,
+              "script": "4 - Iterating Through Arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "multi-dimensional-arrays",
+              "title": "Multi-Dimensional Arrays",
+              "minutes": 15,
+              "notes": null,
+              "script": "5 - Multi-Dimensional Arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "strings-as-character-arrays",
+              "title": "Strings as Character Arrays",
+              "minutes": 10,
+              "notes": null,
+              "script": "6 - Strings as Character Arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "common-string-functions-length-concat-compare-substring",
+              "title": "Common String Functions (length, concat, compare, substring)",
+              "minutes": 15,
+              "notes": null,
+              "script": "7 - Common String Functions (length, concat, compare, substring).docx",
+              "videos": []
+            },
+            {
+              "id": "input-output-with-strings",
+              "title": "Input/Output with Strings",
+              "minutes": 10,
+              "notes": null,
+              "script": "8 - Input/Output with Strings.docx",
+              "videos": []
+            },
+            {
+              "id": "null-terminated-strings",
+              "title": "Null-Terminated Strings",
+              "minutes": 10,
+              "notes": "Duplicate with Strings as Character Arrays (consider removing).",
+              "script": "9 - Null-Terminated Strings.docx",
+              "videos": []
+            },
+            {
+              "id": "string-manipulation-techniques",
+              "title": "String Manipulation Techniques",
+              "minutes": 15,
+              "notes": null,
+              "script": "10 - String Manipulation Techniques.docx",
+              "videos": []
+            },
+            {
+              "id": "difference-between-char-and-string",
+              "title": "Difference Between char[] and string",
+              "minutes": 10,
+              "notes": null,
+              "script": "11 - Difference Between char[] and string .docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s04-complexity-analysis",
+          "number": 4,
+          "title": "Complexity Analysis",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "why-analyze-algorithms",
+              "title": "Why Analyze Algorithms?",
+              "minutes": 10,
+              "notes": "Include: constraints→complexity mapping; nested loops tracing; log growth visualization; real TLE example; O/Θ/Ω; comparing them; using Σ in derivations.",
+              "script": "1 - Why Analyze Algorithms?.docx",
+              "videos": []
+            },
+            {
+              "id": "time-complexity-o-1-o-n-o-n-etc",
+              "title": "Time Complexity: O(1), O(n), O(n²), etc.",
+              "minutes": 15,
+              "notes": null,
+              "script": "2 - Time Complexity: O(1), O(n), O(n²), etc..docx",
+              "videos": []
+            },
+            {
+              "id": "space-complexity",
+              "title": "Space Complexity",
+              "minutes": 10,
+              "notes": null,
+              "script": "3 - Space Complexity.docx",
+              "videos": []
+            },
+            {
+              "id": "big-o-notation",
+              "title": "Big O Notation",
+              "minutes": 10,
+              "notes": null,
+              "script": "4 - Big O Notation.docx",
+              "videos": []
+            },
+            {
+              "id": "best-average-and-worst-case-analysis",
+              "title": "Best, Average, and Worst Case Analysis",
+              "minutes": 10,
+              "notes": null,
+              "script": "5 - Best, Average, and Worst Case Analysis.docx",
+              "videos": []
+            },
+            {
+              "id": "comparing-algorithms-based-on-complexity",
+              "title": "Comparing Algorithms Based on Complexity",
+              "minutes": 10,
+              "notes": null,
+              "script": "6 - Comparing Algorithms Based on Complexity.docx",
+              "videos": []
+            },
+            {
+              "id": "trade-offs-between-time-and-space",
+              "title": "Trade-offs between Time and Space",
+              "minutes": 10,
+              "notes": null,
+              "script": "7 - Trade-offs between Time and Space.docx",
+              "videos": []
+            },
+            {
+              "id": "simple-examples-with-loops-and-conditions",
+              "title": "Simple Examples with Loops and Conditions",
+              "minutes": 15,
+              "notes": null,
+              "script": "8 - Simple Examples with Loops and Conditions.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s05-functions-built-in-functions-basic-math",
+          "number": 5,
+          "title": "Functions & Built-in Functions & Basic Math",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-a-function",
+              "title": "What is a Function?",
+              "minutes": 10,
+              "notes": "Add: pass by value vs reference; recursive vs iterative (tease); inline (optional); common mistakes; const parameters; CP utility functions.",
+              "script": "1 - What is a Function?.docx",
+              "videos": []
+            },
+            {
+              "id": "function-declaration-and-definition",
+              "title": "Function Declaration and Definition",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Function Declaration and Definition.docx",
+              "videos": []
+            },
+            {
+              "id": "function-parameters-and-return-types",
+              "title": "Function Parameters and Return Types",
+              "minutes": 15,
+              "notes": null,
+              "script": "3 - Function Parameters and Return Types.docx",
+              "videos": []
+            },
+            {
+              "id": "void-function-vs-return-types-functions",
+              "title": "Void Function vs Return Types functions",
+              "minutes": null,
+              "notes": null,
+              "script": "4 - Void Function vs Return Types functions .docx",
+              "videos": []
+            },
+            {
+              "id": "function-overloading-if-supported",
+              "title": "Function Overloading (if supported)",
+              "minutes": 10,
+              "notes": null,
+              "script": "5 - Function Overloading (if supported).docx",
+              "videos": []
+            },
+            {
+              "id": "scope-of-variables-local-vs-global",
+              "title": "Scope of Variables (Local vs Global)",
+              "minutes": 10,
+              "notes": null,
+              "script": "6 - Scope of Variables (Local vs Global).docx",
+              "videos": []
+            },
+            {
+              "id": "calling-by-reference-vs-calling-by-value",
+              "title": "Calling by reference vs calling by value",
+              "minutes": null,
+              "notes": null,
+              "script": "7 - calling by reference vs calling  by value.docx",
+              "videos": []
+            },
+            {
+              "id": "built-in-math-functions-pow-sqrt-abs-etc",
+              "title": "Built-in Math Functions (pow, sqrt, abs, etc.)",
+              "minutes": 15,
+              "notes": null,
+              "script": "8 -Built-in Math Functions (pow, sqrt, abs, etc.).docx",
+              "videos": []
+            },
+            {
+              "id": "calling-and-using-functions",
+              "title": "Calling and Using Functions",
+              "minutes": 10,
+              "notes": null,
+              "script": "9 -Calling and Using Functions.docx",
+              "videos": []
+            },
+            {
+              "id": "function-design-and-reusability",
+              "title": "Function Design and Reusability",
+              "minutes": 10,
+              "notes": null,
+              "script": "10 -Function Design and Reusability.docx",
+              "videos": []
+            },
+            {
+              "id": "recap-replacing-repetitive-code-with-functions",
+              "title": "Recap: Replacing Repetitive Code with Functions",
+              "minutes": 10,
+              "notes": "Duplicate with Calling and Using Functions (consider removing).",
+              "script": "11 -Recap: Replacing Repetitive Code with Functions.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s06-basic-recursion",
+          "number": 6,
+          "title": "Basic Recursion",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-recursion",
+              "title": "What is Recursion?",
+              "minutes": 10,
+              "notes": "Add: recursion tree tracing; tail recursion (optional); multiple calls cost; debugging tips; base cases.",
+              "script": "1 - What is Recursion?.docx",
+              "videos": []
+            },
+            {
+              "id": "base-case-and-recursive-case",
+              "title": "Base Case and Recursive Case",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Base Case and Recursive Case.docx",
+              "videos": []
+            },
+            {
+              "id": "recursive-thinking",
+              "title": "Recursive Thinking",
+              "minutes": 10,
+              "notes": null,
+              "script": "3 - Recursive Thinking.docx",
+              "videos": []
+            },
+            {
+              "id": "simple-examples-factorial-fibonacci",
+              "title": "Simple Examples (Factorial, Fibonacci)",
+              "minutes": 20,
+              "notes": null,
+              "script": "4 - Simple Examples (Factorial, Fibonacci).docx",
+              "videos": []
+            },
+            {
+              "id": "another-example-printing-permutation-of-string-printing-subs",
+              "title": "Another example (printing permutation of string, printing subset of array)",
+              "minutes": null,
+              "notes": null,
+              "script": "5 - Another example (printing permutation of string, printing subset of array ).docx",
+              "videos": []
+            },
+            {
+              "id": "comparing-recursion-and-iteration",
+              "title": "Comparing Recursion and Iteration",
+              "minutes": 10,
+              "notes": null,
+              "script": "6 - Comparing Recursion and Iteration.docx",
+              "videos": []
+            },
+            {
+              "id": "stack-memory-in-recursion-stack-overflow",
+              "title": "Stack Memory in Recursion (stack overflow)",
+              "minutes": 15,
+              "notes": null,
+              "script": "7 - Stack Memory in Recursion (stack over flow).docx",
+              "videos": []
+            },
+            {
+              "id": "common-pitfalls-in-recursive-functions",
+              "title": "Common Pitfalls in Recursive Functions",
+              "minutes": 10,
+              "notes": null,
+              "script": "8 - Common Pitfalls in Recursive Functions.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s07-struct-iterators-stls-i-linear",
+          "number": 7,
+          "title": "Struct + Iterators + STLs I (Linear)",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "structs-definition-and-usage",
+              "title": "Structs: Definition and Usage",
+              "minutes": 15,
+              "notes": "Add: auto/typedef; custom sorting with lambda; emplace_back vs push_back; iterator invalidation; why vector over arrays.",
+              "script": "1 - Structs  : Definition and Usage.docx",
+              "videos": []
+            },
+            {
+              "id": "struct-vs-class-brief-intro-if-needed",
+              "title": "Struct vs Class (brief intro if needed)",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Structs  : Struct vs Class (brief intro if needed).docx",
+              "videos": []
+            },
+            {
+              "id": "iterators-what-is-an-iterator",
+              "title": "Iterators: What is an Iterator?",
+              "minutes": 15,
+              "notes": null,
+              "script": "3 - Iterators : What is an Iterator?.docx",
+              "videos": []
+            },
+            {
+              "id": "how-iterators-work-with-arrays-and-strings",
+              "title": "How Iterators Work with Arrays and Strings",
+              "minutes": 10,
+              "notes": null,
+              "script": "4 - Iterators : How Iterators Work with Arrays and Strings.docx",
+              "videos": []
+            },
+            {
+              "id": "stl-linear-containers-vector-list-deque",
+              "title": "STL - Linear Containers: vector, list, deque",
+              "minutes": 20,
+              "notes": null,
+              "script": "5 - STL (Standard Template Library) - Linear Containers : vector, list, deque.docx",
+              "videos": []
+            },
+            {
+              "id": "linear-containers-basic-operations-insert-erase-size",
+              "title": "Linear Containers: Basic Operations (insert, erase, size)",
+              "minutes": 20,
+              "notes": null,
+              "script": "6 - STL (Standard Template Library) - Linear Containers : Basic Operations (insert, erase, size).docx",
+              "videos": []
+            },
+            {
+              "id": "traversing-stl-containers-with-iterators",
+              "title": "Traversing STL Containers with Iterators",
+              "minutes": 15,
+              "notes": null,
+              "script": "7 - STL (Standard Template Library) - Linear Containers : Traversing STL Containers with Iterators.docx",
+              "videos": []
+            },
+            {
+              "id": "stl-vs-arrays",
+              "title": "STL vs Arrays",
+              "minutes": 10,
+              "notes": null,
+              "script": "8 - STL vs Arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "stl-adaptor-containers-stack",
+              "title": "STL adaptor containers: Stack",
+              "minutes": null,
+              "notes": null,
+              "script": "9 - STL || ( adaptor contanirs) : Stack .docx",
+              "videos": []
+            },
+            {
+              "id": "stl-adaptor-containers-queue",
+              "title": "STL adaptor containers: Queue",
+              "minutes": null,
+              "notes": null,
+              "script": "10 - STL || ( adaptor contanirs) : queue.docx",
+              "videos": []
+            },
+            {
+              "id": "stl-adaptor-containers-priority-queue",
+              "title": "STL adaptor containers: Priority Queue",
+              "minutes": null,
+              "notes": null,
+              "script": "11 - STL || ( adaptor contanirs) : pirority queue.docx",
+              "videos": []
+            },
+            {
+              "id": "when-to-use-which-stl-container",
+              "title": "When to Use Which STL Container",
+              "minutes": 10,
+              "notes": null,
+              "script": "12 - When to Use Which STL Container.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s08-dynamic-memory-management-pointers",
+          "number": 8,
+          "title": "Dynamic Memory Management (Pointers)",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "introduction-to-pointers",
+              "title": "Introduction to Pointers",
+              "minutes": 10,
+              "notes": "Add: double pointers; shallow vs deep copy; smart pointers preview; common bugs.",
+              "script": "1 - Introduction to Pointers.docx",
+              "videos": []
+            },
+            {
+              "id": "pointer-declaration-and-initialization",
+              "title": "Pointer Declaration and Initialization",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Pointer Declaration and Initialization.docx",
+              "videos": []
+            },
+            {
+              "id": "dereferencing-pointers",
+              "title": "Dereferencing Pointers",
+              "minutes": 10,
+              "notes": null,
+              "script": "3 - Dereferencing Pointers.docx",
+              "videos": []
+            },
+            {
+              "id": "pointer-arithmetic",
+              "title": "Pointer Arithmetic",
+              "minutes": 15,
+              "notes": null,
+              "script": "4 - Pointer Arithmetic.docx",
+              "videos": []
+            },
+            {
+              "id": "memory-allocation-new-delete-or-malloc-free",
+              "title": "Memory Allocation (new/delete or malloc/free)",
+              "minutes": 20,
+              "notes": null,
+              "script": "5 - Memory Allocation (new, delete or malloc, free).docx",
+              "videos": []
+            },
+            {
+              "id": "dynamically-allocated-arrays-and-multidimensional-arrays",
+              "title": "Dynamically allocated arrays and multidimensional arrays",
+              "minutes": null,
+              "notes": null,
+              "script": "6 - Dynamically allocated arrays and multidimensional arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "dangling-pointers-null-pointers",
+              "title": "Dangling Pointers, Null Pointers",
+              "minutes": 10,
+              "notes": null,
+              "script": "7 - Dangling Pointers, Null Pointers.docx",
+              "videos": []
+            },
+            {
+              "id": "pointers-and-arrays",
+              "title": "Pointers and Arrays",
+              "minutes": 15,
+              "notes": null,
+              "script": "8 - Pointers and Arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "pointers-to-functions",
+              "title": "Pointers to Functions",
+              "minutes": 15,
+              "notes": null,
+              "script": "9 - Pointers to Functions.docx",
+              "videos": []
+            },
+            {
+              "id": "pointers-and-structures",
+              "title": "Pointers and Structures",
+              "minutes": 15,
+              "notes": null,
+              "script": "10 - Pointers and Structures.docx",
+              "videos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intermediate",
+      "title": "Intermediate (Core CP Techniques)",
+      "subtitle": "Associative STL, Range Queries, Backtracking, Binary Search, Two Pointers, Bits, Sorting",
+      "description": "Key competitive programming building blocks after fundamentals.",
+      "sessions": [
+        {
+          "id": "s01-pairs-stl-associative-unordered",
+          "number": 1,
+          "title": "Pairs + STL (Associative & Unordered)",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "pair-declaration-and-access",
+              "title": "Pair: Declaration and Access",
+              "minutes": 20,
+              "notes": null,
+              "script": "1 - Pair : Declaration and Access.docx",
+              "videos": []
+            },
+            {
+              "id": "pair-nested-pairs",
+              "title": "Pair: Nested Pairs",
+              "minutes": null,
+              "notes": null,
+              "script": "2 - Pair : Nested Pairs.docx",
+              "videos": []
+            },
+            {
+              "id": "pair-use-in-sorting-and-maps",
+              "title": "Pair: Use in sorting and maps",
+              "minutes": null,
+              "notes": null,
+              "script": "3 - Pair : Use in sorting and maps.docx",
+              "videos": []
+            },
+            {
+              "id": "set-unique-sorted-elements",
+              "title": "Set: Unique sorted elements",
+              "minutes": 15,
+              "notes": null,
+              "script": "4 - Set : Unique sorted elements.docx",
+              "videos": []
+            },
+            {
+              "id": "set-operations-insert-find-erase-size",
+              "title": "Set: Operations (insert, find, erase, size)",
+              "minutes": null,
+              "notes": null,
+              "script": "5 - Set : Operations: insert, find, erase, size.docx",
+              "videos": []
+            },
+            {
+              "id": "map-key-value-pairs-sorted-by-key",
+              "title": "Map: Key-value pairs (sorted by key)",
+              "minutes": 20,
+              "notes": null,
+              "script": "6 - Map : Key-value pairs (sorted by key).docx",
+              "videos": []
+            },
+            {
+              "id": "map-access-via-map-key",
+              "title": "Map: Access via map[key]",
+              "minutes": null,
+              "notes": null,
+              "script": "7 - Map : Access via map[key] .docx",
+              "videos": []
+            },
+            {
+              "id": "map-iterating-through-a-map",
+              "title": "Map: Iterating through a map",
+              "minutes": null,
+              "notes": null,
+              "script": "8 - Map : Iterating through a map.docx",
+              "videos": []
+            },
+            {
+              "id": "unordered-set-hash-based-set",
+              "title": "Unordered Set: Hash-based set",
+              "minutes": 15,
+              "notes": null,
+              "script": "9 - Unordered Set : Hash-based set.docx",
+              "videos": []
+            },
+            {
+              "id": "unordered-set-average-time-complexity",
+              "title": "Unordered Set: Average time complexity",
+              "minutes": null,
+              "notes": null,
+              "script": "10 - Unordered Set : Average time complexity.docx",
+              "videos": []
+            },
+            {
+              "id": "unordered-set-when-to-use-unordered-over-set",
+              "title": "Unordered Set: When to use unordered over set",
+              "minutes": null,
+              "notes": null,
+              "script": "11 - Unordered Set : When to use unordered over set.docx",
+              "videos": []
+            },
+            {
+              "id": "unordered-map-key-value-unsorted",
+              "title": "Unordered Map: Key-value, unsorted",
+              "minutes": 15,
+              "notes": null,
+              "script": "12 - Unordered Map : Key-value, unsorted.docx",
+              "videos": []
+            },
+            {
+              "id": "unordered-map-collision-handling-basics",
+              "title": "Unordered Map: Collision handling basics",
+              "minutes": null,
+              "notes": null,
+              "script": "13 - Unordered Map : Collision handling basics (no need for implementation).docx",
+              "videos": []
+            },
+            {
+              "id": "multimap-multiset-duplicates-allowed",
+              "title": "Multimap & Multiset: Duplicates allowed",
+              "minutes": 15,
+              "notes": null,
+              "script": "14 - Multimap & Multiset & : Duplicates allowed.docx",
+              "videos": []
+            },
+            {
+              "id": "multimap-multiset-use-cases-and-differences",
+              "title": "Multimap & Multiset: Use cases and differences",
+              "minutes": null,
+              "notes": null,
+              "script": "15 - Multimap & Multiset & : Use cases and differences from set/map.docx",
+              "videos": []
+            },
+            {
+              "id": "unordered-multiset-unordered-multimap",
+              "title": "Unordered multiset & unordered multimap",
+              "minutes": null,
+              "notes": null,
+              "script": "16 - Unordered multiset & unordered multimap.docx",
+              "videos": []
+            },
+            {
+              "id": "policy-based-data-structures",
+              "title": "Policy-based data structures",
+              "minutes": null,
+              "notes": null,
+              "script": "17 - policy based data structures.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s02-static-range-queries",
+          "number": 2,
+          "title": "Static Range Queries",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-are-range-queries",
+              "title": "What are Range Queries?",
+              "minutes": 10,
+              "notes": null,
+              "script": "1 - What are Range Queries?.docx",
+              "videos": []
+            },
+            {
+              "id": "prefix-sum-technique-sum-in-o-1-using-prefix-array",
+              "title": "Prefix Sum Technique: Sum in O(1) using prefix array",
+              "minutes": 20,
+              "notes": null,
+              "script": "2 - Prefix Sum Technique : Sum in O(1) using prefix array.docx",
+              "videos": []
+            },
+            {
+              "id": "prefix-sum-use-in-1d-and-2d-arrays",
+              "title": "Prefix Sum: Use in 1D and 2D arrays",
+              "minutes": 15,
+              "notes": null,
+              "script": "3 - Prefix Sum Technique : Use in 1D and 2D arrays.docx",
+              "videos": []
+            },
+            {
+              "id": "prefix-minimum",
+              "title": "Prefix minimum",
+              "minutes": null,
+              "notes": null,
+              "script": "4 - prefix minimum.docx",
+              "videos": []
+            },
+            {
+              "id": "suffix",
+              "title": "Suffix",
+              "minutes": null,
+              "notes": null,
+              "script": "5 - Suffix .docx",
+              "videos": []
+            },
+            {
+              "id": "suffix-minimum",
+              "title": "Suffix minimum",
+              "minutes": null,
+              "notes": null,
+              "script": "6 - suffix minimum.docx",
+              "videos": []
+            },
+            {
+              "id": "difference-array-efficient-range-updates",
+              "title": "Difference Array: Efficient range updates",
+              "minutes": 15,
+              "notes": null,
+              "script": "7 - Difference Array : Efficient range updates.docx",
+              "videos": []
+            },
+            {
+              "id": "difference-array-o-1-range-min-max-queries",
+              "title": "Difference Array: O(1) range min/max queries",
+              "minutes": 20,
+              "notes": "Consider removing/rewriting: mentions RMQ/segment tree too advanced for this level.",
+              "script": "8 - Difference Array : O(1) range min/max queries.docx",
+              "videos": []
+            },
+            {
+              "id": "when-and-why-to-use-static-methods",
+              "title": "When and why to use static methods",
+              "minutes": 10,
+              "notes": null,
+              "script": "9 - When and why to use static methods.docx",
+              "videos": []
+            },
+            {
+              "id": "partial-sum",
+              "title": "partial_sum",
+              "minutes": null,
+              "notes": null,
+              "script": "10 - partial sum.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s03-recursion-backtracking",
+          "number": 3,
+          "title": "Recursion & Backtracking",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "recursion-basics-base-case-and-recursive-case",
+              "title": "Recursion Basics: Base case and recursive case",
+              "minutes": 20,
+              "notes": null,
+              "script": "1 - Recursion Basics : Base case and recursive case.docx",
+              "videos": []
+            },
+            {
+              "id": "recursion-basics-stack-memory-and-call-depth",
+              "title": "Recursion Basics: Stack memory and call depth",
+              "minutes": 10,
+              "notes": null,
+              "script": "2 - Recursion Basics: Stack memory and call depth.docx",
+              "videos": []
+            },
+            {
+              "id": "common-recursive-problems-factorial-fibonacci",
+              "title": "Common Recursive Problems (Factorial, Fibonacci)",
+              "minutes": 20,
+              "notes": null,
+              "script": "3 - Common Recursive Problems .docx",
+              "videos": []
+            },
+            {
+              "id": "backtracking-introduction-idea-of-trying-and-undoing",
+              "title": "Backtracking Introduction: Idea of trying and undoing",
+              "minutes": 10,
+              "notes": null,
+              "script": "4 - Backtracking Introduction: Idea of trying and undoing.docx",
+              "videos": []
+            },
+            {
+              "id": "backtracking-n-queens-problem-example",
+              "title": "Backtracking: N-Queens Problem (example)",
+              "minutes": 30,
+              "notes": null,
+              "script": "5 - Backtracking Introduction: N-Queens Problem (example).docx",
+              "videos": []
+            },
+            {
+              "id": "backtracking-subsets-permutations-generation",
+              "title": "Backtracking: Subsets/Permutations generation",
+              "minutes": 10,
+              "notes": null,
+              "script": "6 - Backtracking Introduction: Subsets/Permutations generation.docx",
+              "videos": []
+            },
+            {
+              "id": "backtracking-matrix-traverse-knapsack-complete-search",
+              "title": "Backtracking: Matrix traverse / Knapsack complete search",
+              "minutes": null,
+              "notes": null,
+              "script": "7 - Backtracking Introduction: Matrix travers / Knapsack complete search.docx",
+              "videos": []
+            },
+            {
+              "id": "differences-between-recursion-and-backtracking",
+              "title": "Differences between recursion and backtracking",
+              "minutes": 10,
+              "notes": null,
+              "script": "8 - Differences between recursion and backtracking.docx",
+              "videos": []
+            },
+            {
+              "id": "stack-overflow-issues-and-how-to-avoid-them",
+              "title": "Stack overflow issues and how to avoid them",
+              "minutes": 10,
+              "notes": null,
+              "script": "9 - Stack overflow issues and how to avoid them.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s04-binary-search",
+          "number": 4,
+          "title": "Binary Search",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "binary-search-algorithm",
+              "title": "Binary Search Algorithm",
+              "minutes": 20,
+              "notes": null,
+              "script": "1-Binary Search Algorithm.docx",
+              "videos": []
+            },
+            {
+              "id": "iterative-vs-recursive-implementation",
+              "title": "Iterative vs Recursive implementation",
+              "minutes": 15,
+              "notes": null,
+              "script": "2-Iterative vs Recursive implementation.docx",
+              "videos": []
+            },
+            {
+              "id": "search-on-answer-pattern",
+              "title": "Search on Answer Pattern",
+              "minutes": 20,
+              "notes": null,
+              "script": "3-Search on Answer Pattern.docx",
+              "videos": []
+            },
+            {
+              "id": "lower-bound-upper-bound",
+              "title": "Lower Bound / Upper Bound",
+              "minutes": 15,
+              "notes": "Example: 1 1 5 5 5 10",
+              "script": "4-Lower Bound / Upper Bound.docx",
+              "videos": []
+            },
+            {
+              "id": "applications-finding-first-true-binary-on-index",
+              "title": "Applications (finding first true, binary on index)",
+              "minutes": 15,
+              "notes": null,
+              "script": "5-Applications (e.g., finding first true, binary on index).docx",
+              "videos": []
+            },
+            {
+              "id": "edge-case-handling-and-infinite-loops",
+              "title": "Edge case handling and infinite loops",
+              "minutes": 10,
+              "notes": null,
+              "script": "6-Edge case handling and infinite loops.docx",
+              "videos": []
+            },
+            {
+              "id": "binary-search-on-continuous-functions",
+              "title": "Binary Search on continuous functions",
+              "minutes": 30,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s05-two-pointers-sliding-window-monotonic-stack",
+          "number": 5,
+          "title": "Two Pointers & Sliding Window & Monotonic Stack",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "two-pointers-left-right-pointer-approach",
+              "title": "Two Pointers: Left-right pointer approach",
+              "minutes": 20,
+              "notes": null,
+              "script": "1-Left-right pointer approach.docx",
+              "videos": []
+            },
+            {
+              "id": "two-pointers-sorted-array-pair-sum-example",
+              "title": "Two Pointers: Sorted array pair-sum example",
+              "minutes": null,
+              "notes": null,
+              "script": "2-Sorted array pair-sum example.docx",
+              "videos": []
+            },
+            {
+              "id": "sliding-window-fixed-and-variable-window",
+              "title": "Sliding Window: Fixed and variable window",
+              "minutes": null,
+              "notes": null,
+              "script": "3-Fixed and variable window.docx",
+              "videos": []
+            },
+            {
+              "id": "sliding-window-maximum-subarray-sum-kadane-s-as-sliding",
+              "title": "Sliding Window: Maximum subarray sum (Kadane’s as sliding)",
+              "minutes": 40,
+              "notes": null,
+              "script": "4-Maximum subarray sum (Kadane’s as sliding).docx",
+              "videos": []
+            },
+            {
+              "id": "monotonic-stack-increasing-decreasing-stack",
+              "title": "Monotonic Stack: Increasing/Decreasing stack",
+              "minutes": 15,
+              "notes": null,
+              "script": "5-Increasing/Decreasing stack.docx",
+              "videos": []
+            },
+            {
+              "id": "monotonic-stack-next-greater-element",
+              "title": "Monotonic Stack: Next Greater Element",
+              "minutes": 15,
+              "notes": null,
+              "script": "6-Next Greater Element.docx",
+              "videos": []
+            },
+            {
+              "id": "monotonic-stack-histogram-area-problem",
+              "title": "Monotonic Stack: Histogram area problem",
+              "minutes": 20,
+              "notes": null,
+              "script": "7-Histogram area problem.docx",
+              "videos": []
+            },
+            {
+              "id": "monotonic-queue",
+              "title": "Monotonic Queue",
+              "minutes": null,
+              "notes": null,
+              "script": "8-Monotonic queue.docx",
+              "videos": []
+            },
+            {
+              "id": "time-and-space-complexity-of-each",
+              "title": "Time and space complexity of each",
+              "minutes": 10,
+              "notes": null,
+              "script": "9-Time and space complexity of each.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s06-bit-manipulations-masks",
+          "number": 6,
+          "title": "Bit Manipulations & Masks",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "bitwise-operators",
+              "title": "Bitwise Operators (&, |, ^, ~, <<, >>)",
+              "minutes": 20,
+              "notes": null,
+              "script": "1-Bitwise Operators.docx",
+              "videos": []
+            },
+            {
+              "id": "bitmasks",
+              "title": "Bitmasks",
+              "minutes": null,
+              "notes": null,
+              "script": "2-Bitmasks .docx",
+              "videos": []
+            },
+            {
+              "id": "checking-even-odd-using-bits",
+              "title": "Checking Even/Odd using bits",
+              "minutes": 20,
+              "notes": null,
+              "script": "3-Checking Even/Odd using bits.docx",
+              "videos": []
+            },
+            {
+              "id": "setting-clearing-toggling-a-bit",
+              "title": "Setting, clearing, toggling a bit",
+              "minutes": null,
+              "notes": null,
+              "script": "4-Setting, clearing, toggling a bit.docx",
+              "videos": []
+            },
+            {
+              "id": "counting-number-of-1s-brian-kernighan-s-algorithm",
+              "title": "Counting number of 1s (Brian Kernighan’s Algorithm)",
+              "minutes": 15,
+              "notes": null,
+              "script": "5-Counting number of 1s (Brian Kernighan’s Algorithm).docx",
+              "videos": []
+            },
+            {
+              "id": "subsets-using-bit-masking",
+              "title": "Subsets using bit masking",
+              "minutes": 20,
+              "notes": null,
+              "script": "6-Subsets using bit masking.docx",
+              "videos": []
+            },
+            {
+              "id": "fast-exponentiation-using-binary-exponentiation",
+              "title": "Fast exponentiation using binary exponentiation",
+              "minutes": 20,
+              "notes": "Should be moved to Number Theory II.",
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "xor-tricks-finding-missing-element",
+              "title": "XOR tricks (finding missing element)",
+              "minutes": 15,
+              "notes": null,
+              "script": "8-XOR tricks (e.g., finding missing element).docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s07-sorting-algorithms",
+          "number": 7,
+          "title": "Sorting Algorithms",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "built-in-sorting-functions-sort-stable-sort",
+              "title": "Built-in Sorting Functions (sort(), stable_sort())",
+              "minutes": 15,
+              "notes": null,
+              "script": "1-Built-in Sorting Functions .docx",
+              "videos": []
+            },
+            {
+              "id": "default-comparators-and-overriding",
+              "title": "Default Comparators and Overriding",
+              "minutes": 15,
+              "notes": null,
+              "script": "2-Default Comparators and Overriding.docx",
+              "videos": []
+            },
+            {
+              "id": "sorting-vectors-of-pairs-structs",
+              "title": "Sorting Vectors of Pairs/Structs",
+              "minutes": 20,
+              "notes": null,
+              "script": "3-Sorting Vectors of Pairs/Structs.docx",
+              "videos": []
+            },
+            {
+              "id": "sorting-in-descending-custom-order",
+              "title": "Sorting in Descending/Custom Order",
+              "minutes": 15,
+              "notes": "Already covered in comparator overriding.",
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "n-sorting-algorithms-bubble-insertion-selection",
+              "title": "N² sorting algorithms (Bubble/Insertion/Selection)",
+              "minutes": 15,
+              "notes": null,
+              "script": "5-N square sorting algo.docx",
+              "videos": []
+            },
+            {
+              "id": "merge-sort-optional-for-recursion-connection",
+              "title": "Merge Sort (optional for recursion connection)",
+              "minutes": 20,
+              "notes": null,
+              "script": "6-Merge Sort.docx",
+              "videos": []
+            },
+            {
+              "id": "quick-sort-heap-sort",
+              "title": "Quick sort / Heap sort",
+              "minutes": null,
+              "notes": null,
+              "script": "7-quick sort / heap sort.docx",
+              "videos": []
+            },
+            {
+              "id": "counting-sort-frequency-based-tasks",
+              "title": "Counting Sort (frequency-based tasks)",
+              "minutes": 20,
+              "notes": null,
+              "script": "8-Counting Sort.docx",
+              "videos": []
+            },
+            {
+              "id": "bucket-radix",
+              "title": "Bucket & Radix",
+              "minutes": null,
+              "notes": null,
+              "script": "9-bucket & radix .docx",
+              "videos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-graphs-nt",
+      "title": "Advanced I (Greedy • Number Theory • Graphs I)",
+      "subtitle": "Greedy, Number Theory I/II, Graph traversal and MST foundations",
+      "description": "Advanced foundations leading into DP and heavy data structures.",
+      "sessions": [
+        {
+          "id": "s01-greedy",
+          "number": 1,
+          "title": "Greedy",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-greedy-strategy",
+              "title": "What is Greedy Strategy?",
+              "minutes": 10,
+              "notes": null,
+              "script": "1- What is Greedy Strategy?.docx",
+              "videos": [
+                {
+                  "title": "Video 1",
+                  "url": "https://www.youtube.com/watch?v=Oq1seKJvfQU"
+                }
+              ]
+            },
+            {
+              "id": "greedy-vs-complete-search",
+              "title": "Greedy vs complete search",
+              "minutes": 15,
+              "notes": "Ensure nothing missing.",
+              "script": "Greedy vs. complete search.docx",
+              "videos": []
+            },
+            {
+              "id": "activity-selection-problem",
+              "title": "Activity Selection Problem",
+              "minutes": 20,
+              "notes": null,
+              "script": "Activity Selection Problem.docx",
+              "videos": []
+            },
+            {
+              "id": "fractional-knapsack",
+              "title": "Fractional Knapsack",
+              "minutes": 20,
+              "notes": null,
+              "script": "Fractional Knapsack.docx",
+              "videos": []
+            },
+            {
+              "id": "huffman-encoding",
+              "title": "Huffman Encoding",
+              "minutes": 20,
+              "notes": null,
+              "script": "Huffman Encoding.docx",
+              "videos": []
+            },
+            {
+              "id": "job-sequencing",
+              "title": "Job Sequencing",
+              "minutes": 15,
+              "notes": null,
+              "script": "Job Sequencing.docx",
+              "videos": []
+            },
+            {
+              "id": "when-greedy-works-fails-proving-correctness",
+              "title": "When greedy works/fails & proving correctness",
+              "minutes": 15,
+              "notes": null,
+              "script": "Conditions where Greedy works and where it fails/Proving correctness of greedy choices.docx",
+              "videos": []
+            },
+            {
+              "id": "sorting-based-greedy-problems",
+              "title": "Sorting-based greedy problems",
+              "minutes": 15,
+              "notes": null,
+              "script": "Sorting-based greedy problems.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s02-number-theory-i",
+          "number": 2,
+          "title": "Number Theory I",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "divisibility-rules-trial-division",
+              "title": "Divisibility rules (Trial division)",
+              "minutes": 15,
+              "notes": null,
+              "script": "Divisibility rules.docx",
+              "videos": []
+            },
+            {
+              "id": "divisors",
+              "title": "Divisors",
+              "minutes": null,
+              "notes": null,
+              "script": "Divisors.docx",
+              "videos": []
+            },
+            {
+              "id": "fundamental-theorem-of-arithmetic",
+              "title": "Fundamental theorem of arithmetic",
+              "minutes": null,
+              "notes": null,
+              "script": "fundamental theorem of arithmetic.docx",
+              "videos": []
+            },
+            {
+              "id": "prime-numbers",
+              "title": "Prime Numbers",
+              "minutes": 15,
+              "notes": null,
+              "script": "Prime Numbers.docx",
+              "videos": []
+            },
+            {
+              "id": "sieve-of-eratosthenes-and-sieve-variants",
+              "title": "Sieve of Eratosthenes and sieve variants",
+              "minutes": null,
+              "notes": "Include linear/segmented/etc.",
+              "script": "Sieve of Eratosthenes and All Sieve Variants.docx",
+              "videos": []
+            },
+            {
+              "id": "gcd-by-prime-factorization",
+              "title": "GCD by prime factorization",
+              "minutes": null,
+              "notes": null,
+              "script": "GCD by Prime Factorization.docx",
+              "videos": []
+            },
+            {
+              "id": "gcd-euclidean-algorithm",
+              "title": "GCD - Euclidean Algorithm",
+              "minutes": null,
+              "notes": null,
+              "script": "GCD - Euclidean Algorithm.docx",
+              "videos": []
+            },
+            {
+              "id": "least-common-multiple-lcm",
+              "title": "Least Common Multiple (LCM)",
+              "minutes": 10,
+              "notes": null,
+              "script": "LCM.docx",
+              "videos": []
+            },
+            {
+              "id": "lcm-by-prime-factorization",
+              "title": "LCM by Prime Factorization",
+              "minutes": null,
+              "notes": "To be written.",
+              "script": "LCM by Prime Factorization.docx",
+              "videos": []
+            },
+            {
+              "id": "factorization-by-smallest-prime-factor-spf",
+              "title": "Factorization by Smallest Prime Factor (SPF)",
+              "minutes": null,
+              "notes": "To be written.",
+              "script": "Factorization by Smallest Prime Factor.docx",
+              "videos": []
+            },
+            {
+              "id": "binary-exponentiation-fast-exponentiation",
+              "title": "Binary Exponentiation (Fast Exponentiation)",
+              "minutes": 15,
+              "notes": null,
+              "script": "Binary Exponentiation.docx",
+              "videos": []
+            },
+            {
+              "id": "modular-arithmetic-properties-of-mod",
+              "title": "Modular Arithmetic: Properties of mod",
+              "minutes": 25,
+              "notes": null,
+              "script": "Modular Arithmetic: Properties of mod.docx",
+              "videos": []
+            },
+            {
+              "id": "modular-arithmetic-handling-large-numbers-with-mod",
+              "title": "Modular Arithmetic: Handling large numbers with mod",
+              "minutes": 15,
+              "notes": null,
+              "script": "Modular Arithmetic(Handling large numbers with mod).docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s03-number-theory-ii",
+          "number": 3,
+          "title": "Number Theory II",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "modular-inverse-prime-mod-fermat-s-little-theorem",
+              "title": "Modular Inverse (prime mod) + Fermat's Little Theorem",
+              "minutes": null,
+              "notes": null,
+              "script": "Modular Inverse prime .docx",
+              "videos": []
+            },
+            {
+              "id": "euler-s-theorem-euler-totient-function-general-inverse",
+              "title": "Euler's theorem / Euler totient function (general inverse)",
+              "minutes": 20,
+              "notes": null,
+              "script": "Euler's theorem / euler totient function  .docx",
+              "videos": []
+            },
+            {
+              "id": "power-modulo-a-b-m-techniques",
+              "title": "Power Modulo: a^b % m techniques",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "extended-euclidean-algorithm",
+              "title": "Extended Euclidean Algorithm",
+              "minutes": 20,
+              "notes": "Mention for modular inverse.",
+              "script": "Extended Euclidean Algorithm.docx",
+              "videos": []
+            },
+            {
+              "id": "solving-linear-diophantine-equations",
+              "title": "Solving Linear Diophantine Equations",
+              "minutes": null,
+              "notes": null,
+              "script": "Solving Linear Diophantine Equations.docx",
+              "videos": []
+            },
+            {
+              "id": "bezout-s-identity",
+              "title": "Bezout's identity",
+              "minutes": null,
+              "notes": null,
+              "script": "bezout's identity.docx",
+              "videos": []
+            },
+            {
+              "id": "chinese-remainder-theorem",
+              "title": "Chinese Remainder Theorem",
+              "minutes": 15,
+              "notes": null,
+              "script": "Chinese Remainder Theorem.docx",
+              "videos": []
+            },
+            {
+              "id": "solving-linear-congruences",
+              "title": "Solving Linear Congruences",
+              "minutes": 15,
+              "notes": null,
+              "script": "Solving Linear Congruences.docx",
+              "videos": []
+            },
+            {
+              "id": "applications-in-competitive-problems",
+              "title": "Applications in competitive problems",
+              "minutes": 20,
+              "notes": null,
+              "script": "Applications in competitive problems.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s04-graph-representation-dfs",
+          "number": 4,
+          "title": "Graph Representation & DFS",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "graph-basics-directed-vs-undirected",
+              "title": "Graph basics: Directed vs Undirected",
+              "minutes": 10,
+              "notes": null,
+              "script": "Directed vs. Undirected.docx",
+              "videos": []
+            },
+            {
+              "id": "graph-basics-weighted-vs-unweighted",
+              "title": "Graph basics: Weighted vs Unweighted",
+              "minutes": null,
+              "notes": null,
+              "script": "Weighted vs. Unweighted.docx",
+              "videos": []
+            },
+            {
+              "id": "graph-basics-cyclic-vs-acyclic",
+              "title": "Graph basics: Cyclic vs Acyclic",
+              "minutes": null,
+              "notes": null,
+              "script": "cyclic vs. acyclic.docx",
+              "videos": []
+            },
+            {
+              "id": "graph-basics-simple-and-multigraph",
+              "title": "Graph basics: Simple and multigraph",
+              "minutes": null,
+              "notes": null,
+              "script": "simple and multigraph.docx",
+              "videos": []
+            },
+            {
+              "id": "graph-representation-adjacency-matrix-vs-adjacency-list",
+              "title": "Graph representation: Adjacency Matrix vs Adjacency List",
+              "minutes": 15,
+              "notes": null,
+              "script": "Adjacency Matrix vs. Adjacency List.docx",
+              "videos": []
+            },
+            {
+              "id": "graph-representation-edge-list-implicit-graphs",
+              "title": "Graph representation: Edge List & Implicit Graphs",
+              "minutes": null,
+              "notes": null,
+              "script": "Edge List & Implicit Graphs.docx",
+              "videos": []
+            },
+            {
+              "id": "depth-first-search-dfs-recursive-and-iterative",
+              "title": "Depth-First Search (DFS): Recursive and Iterative",
+              "minutes": 25,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "graph-traversal-vs-tree-traversal",
+              "title": "Graph traversal vs tree traversal",
+              "minutes": 10,
+              "notes": null,
+              "script": "Graph traversal vs. tree traversal.docx",
+              "videos": []
+            },
+            {
+              "id": "dfs-complexity-time-space",
+              "title": "DFS complexity (time & space)",
+              "minutes": 10,
+              "notes": null,
+              "script": "Time & space complexity.docx",
+              "videos": []
+            },
+            {
+              "id": "connected-components",
+              "title": "Connected Components",
+              "minutes": 15,
+              "notes": null,
+              "script": "Connected Components.docx",
+              "videos": []
+            },
+            {
+              "id": "cycle-detection-undirected-directed",
+              "title": "Cycle Detection (Undirected / Directed)",
+              "minutes": 15,
+              "notes": null,
+              "script": "Cycle Detection (Undirected Graph / directed).docx",
+              "videos": []
+            },
+            {
+              "id": "flattening-a-tree-pre-order-traversal-indexing",
+              "title": "Flattening a Tree: Pre-order traversal indexing",
+              "minutes": null,
+              "notes": null,
+              "script": "Pre-order traversal indexing.docx",
+              "videos": []
+            },
+            {
+              "id": "subtree-problems",
+              "title": "Subtree problems",
+              "minutes": null,
+              "notes": null,
+              "script": "Subtree problems.docx",
+              "videos": []
+            },
+            {
+              "id": "tree-queries-using-array-indexing",
+              "title": "Tree queries using array indexing",
+              "minutes": null,
+              "notes": null,
+              "script": "Tree queries using array indexing.docx",
+              "videos": []
+            },
+            {
+              "id": "euler-tour-technique-optional",
+              "title": "Euler Tour Technique (optional)",
+              "minutes": null,
+              "notes": null,
+              "script": "Euler Tour.docx",
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s05-bfs-applications",
+          "number": 5,
+          "title": "BFS & Applications",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "bfs-level-order-traversal",
+              "title": "BFS Level-order traversal",
+              "minutes": 20,
+              "notes": null,
+              "script": "Breadth-First Search (BFS) Level-order Traversal.docx",
+              "videos": []
+            },
+            {
+              "id": "bfs-shortest-path-unweighted-graphs",
+              "title": "BFS shortest path (unweighted graphs)",
+              "minutes": 15,
+              "notes": null,
+              "script": "BFS for shortest path (unweighted graphs).docx",
+              "videos": []
+            },
+            {
+              "id": "difference-between-dfs-and-bfs",
+              "title": "Difference between DFS and BFS",
+              "minutes": 10,
+              "notes": null,
+              "script": "Difference between DFS and BFS.docx",
+              "videos": []
+            },
+            {
+              "id": "applications-puzzles",
+              "title": "Applications & puzzles",
+              "minutes": 10,
+              "notes": "Problem links: Aizu-ALDS1_13_B, LightOJ-1139, UVA-10085",
+              "script": null,
+              "videos": [
+                {
+                  "title": "Video 1",
+                  "url": "https://vjudge.net/problem/Aizu-ALDS1_13_B"
+                },
+                {
+                  "title": "Video 2",
+                  "url": "https://vjudge.net/problem/LightOJ-1139"
+                },
+                {
+                  "title": "Video 3",
+                  "url": "https://vjudge.net/problem/UVA-10085"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s06-dijkstra-s-algorithm",
+          "number": 6,
+          "title": "Dijkstra’s Algorithm",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "motivation-weighted-shortest-paths",
+              "title": "Motivation: Weighted shortest paths",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "graph-representation-for-dijkstra",
+              "title": "Graph representation for Dijkstra",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "priority-queue-usage",
+              "title": "Priority Queue usage",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "implementation-using-pair-set-or-priority-queue",
+              "title": "Implementation using pair/set or priority_queue",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "limitations-negative-weights",
+              "title": "Limitations: Negative weights",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "time-complexity-o-v-e-log-v",
+              "title": "Time complexity: O((V+E) log V)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "path-reconstruction-optional",
+              "title": "Path reconstruction (optional)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s07-bellman-ford-floyd-warshall",
+          "number": 7,
+          "title": "Bellman-Ford & Floyd-Warshall",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "bellman-ford-works-with-negative-weights",
+              "title": "Bellman-Ford: works with negative weights",
+              "minutes": 25,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "edge-relaxation-step-by-step",
+              "title": "Edge relaxation step-by-step",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "detecting-negative-weight-cycles",
+              "title": "Detecting Negative Weight Cycles",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "time-complexity-o-v-e",
+              "title": "Time Complexity: O(V×E)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "spfa-queue-optimized-bellman-ford",
+              "title": "SPFA (queue-optimized Bellman-Ford)",
+              "minutes": null,
+              "notes": "Improves average; worst-case still bad.",
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "floyd-warshall-all-pairs-shortest-paths",
+              "title": "Floyd-Warshall: all-pairs shortest paths",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "matrix-based-implementation",
+              "title": "Matrix-based implementation",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "complexity-o-v",
+              "title": "Complexity: O(V³)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s08-dsu-mst-prim",
+          "number": 8,
+          "title": "DSU & MST & Prim",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "dsu-union-by-rank",
+              "title": "DSU: Union by Rank",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dsu-union-by-size-random",
+              "title": "DSU: Union by Size / Random",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dsu-path-compression",
+              "title": "DSU: Path Compression",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dsu-applications-in-graph-problems",
+              "title": "DSU applications in graph problems",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "detecting-cycles-in-undirected-graphs",
+              "title": "Detecting cycles in undirected graphs",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "kruskal-s-algorithm-mst",
+              "title": "Kruskal’s Algorithm (MST)",
+              "minutes": 25,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "prim-s-algorithm-mst",
+              "title": "Prim’s Algorithm (MST)",
+              "minutes": 25,
+              "notes": "Dense graphs with adjacency matrix; also PQ/set.",
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "prim-in-dense-graphs-adjacency-matrix",
+              "title": "Prim in dense graphs (adjacency matrix)",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": [],
+              "parentId": "prim-s-algorithm-mst"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-dp-ds",
+      "title": "Advanced II (Dynamic Programming • Segment Trees • LCA)",
+      "subtitle": "DP core + major data structures",
+      "description": "From classical DP to segment trees, sparse table, and LCA.",
+      "sessions": [
+        {
+          "id": "s01-dynamic-programming",
+          "number": 1,
+          "title": "Dynamic Programming",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-dynamic-programming",
+              "title": "What is Dynamic Programming?",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "memoization-vs-tabulation",
+              "title": "Memoization vs Tabulation",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "identifying-dp-problems-optimal-substructure-overlapping-sub",
+              "title": "Identifying DP problems (optimal substructure & overlapping subproblems)",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "state-definition-and-transition-logic",
+              "title": "State definition and transition logic",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "fibonacci-base-dp",
+              "title": "Fibonacci (base DP)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "0-1-knapsack",
+              "title": "0/1 Knapsack",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "longest-common-subsequence-lcs",
+              "title": "Longest Common Subsequence (LCS)",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "longest-increasing-subsequence-lis",
+              "title": "Longest Increasing Subsequence (LIS)",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "partition-dp-on-a-line",
+              "title": "Partition DP on a line",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": [
+                {
+                  "title": "Video 1",
+                  "url": "https://vjudge.net/problem/POJ-1857"
+                }
+              ]
+            },
+            {
+              "id": "matrix-chain-multiplication-coin-change",
+              "title": "Matrix chain multiplication / Coin change",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": [
+                {
+                  "title": "Video 1",
+                  "url": "https://codeforces.com/blog/entry/67679"
+                }
+              ]
+            },
+            {
+              "id": "space-optimization-techniques",
+              "title": "Space optimization techniques",
+              "minutes": null,
+              "notes": "Move to iterative DP session.",
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "time-space-complexity-considerations",
+              "title": "Time & Space complexity considerations",
+              "minutes": 10,
+              "notes": "Move before common base problems.",
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "building-path-in-dp",
+              "title": "Building path in DP",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": [
+                {
+                  "title": "Video 1",
+                  "url": "https://vjudge.net/problem/UVA-348"
+                },
+                {
+                  "title": "Video 2",
+                  "url": "https://vjudge.net/problem/UVA-10453"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s02-iterative-dynamic-programming",
+          "number": 2,
+          "title": "Iterative Dynamic Programming",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "when-to-prefer-iterative-dp",
+              "title": "When to prefer iterative DP",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "1d-vs-2d-dp-tables",
+              "title": "1D vs 2D DP tables",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "iterative-lcs",
+              "title": "Iterative LCS",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "iterative-knapsack",
+              "title": "Iterative Knapsack",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "iterative-lis",
+              "title": "Iterative LIS",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "rolling-arrays-to-optimize-space",
+              "title": "Rolling arrays to optimize space",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "debugging-and-tracing-iterative-flow",
+              "title": "Debugging and tracing iterative flow",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s03-non-classical-dp",
+          "number": 3,
+          "title": "Non-Classical DP",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "digit-dp",
+              "title": "Digit DP",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "bitmask-dp",
+              "title": "Bitmask DP",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "tree-dp-dp-on-trees-using-dfs",
+              "title": "Tree DP (DP on trees using DFS)",
+              "minutes": 25,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dp-with-multiple-states",
+              "title": "DP with multiple states",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "sliding-window-dp",
+              "title": "Sliding Window DP",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "state-compression-techniques",
+              "title": "State compression techniques",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dp-with-pre-calculated-prefix-sums-or-combinatorics",
+              "title": "DP with pre-calculated prefix sums or combinatorics",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s04-matrix-exponentiation",
+          "number": 4,
+          "title": "Matrix Exponentiation",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "motivation-speeding-up-fibonacci-to-o-log-n",
+              "title": "Motivation: Speeding up Fibonacci to O(log n)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "matrix-representation-of-recurrence",
+              "title": "Matrix representation of recurrence",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "fast-matrix-power-exponentiation-by-squaring",
+              "title": "Fast matrix power (exponentiation by squaring)",
+              "minutes": 30,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "implementation-steps-for-2x2-and-nxn-matrices",
+              "title": "Implementation steps for 2x2 and nxn matrices",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-fibonacci",
+              "title": "Applications: Fibonacci",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-linear-dp-recurrences",
+              "title": "Applications: Linear DP recurrences",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-population-growth-models",
+              "title": "Applications: Population growth models",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s05-bit-fenwick-tree",
+          "number": 5,
+          "title": "BIT (Fenwick Tree)",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-bit-fenwick-tree",
+              "title": "What is BIT/Fenwick Tree?",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "building-the-tree",
+              "title": "Building the tree",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "point-updates-and-range-queries",
+              "title": "Point updates and range queries",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-prefix-sum-queries",
+              "title": "Use cases: Prefix sum queries",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-inversion-count",
+              "title": "Use cases: Inversion count",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "comparison-with-segment-tree",
+              "title": "Comparison with Segment Tree",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "2d-bit-optional",
+              "title": "2D BIT (optional)",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "range-update-range-query-advanced-variants",
+              "title": "Range update / range query (advanced variants)",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "complexity-o-log-n",
+              "title": "Complexity: O(log n)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s06-segment-tree-i",
+          "number": 6,
+          "title": "Segment Tree I",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-a-segment-tree",
+              "title": "What is a Segment Tree?",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "building-the-tree",
+              "title": "Building the tree",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "point-updates",
+              "title": "Point updates",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "range-queries-sum-min-max-etc",
+              "title": "Range queries (sum, min, max, etc.)",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "time-space-complexity",
+              "title": "Time & space complexity",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-rmq",
+              "title": "Use cases: RMQ",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-range-sum-frequency",
+              "title": "Use cases: Range sum/frequency",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s07-segment-tree-ii-lazy-advanced-variants",
+          "number": 7,
+          "title": "Segment Tree II (Lazy, Advanced Variants)",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "why-lazy-propagation-is-needed",
+              "title": "Why lazy propagation is needed",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "lazy-propagation-technique",
+              "title": "Lazy propagation technique",
+              "minutes": 25,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "range-addition-range-query",
+              "title": "Range addition & range query",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "range-assignment",
+              "title": "Range assignment",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "merge-sort-tree-optional",
+              "title": "Merge sort tree (optional)",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dynamic-segment-tree-optional",
+              "title": "Dynamic segment tree (optional)",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "persistent-segment-tree-optional",
+              "title": "Persistent segment tree (optional)",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "code-structure-storing-pending-updates",
+              "title": "Code structure: storing pending updates",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "complexity-o-log-n-update-query",
+              "title": "Complexity: O(log n) update/query",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s08-sparse-table-lca",
+          "number": 8,
+          "title": "Sparse Table & LCA",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "sparse-table-immutable-arrays",
+              "title": "Sparse Table: immutable arrays",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "rmq-in-o-1-after-preprocessing",
+              "title": "RMQ in O(1) after preprocessing",
+              "minutes": 25,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-rmq-where-array-does-not-change",
+              "title": "Applications: RMQ where array does not change",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "what-is-lca-and-its-applications",
+              "title": "What is LCA and its applications",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "lca-binary-lifting",
+              "title": "LCA: Binary Lifting",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "lca-euler-tour-rmq",
+              "title": "LCA: Euler Tour + RMQ",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-tree-distance-queries",
+              "title": "Applications: Tree distance queries",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-path-queries",
+              "title": "Applications: Path queries",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-strings-graphs",
+      "title": "Advanced III (Strings • MO’s • SCC • Probability)",
+      "subtitle": "Advanced string algorithms and graph components",
+      "description": "High-level CP topics for senior students.",
+      "sessions": [
+        {
+          "id": "s01-trie-binary-trie",
+          "number": 1,
+          "title": "Trie & Binary Trie",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "introduction-to-trie-prefix-tree",
+              "title": "Introduction to Trie (Prefix Tree)",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "inserting-and-searching-words",
+              "title": "Inserting and searching words",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "deleting-words",
+              "title": "Deleting words",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-dictionary-matching",
+              "title": "Applications: Dictionary matching",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-auto-completion",
+              "title": "Applications: Auto-completion",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-counting-distinct-substrings",
+              "title": "Applications: Counting distinct substrings",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "binary-trie-numbers",
+              "title": "Binary Trie (numbers)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "storing-numbers-in-binary-form",
+              "title": "Storing numbers in binary form",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-maximum-xor-pair",
+              "title": "Applications: Maximum XOR Pair",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-range-xor-queries-with-dp",
+              "title": "Applications: Range XOR Queries (with DP)",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s02-hashing-rabin-karp-set-hash",
+          "number": 2,
+          "title": "Hashing (Rabin Karp - Set Hash)",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "string-hashing-basics",
+              "title": "String Hashing Basics",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "rolling-hash",
+              "title": "Rolling Hash",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "rabin-karp-detecting-substrings",
+              "title": "Rabin-Karp: Detecting substrings",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "rabin-karp-multiple-pattern-matching",
+              "title": "Rabin-Karp: Multiple pattern matching",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "hash-collisions-modulus-usage",
+              "title": "Hash collisions & modulus usage",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "set-hashing-hashing-of-sets-multisets",
+              "title": "Set Hashing: Hashing of sets/multisets",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "set-hashing-applications-unordered-input-comparison",
+              "title": "Set Hashing applications (unordered input comparison)",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s03-kmp-kmp-with-dp",
+          "number": 3,
+          "title": "KMP & KMP with DP",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "need-for-kmp-why-brute-force-fails",
+              "title": "Need for KMP (Why brute-force fails)",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "prefix-function-array",
+              "title": "Prefix Function (π array)",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "pattern-preprocessing",
+              "title": "Pattern preprocessing",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "matching-phase",
+              "title": "Matching phase",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "kmp-with-dp-dp-applications",
+              "title": "KMP with DP: DP applications",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "automaton-style-string-state-transitions",
+              "title": "Automaton-style string state transitions",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s04-suffix-arrays-lcp",
+          "number": 4,
+          "title": "Suffix Arrays & LCP",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-is-a-suffix-array",
+              "title": "What is a suffix array?",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "naive-vs-efficient-construction-o-n-log-n-o-n-log-n",
+              "title": "Naive vs efficient construction (O(n log² n) / O(n log n))",
+              "minutes": 30,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "lcp-array-kasai-s-algorithm",
+              "title": "LCP Array: Kasai's Algorithm",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "lcp-applications-distinct-substrings-matching",
+              "title": "LCP applications (distinct substrings, matching)",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dictionary-of-basic-factors-compare-substrings-o-1",
+              "title": "Dictionary of basic factors (compare substrings O(1))",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s05-sqrt-decomposition-mo-s-algorithm",
+          "number": 5,
+          "title": "Sqrt Decomposition & MO's Algorithm",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "concept-n-blocks",
+              "title": "Concept: √n blocks",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "query-and-update-operations",
+              "title": "Query and update operations",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-range-sum-min-max",
+              "title": "Use cases: Range sum / min / max",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-frequency-count-queries",
+              "title": "Use cases: Frequency count queries",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "offline-query-processing",
+              "title": "Offline query processing",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "sorting-queries-by-block",
+              "title": "Sorting queries by block",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "add-remove-technique",
+              "title": "Add/Remove technique",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "mo-s-on-trees-path-queries-updates",
+              "title": "MO's on trees / path queries / updates",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-range-frequency",
+              "title": "Use cases: Range frequency",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "use-cases-most-frequent-element-in-range",
+              "title": "Use cases: Most frequent element in range",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s06-probability-expected-value",
+          "number": 6,
+          "title": "Probability & Expected Value",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "probability-fundamentals",
+              "title": "Probability fundamentals",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "expected-value-formula",
+              "title": "Expected Value formula",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "linearity-of-expectation",
+              "title": "Linearity of Expectation",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "dice-rolls-problems",
+              "title": "Dice rolls problems",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "random-selection-problems",
+              "title": "Random selection problems",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "expected-steps-moves-problems",
+              "title": "Expected steps/moves problems",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s07-scc-2-sat",
+          "number": 7,
+          "title": "SCC & 2-SAT",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "definition-of-scc",
+              "title": "Definition of SCC",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "kosaraju-s-algorithm",
+              "title": "Kosaraju’s Algorithm",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "tarjan-s-algorithm",
+              "title": "Tarjan’s Algorithm",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "condensation-graph",
+              "title": "Condensation graph",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-component-compression",
+              "title": "Applications: Component compression",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-cycle-detection-in-directed-graphs",
+              "title": "Applications: Cycle detection in directed graphs",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "2-sat-boolean-formula-satisfiability-cnf",
+              "title": "2-SAT: Boolean formula satisfiability (CNF)",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "implication-graph",
+              "title": "Implication graph",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "reducing-to-scc",
+              "title": "Reducing to SCC",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "assignment-generation-for-satisfiable-formulas",
+              "title": "Assignment generation for satisfiable formulas",
+              "minutes": null,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "transitive-closure-using-floyd-warshall-for-2-sat",
+              "title": "Transitive closure using Floyd-Warshall for 2-SAT",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        },
+        {
+          "id": "s08-bcc-bridges-articulation-points",
+          "number": 8,
+          "title": "BCC, Bridges & Articulation Points",
+          "lectureHours": "2 Hours",
+          "mentoringHours": "2 Hours",
+          "practiceHours": "2 Hours",
+          "note": null,
+          "topics": [
+            {
+              "id": "what-are-biconnected-components-bccs",
+              "title": "What are Biconnected Components (BCCs)?",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "detection-using-dfs-and-low-link-values",
+              "title": "Detection using DFS and low-link values",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-in-network-reliability",
+              "title": "Applications in network reliability",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "bridges-critical-edges",
+              "title": "Bridges: critical edges",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "tarjan-s-algorithm-for-bridges",
+              "title": "Tarjan’s algorithm for bridges",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "bridge-use-cases-network-design-vulnerability",
+              "title": "Bridge use cases: network design/vulnerability",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "articulation-points-critical-nodes",
+              "title": "Articulation Points: critical nodes",
+              "minutes": 10,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "detection-via-dfs",
+              "title": "Detection via DFS",
+              "minutes": 20,
+              "notes": null,
+              "script": null,
+              "videos": []
+            },
+            {
+              "id": "applications-communication-networks-failure-points",
+              "title": "Applications: communication networks/failure points",
+              "minutes": 15,
+              "notes": null,
+              "script": null,
+              "videos": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
