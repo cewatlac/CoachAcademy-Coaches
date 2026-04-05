@@ -9,56 +9,81 @@
   },
   "hero": {
     "eyebrow": "Coach Academy",
-    "subline": "Software Developer & Competitive Programmer with strong skills in Algorithms, OOP, and Web Development. Active in ICPC contests and experienced mentor.",
+    "subline": "Software Engineer with practical experience in frontend and full stack web development, with strong focus on Angular, React.js, Next.js, JavaScript, TypeScript, and modern responsive web applications.",
     "badges": [
-      { "label": "Problems Solved", "value": "1600+" },
-      { "label": "Students Mentored", "value": "Many" }
+      { "label": "Specialization", "value": "Frontend + Full Stack" },
+      { "label": "Focus", "value": "Angular / React / Next.js" }
     ]
   },
   "coach": {
-    "name": "Zyad Mohamed Elnaghy",
-    "role": "Software Developer | Competitive Programmer | Mentor",
-    "university": "Bachelor of Computer Science and Informatics, Suez Canal University (2021 – present)",
-    "photo": "assets/zyad.jpg",
+    "name": "Ruba Ismail Sliem",
+    "role": "Software Engineer | Frontend & Full Stack Developer | Mentor",
+    "university": "Bachelor in Computer Science, Menoufia University",
+    "photo": "assets/ruba.jpg",
     "snapshot": [
-      "ICPC Suez Canal University Mentor",
-      "Solved 1600+ problems on Codeforces & LeetCode",
-      "Specialized in Algorithms and Data Structures",
-      "Built responsive websites with React, HTML, CSS, JS",
-      "Developed visualization tools for sorting algorithms (C++/SFML)"
+      "Junior Full Stack Web Developer with strong expertise in Angular, React.js, and Next.js",
+      "Experienced with Node.js through real project implementations",
+      "Strong foundation in JavaScript, TypeScript, HTML5, CSS3, Redux, and Context API",
+      "Skilled in responsive UI, performance optimization, SSR/SSG, and collaborative GitHub workflow",
+      "Has both software development experience and training experience in structured educational programs"
     ],
     "skills": [
-      "C++","Python","Java","C","HTML5","CSS","JavaScript","ReactJS",
-      "Next.js","Bootstrap 5","MySQL","Git","GitHub","Linux",
-      "OOP","SOLID Principles","Data Structures","Algorithms","Problem Solving",
-      "Competitive Programming","Networking"
+      "Angular",
+      "Angular Material",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Redux Toolkit",
+      "React Router",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Material UI",
+      "Zustand",
+      "Axios",
+      "Vite",
+      "Git",
+      "GitHub",
+      "Postman",
+      "UI/UX",
+      "Agile"
     ],
     "achievements": [
-      "Mentored students in ICPC regional training",
-      "Ranked in ICPC Suez Canal University contests",
-      "Contributed to open-source projects on GitHub",
-      "Participated in multiple competitive programming contests"
+      "Worked as a Full Stack Web Developer specializing in the MEARN stack",
+      "Completed intensive training in the MEARN Full Stack Development Track at ITI",
+      "Worked on clean, maintainable, and structured frontend and backend codebases",
+      "Has previous teaching and training experience through UCMAS and KENKEN programs",
+      "Built multiple real-world projects covering authentication, dashboards, search, cart flows, and payments"
     ],
     "projects": [
-      "Traveling Website – Front-end responsive website using HTML, CSS, JS",
-      "Visualization of Sorting Algorithms – Interactive tool using C++ and SFML",
-      "Multiple academic and self-driven projects (React, Databases, System Design)"
+      "Shipping Website — full stack platform to manage orders, shipments, user roles, and automated delivery cost calculation",
+      "Ecommerce Website App — full stack application with categories, search, product details, forms, authentication, favorites, cart, and Stripe payment flow",
+      "Trending Movie App — full stack app for discovering movies, TV shows, and actors with authentication and profile settings",
+      "Restaurant Website — React-based frontend app with cart, favorites, theme and language switching, login, and order flow",
+      "Cashier Website — frontend app for product listing, quantity control, kitchen order workflow, and notes handling",
+      "Meals Recipe Website — Angular app with categories, favorites, authentication, and meal-detail tutorial viewing"
     ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "How to request this coach for competitive programming mentorship?",
-        "a": "Use the WhatsApp button to share your requirements. We will coordinate sessions and training details."
+        "q": "How can I request Ruba for coaching or training?",
+        "a": "Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals."
       },
       {
-        "q": "What are the coach's main areas of expertise?",
-        "a": "Algorithms, Data Structures, OOP, Web Development (React, Next.js), and Competitive Programming."
+        "q": "What are Ruba’s main teaching and technical strengths?",
+        "a": "Frontend development, Angular, React, Next.js, JavaScript, TypeScript, full stack project work, and practical learner-friendly guidance."
       },
       {
-        "q": "Does the coach have teaching experience?",
-        "a": "Yes. Zyad has mentored ICPC teams and guided peers on problem-solving platforms like Codeforces and LeetCode."
+        "q": "Does Ruba have project and teaching experience?",
+        "a": "Yes. She has experience in both software development and structured training work, which makes her suitable for practical, guided learning sessions."
       }
     ]
   },
@@ -71,7 +96,7 @@
       { "label": "Projects", "href": "#projects" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "address": "Port Said, Egypt",
+    "address": "Cairo, Egypt",
     "email_public": "info@coach-academy.net",
     "copyright": "© 2025 Coach Academy — All rights reserved."
   }

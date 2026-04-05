@@ -3,174 +3,584 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coach Academy — Coach Profile (Zyad Mohamed Elnaghy)</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Coach Academy — Coach Profile (Ruba Ismail Sliem)</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --brand-primary: #002366;
       --brand-gradient2: #1e3a8a;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 10px 30px rgba(2, 35, 102, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .org {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.1;
+    }
+
+    .org span { color: var(--brand-primary); }
+
+    .org-sub {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: var(--brand-primary);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-outline {
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+      background: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #eff6ff;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));
+      color: #fff;
+      padding: 72px 0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.1;
+    }
+
+    .hero-role {
+      margin: 10px 0 14px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-sub {
+      max-width: 720px;
+      margin: 0 0 22px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .badge {
+      min-width: 170px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .badge strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    .badge span {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .coach-photo-hero {
+      width: min(100%, 360px);
+      aspect-ratio: 1 / 1;
+      border-radius: 28px;
+      object-fit: cover;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .coach-card {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .coach-photo {
+      width: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      background: #e2e8f0;
+    }
+
+    .coach-name {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    .coach-role {
+      margin: 8px 0 6px;
+      font-weight: 600;
+      color: var(--brand-primary);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .coach-subtitle,
+    .section-heading {
+      margin: 28px 0 14px;
+      font-size: 1.3rem;
+    }
+
+    .bullets {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .bullets li {
+      margin-bottom: 10px;
+    }
+
+    .coach-tags {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tag {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: var(--brand-primary);
+      border: 1px solid #dbeafe;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .coach-cta {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 580px;
+    }
+
+    .section-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .faq-a {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      background: #0f172a;
+      color: #fff;
+      padding-top: 56px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.8fr 1fr;
+      gap: 28px;
+      padding-bottom: 36px;
+    }
+
+    .footer-col h5 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    .footer-links,
+    .contact {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li,
+    .contact li {
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .copy {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+      padding: 18px 16px;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.72);
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .coach-card,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .header-inner {
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
         <div class="brand-text">
           <h1 class="org">Coach <span>Academy</span></h1>
-          <p class="org-sub">Coach Profile — Anonymized (Name Only)</p>
+          <p class="org-sub">Coach Profile</p>
         </div>
       </div>
+
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-outline" id="nav-whatsapp"
-           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20a%20coaching%20request."
+        <a class="btn btn-outline"
+           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Ruba."
            target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" style="background: linear-gradient(135deg, var(--brand-primary), var(--brand-gradient2));">
+  <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
         <div class="eyebrow">Coach Academy</div>
-        <h2 class="hero-title">Zyad Mohamed Elnaghy</h2>
-        <h3 class="hero-role">Software Developer | Competitive Programmer | Mentor</h3>
+        <h2 class="hero-title">Ruba Ismail Sliem</h2>
+        <h3 class="hero-role">Software Engineer | Frontend & Full Stack Developer | Mentor</h3>
         <p class="hero-sub">
-          Software Developer & Competitive Programmer with strong skills in Algorithms, OOP, and Web Development.
-          Active in ICPC contests and experienced mentor.
+          Software Engineer with practical experience in frontend and full stack web development,
+          with strong focus on Angular, React.js, Next.js, JavaScript, TypeScript, and modern responsive web applications.
         </p>
+
         <div class="hero-ctas">
           <a class="btn btn-primary"
-             href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20a%20coaching%20request."
+             href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Ruba."
              target="_blank" rel="noopener">Contact on WhatsApp</a>
         </div>
+
         <div class="hero-badges">
-          <div class="badge"><strong>1600+</strong><span>Problems Solved</span></div>
-          <div class="badge"><strong>Many</strong><span>Students Mentored</span></div>
+          <div class="badge">
+            <strong>Frontend + Full Stack</strong>
+            <span>Angular, React, Next.js, Node.js</span>
+          </div>
+          <div class="badge">
+            <strong>Training Background</strong>
+            <span>Teaching and structured learner support</span>
+          </div>
         </div>
       </div>
+
       <div class="hero-visual">
-        <img class="coach-photo-hero" src="assets/zyad.jpg" alt="Portrait of Zyad Mohamed Elnaghy" />
+        <img class="coach-photo-hero" src="assets/ruba.jpg" alt="Portrait of Ruba Ismail Sliem" />
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="about">
     <div class="container">
       <div class="coach-card">
         <div class="coach-media">
-          <img class="coach-photo" src="assets/zyad.jpg" alt="Zyad Elnaghy photo" />
+          <img class="coach-photo" src="assets/ruba.jpg" alt="Ruba Ismail Sliem photo" />
         </div>
+
         <div class="coach-body">
-          <h3 class="coach-name">Zyad Mohamed Elnaghy</h3>
-          <p class="coach-role">Software Developer | Competitive Programmer | Mentor</p>
-          <p class="muted">Bachelor of Computer Science and Informatics, Suez Canal University (2021 – 2025)</p>
+          <h3 class="coach-name">Ruba Ismail Sliem</h3>
+          <p class="coach-role">Software Engineer | Frontend & Full Stack Developer | Mentor</p>
+          <p class="muted">Bachelor in Computer Science, Menoufia University</p>
 
           <h4 class="coach-subtitle">Snapshot</h4>
           <ul class="bullets">
-            <li>ICPC Suez Canal University Mentor</li>
-            <li>Solved 1600+ problems on Codeforces &amp; LeetCode</li>
-            <li>Specialized in Algorithms and Data Structures</li>
-            <li>Built responsive websites with React, HTML, CSS, JS</li>
-            <li>Developed sorting algorithms visualizer (C++/SFML)</li>
+            <li>Junior Full Stack Web Developer with strong expertise in Angular, React.js, and Next.js</li>
+            <li>Experienced with Node.js through real project implementations</li>
+            <li>Strong foundation in JavaScript, TypeScript, HTML5, CSS3, Redux, and Context API</li>
+            <li>Skilled in responsive UI, performance optimization, SSR/SSG, and collaborative GitHub workflow</li>
+            <li>Has both software development experience and training experience in structured educational programs</li>
           </ul>
 
           <h4 class="coach-subtitle">Core Skills</h4>
           <ul class="coach-tags">
-            <li class="tag">C++</li><li class="tag">Python</li><li class="tag">Java</li><li class="tag">C</li>
-            <li class="tag">HTML5</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
-            <li class="tag">ReactJS</li><li class="tag">Next.js</li><li class="tag">Bootstrap 5</li>
-            <li class="tag">MySQL</li><li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">Linux</li>
-            <li class="tag">OOP</li><li class="tag">SOLID</li><li class="tag">Data Structures</li>
-            <li class="tag">Algorithms</li><li class="tag">Problem Solving</li><li class="tag">Networking</li>
+            <li class="tag">Angular</li>
+            <li class="tag">Angular Material</li>
+            <li class="tag">React.js</li>
+            <li class="tag">Next.js</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">Express.js</li>
+            <li class="tag">MongoDB</li>
+            <li class="tag">MySQL</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">HTML5</li>
+            <li class="tag">CSS3</li>
+            <li class="tag">Redux Toolkit</li>
+            <li class="tag">React Router</li>
+            <li class="tag">Tailwind CSS</li>
+            <li class="tag">Bootstrap</li>
+            <li class="tag">Material UI</li>
+            <li class="tag">Zustand</li>
+            <li class="tag">Axios</li>
+            <li class="tag">Vite</li>
+            <li class="tag">Git</li>
+            <li class="tag">GitHub</li>
+            <li class="tag">Postman</li>
+            <li class="tag">UI/UX</li>
+            <li class="tag">Agile</li>
           </ul>
 
           <div class="coach-cta">
             <div class="note">
-              This profile hides personal identifiers (emails, phones, addresses).<br />
-              Coach Academy shares details later in the hiring process upon request.
+              This public profile intentionally hides personal identifiers such as email, phone number,
+              and social profile links. All coaching requests are handled through Coach Academy only.
             </div>
-            <a class="btn btn-primary"
-               href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20a%20coaching%20request."
-               target="_blank" rel="noopener">Contact on WhatsApp</a>
-          </div>
 
-          <div class="coach-links" style="margin-top:1rem;">
-            <!-- Only safe public profiles -->
-            <a class="btn btn-outline" href="https://github.com/ZyadElnaghy" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-outline" href="https://codeforces.com/profile/ElNaghy" target="_blank" rel="noopener">Codeforces</a>
-            <a class="btn btn-outline" href="https://leetcode.com/u/na8y/" target="_blank" rel="noopener">LeetCode</a>
+            <a class="btn btn-outline"
+               href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Ruba."
+               target="_blank" rel="noopener">Request via WhatsApp</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ACHIEVEMENTS -->
   <section id="achievements" class="achievements">
     <div class="container">
-      <h3 class="section-heading">Competitive Programming &amp; Activities</h3>
-      <ul class="bullets big" id="achievements-list">
-        <li>Mentored peers and teams in ICPC training and local contests</li>
-        <li>Ranked participant in ICPC Suez Canal University contests</li>
-        <li>Active problem solver with 1600+ solved problems on CP platforms</li>
-      </ul>
+      <div class="section-box">
+        <h3 class="section-heading">Experience & Highlights</h3>
+        <ul class="bullets">
+          <li>Worked as a Full Stack Web Developer specializing in the MEARN stack</li>
+          <li>Completed intensive training in the MEARN Full Stack Development Track at ITI</li>
+          <li>Worked on clean, maintainable, and structured frontend and backend codebases</li>
+          <li>Has previous teaching and training experience through UCMAS and KENKEN programs</li>
+          <li>Built multiple real-world projects covering authentication, dashboards, search, cart flows, and payments</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects" class="projects">
     <div class="container">
-      <h3 class="section-heading">Selected Projects</h3>
-      <ul class="bullets" id="projects-list">
-        <li><strong>Traveling Website</strong> — responsive front-end website (HTML, CSS, JS)</li>
-        <li><strong>Sorting Algorithms Visualizer</strong> — interactive tool (C++/SFML)</li>
-        <li><strong>Learning Projects</strong> — React, MySQL, and modern web tooling</li>
-      </ul>
+      <div class="section-box">
+        <h3 class="section-heading">Selected Projects</h3>
+        <ul class="bullets">
+          <li><strong>Shipping Website</strong> — full stack platform to manage orders, shipments, user roles, and automated delivery cost calculation</li>
+          <li><strong>Ecommerce Website App</strong> — full stack application with categories, search, product details, forms, authentication, favorites, cart, and Stripe payment flow</li>
+          <li><strong>Trending Movie App</strong> — full stack app for discovering movies, TV shows, and actors with authentication and profile settings</li>
+          <li><strong>Restaurant Website</strong> — React-based frontend app with cart, favorites, theme and language switching, login, and order flow</li>
+          <li><strong>Cashier Website</strong> — frontend app for product listing, quantity control, kitchen order workflow, and notes handling</li>
+          <li><strong>Meals Recipe Website</strong> — Angular app with categories, favorites, authentication, and meal-detail tutorial viewing</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- FAQ -->
   <section id="faq" class="faq">
     <div class="container">
-      <h3 class="section-heading">Frequently Asked Questions</h3>
-      <div id="faq-list">
+      <div class="section-box">
+        <h3 class="section-heading">Frequently Asked Questions</h3>
+
         <div class="faq-item">
-          <h4 class="faq-q">How to request this coach for competitive programming mentorship?</h4>
-          <p class="faq-a">Use the WhatsApp button to share your requirements. We will coordinate sessions and training details.</p>
+          <h4 class="faq-q">How can I request Ruba for coaching or training?</h4>
+          <p class="faq-a">
+            Use the WhatsApp button to send your training needs. Coach Academy will coordinate the suitable format, schedule, and learning goals.
+          </p>
         </div>
+
         <div class="faq-item">
-          <h4 class="faq-q">What are the coach's main areas of expertise?</h4>
-          <p class="faq-a">Algorithms, Data Structures, OOP, Web Development (React, Next.js), and Competitive Programming.</p>
+          <h4 class="faq-q">What are Ruba’s main teaching and technical strengths?</h4>
+          <p class="faq-a">
+            Frontend development, Angular, React, Next.js, JavaScript, TypeScript, full stack project work, and practical learner-friendly guidance.
+          </p>
         </div>
+
         <div class="faq-item">
-          <h4 class="faq-q">Does the coach have teaching experience?</h4>
-          <p class="faq-a">Yes. Zyad has mentored ICPC teams and guided peers on problem-solving platforms like Codeforces and LeetCode.</p>
+          <h4 class="faq-q">Does Ruba have project and teaching experience?</h4>
+          <p class="faq-a">
+            Yes. She has experience in both software development and structured training work, which makes her suitable for practical, guided learning sessions.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Coach Academy logo" class="logo" />
-        <p class="muted">Empowering talent through hands-on, industry-aligned tech coaching.</p>
+        <p class="muted" style="color: rgba(255,255,255,0.8);">
+          Empowering talent through hands-on, industry-aligned tech coaching.
+        </p>
         <a class="btn btn-outline"
-           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20a%20coaching%20request."
-           target="_blank" rel="noopener">Contact on WhatsApp</a>
+           href="https://wa.me/201102919193?text=Hello!%20I%27m%20interested%20in%20booking%20a%20session%20with%20Ruba."
+           target="_blank" rel="noopener"
+           style="border-color: rgba(255,255,255,0.4); color: #fff; background: transparent;">
+          Contact on WhatsApp
+        </a>
       </div>
+
       <div class="footer-col">
         <h5>Quick Links</h5>
         <ul class="footer-links">
@@ -180,15 +590,17 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
         <h5>Contact Info</h5>
-        <ul class="contact" id="footer-contact">
-          <li><strong>Address:</strong> Port Said, Egypt</li>
+        <ul class="contact">
+          <li><strong>Address:</strong> Cairo, Egypt</li>
           <li><strong>Email:</strong> <a href="mailto:info@coach-academy.net">info@coach-academy.net</a></li>
           <li><strong>WhatsApp:</strong> <a href="https://wa.me/201102919193" target="_blank" rel="noopener">+20 110 291 9193</a></li>
         </ul>
       </div>
     </div>
+
     <div class="copy">© 2025 Coach Academy — All rights reserved.</div>
   </footer>
 </body>
